@@ -1,0 +1,286 @@
+html body{
+	color: grey;
+	font-family: "Trebuchet MS";
+	top:0;
+	margin-left:0;
+	margin-right:0;
+	margin-top:0;
+	margin-bottom:0;
+	background: rgb(169,27,120);
+	background: radial-gradient(ellipse 100% 100% at 100% 100%, rgba(169,27,120,1) 17%, rgba(47,25,95,1) 100%);
+	background-image: radial-gradient(ellipse 100% 100% at 100% 100%,#9d162d 0%,#a91b78 46%,#2f195f  100%);
+	text-align: justify;
+
+}
+
+
+header{
+	z-index: 2;
+
+	background-color: none;
+	margin:0;
+	position:fixed;
+	width:100%;
+	top:0;
+	left:0;
+	margin-top:0;
+}
+div{
+	margin:10vh;
+	margin-left:20%;
+	margin-right:20%;
+	color: white;
+	border-radius: 10px;
+	border: 1vh solid white;
+}
+
+p{
+	font-weight: normal;
+}
+
+#compétences p{
+	margin-left: 2vh;
+	margin-bottom: 2vh;
+}
+
+h1{
+	margin-left: 2vh;
+}
+
+.menu{
+	display: flex;
+	margin:0;
+	padding:0;
+	background-color: none;
+}
+
+.menu li{
+	list-style-type: none;
+}
+
+.menu a {
+	display:block;
+	min-width: 6rem;
+	padding: 0.4rem 0;
+    text-align: center;
+    background-color: #2F195F;
+    color: #fff;
+    text-decoration: none;
+    border-left:2px solid #000;
+}
+
+.menu a:hover{
+ 	color: #ffe843;
+}
+
+#presentation{
+	margin-top:10vh;
+	color: white;
+	overflow:hidden;
+}
+
+
+#presentation h1{
+	margin-bottom: 1vh;
+}
+#photomoi{
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom:10vh;
+	object-fit: cover;
+	height: 30vh;
+	width: 30vh;
+	float:left;
+}
+#git{
+	margin-bottom:10vh;
+	object-fit: cover;
+	height: 10vh;
+	width: 10vh;
+	float: left;
+	display: inline;
+}
+#linkdin{
+	margin-bottom:10vh;
+	margin-left:5vh;
+	object-fit: cover;
+	height: 10vh;
+	width: 10vh;
+	display: inline;
+}
+
+#presentation p{
+	margin: 3vh;
+	margin-top:5vh;
+	margin-bottom:5vh;
+}
+
+#soft {
+	padding-top:0.2vh;
+	padding-bottom:1vh;
+}
+#compétences {
+	padding-top:0.2vh;
+	padding-bottom:1vh;
+
+}
+#compétences p{
+	font-weight: bolder;
+	padding-left:3vh;
+}
+#compétences li{
+	font-weight: normal;
+	padding-top:1vh;
+	padding-bottom:1vh;
+	display:inline-block;
+	height:20%;
+	min-width:10rem;
+}
+#compétences ul{
+	padding-left:10vh;
+}
+
+#compétences img{
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-top:2vh;
+	object-fit: cover;
+	float:center;
+	height: 5%;
+	width: 5%;
+}
+
+#formation {
+	padding-top:0.2vh;
+	padding-bottom:1vh;
+}
+#formation p{
+	padding-left:5vh;
+	padding-right:5vh;
+	padding-bottom:1vh;
+}
+#formation li{
+	padding-left:0vh;
+	padding-bottom:1vh;
+}
+#projets {
+	padding-top:0.2vh;
+	padding-bottom:1vh;
+}
+
+#projets iframe{
+	margin-left:5vh;
+	margin-top:2vh;
+}
+a {
+	color:cyan;
+}
+#projets img{
+	margin-left: 5vh;
+	padding-top:2vh;
+	object-fit: cover;
+	float:center;
+}
+#projets p{
+	margin-left: 5vh;
+	padding-right:5vh;
+
+}
+#ply{
+	height: 90%;
+	width: 90%;
+}
+#experience {
+	padding-top:0.2vh;
+	padding-bottom:1vh;
+}
+#experience p{
+	padding-left:5vh;
+	padding-right:5vh;
+}
+
+#loisirs {
+	padding-top:0.2vh;
+	padding-bottom:1vh;
+}
+#loisirs p{
+		padding-left:5vh;
+		padding-right:5vh;
+
+}
+
+li{
+	font-weight: bolder;
+	list-style: none;
+}
+
+@media (min-width: 0px) and (max-width: 1500px) {
+	.menu{
+		display: flex;
+		margin:0;
+		padding:0;
+		background-color: none;
+		font-size: 1.3rem;
+	}
+
+	.menu li{
+		list-style-type: none;
+	}
+
+	.menu a {
+		display:block;
+		min-width: 6rem;
+		padding: 0.4rem 0;
+	    text-align: center;
+	    background-color: #2F195F;
+	    color: #fff;
+	    text-decoration: none;
+	    border-left:2px solid #000;
+	}
+
+	.menu a:hover{
+	 	color: #ffe843;
+	}
+	div{
+		margin:5vh;
+		margin-left:10%;
+		margin-right:10%;
+	}
+	#presentation p{
+		margin:2vh;
+	}
+	#photomoi{
+		float:none;
+		margin-bottom:2vh;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#presentation h2{
+		margin-left: 2vh;
+	}
+	#git, #linkdin{
+		margin-bottom: 2vh;
+	}
+	#git{
+		margin-left: 2vh;
+	}
+	#compétences ul{
+		padding-left: 5vh;
+	}
+	#compétences li{
+		font-size: 2vh;
+		margin-right: 2vh;
+	}
+	#projets iframe{
+		margin-left:auto;
+		margin-top:auto;
+	}
+	#projets img{
+		margin-left: auto;
+		padding-top:auto;
+		object-fit: cover;
+		float:center;
+	}
+
+}
