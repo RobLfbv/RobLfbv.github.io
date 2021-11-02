@@ -339,5 +339,27 @@ label
 		object-fit: cover;
 		float:center;
 	}
+	#projets p{
+		margin: 1vh;
+		padding-left: 0.5vh;
+		padding-right: 1vh;
+		padding-bottom: 2vh;
+	}
+	#experience p{
+		margin: 1vh;
+		padding-left: 0.5vh;
+		padding-right: 1vh;
+		padding-bottom: 2vh;
+	}
+	#formation p{
+		margin: 1vh;
+		padding-left: 0.5vh;
+	}
+	#loisirs p{
+		margin: 1vh;
+		padding-left: 0.5vh;
+		padding-right: 1vh;
+		padding-bottom: 2vh;
+	}
 
 }
