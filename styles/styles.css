@@ -249,7 +249,7 @@ li{
 {
 	background-color: #2F195F;
 
-		height: 50px;
+		height: 60px;
 }
 nav>label
 {
@@ -279,7 +279,11 @@ nav .menu a {
 
 label
 {
-		width: 30px;
+		width: 40px;
+		padding-right: 300px;
+		padding-left: 300px;
+		padding-bottom: 10px;
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -288,7 +292,6 @@ label
 		color: white;
 		cursor: pointer;
 }
-
 #toggle:checked + .menu {
 		display: flex;
 }
