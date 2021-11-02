@@ -54,10 +54,6 @@ h1{
 	background-color: none;
 }
 
-.menu li{
-	list-style-type: none;
-}
-
 .menu a {
 	display:block;
 	min-width: 6rem;
@@ -71,6 +67,10 @@ h1{
 
 .menu a:hover{
  	color: #ffe843;
+}
+label, #toggle
+{
+    display: none;
 }
 
 #presentation{
@@ -93,20 +93,21 @@ h1{
 	float:left;
 }
 #git{
-	margin-bottom:10vh;
 	object-fit: cover;
 	height: 10vh;
 	width: 10vh;
-	float: left;
-	display: inline;
 }
 #linkdin{
-	margin-bottom:10vh;
-	margin-left:5vh;
 	object-fit: cover;
 	height: 10vh;
 	width: 10vh;
-	display: inline;
+}
+
+.centerImage{
+	justify-content: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 #presentation p{
@@ -132,7 +133,6 @@ h1{
 	font-weight: normal;
 	padding-top:1vh;
 	padding-bottom:1vh;
-	display:inline-block;
 	height:20%;
 	min-width:10rem;
 }
@@ -214,33 +214,87 @@ li{
 	list-style: none;
 }
 
-@media (min-width: 0px) and (max-width: 1500px) {
-	.menu{
-		display: flex;
-		margin:0;
-		padding:0;
-		background-color: none;
-		font-size: 1.3rem;
-	}
+#CVBouton{
+	font-family: "Trebuchet MS";
+	font-style: bold;
+	font-size: 2vh;
+	color:white;
+	background-color: #2F195F;
+	border-radius: 10px;
+	border: 0.4vh solid white;
+	margin-bottom: 1vh;
 
-	.menu li{
-		list-style-type: none;
-	}
+}
+
+#CVBouton:hover{
+	color:#ffe843;
+	border-radius: 10px;
+	border: 0.4vh solid white;
+}
+#warp{
+	margin:0vh;
+	margin-left:0%;
+	margin-right:0%;
+	color: none;
+	border-radius: 0px;
+	border: 0vh solid white;
+}
+#wrap:not(:target) {
+  transform: translate3d(-335px, 0, 0); /* cache l'élément #wrap */
+}
+#wrap:target {
+  transform: translate3d(0, 0, 0); /* affiche l'élément */
+}
+
+
+
+@media (min-width: 0px) and (max-width: 1500px) {
 
 	.menu a {
-		display:block;
+		font-size: 2vh;
 		min-width: 6rem;
-		padding: 0.4rem 0;
-	    text-align: center;
-	    background-color: #2F195F;
-	    color: #fff;
-	    text-decoration: none;
-	    border-left:2px solid #000;
+		border:1px solid #fff;
 	}
 
 	.menu a:hover{
 	 	color: #ffe843;
 	}
+	nav
+{
+	background-color: #2F195F;
+
+		height: 60px;
+}
+
+nav .menu
+{
+		display: none;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+
+		height: 220px;
+}
+
+nav .menu a {
+		width: 50%;
+}
+
+label
+{
+		width: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		font-size: 40px;
+		color: white;
+		cursor: pointer;
+}
+
+#toggle:checked + .menu {
+		display: flex;
+}
 	div{
 		margin:5vh;
 		margin-left:10%;
@@ -263,14 +317,17 @@ li{
 		margin-bottom: 2vh;
 	}
 	#git{
-		margin-left: 2vh;
-	}
+		margin-left: auto;
+		margin-right: auto;
+		}
 	#compétences ul{
-		padding-left: 5vh;
+		padding-left: 10vh;
 	}
 	#compétences li{
-		font-size: 2vh;
 		margin-right: 2vh;
+		font-size:100%;
+		padding-top:1.3vh;
+		padding-bottom:1.3vh;
 	}
 	#projets iframe{
 		margin-left:auto;
