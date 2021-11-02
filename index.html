@@ -7,7 +7,13 @@
 <header>
 
 	<nav>
-    <label for="toggle">☰</label>
+    <label for="toggle">
+      <svg>
+      <rect fill="#FFFFFF" width="34" height="4"/>
+      <rect y="11" fill="#FFFFFF" width="34" height="4"/>
+      <rect y="23" fill="#FFFFFF" width="34" height="4"/>
+    </svg>
+    </label>
     <input type="checkbox" id="toggle">
 	<ul class="menu">
     <a href="#presentation">Présentation</a>
@@ -188,19 +194,19 @@
   </p>
 	</div>
 	<div id="contact">
+
     <p>
       <h1>Me contacter !</h1>
-      <ul>
-        <li>
-          robin.lefebvrep@gmail.com
-        </li>
-        <li>
-          <a href="https://github.com/PurpleLuma">GitHub</a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/robin-l-9765541b9/">Linkedin</a>
-        </li>
+      <center>
+        robin.lefebvrep@gmail.com</br></br>
+        <form method="get" action="">
+          <button id="CVBouton" type="submit" onclick="window.open('./img/Photo_perso.jpg')">Télécharger mon CV !</button>
+        </form>
+        <a href="https://github.com/PurpleLuma"><img class="centerImage" id="git" src="./img/git.png"></img></a>
+        <a href="https://www.linkedin.com/in/robin-l-9765541b9/"><img class="centerImage" id="linkdin" src="./img/linkdin.png"></img></a>
+      </center>
     </p>
+
 	</div>
 
 </body>

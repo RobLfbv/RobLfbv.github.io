@@ -219,7 +219,7 @@ li{
 	font-style: bold;
 	font-size: 2vh;
 	color:white;
-	background-color: #2F195F;
+	background-color: rgba(255, 255, 255, 0);
 	border-radius: 10px;
 	border: 0.4vh solid white;
 	margin-bottom: 1vh;
@@ -230,20 +230,6 @@ li{
 	color:#ffe843;
 	border-radius: 10px;
 	border: 0.4vh solid white;
-}
-#warp{
-	margin:0vh;
-	margin-left:0%;
-	margin-right:0%;
-	color: none;
-	border-radius: 0px;
-	border: 0vh solid white;
-}
-#wrap:not(:target) {
-  transform: translate3d(-335px, 0, 0); /* cache l'élément #wrap */
-}
-#wrap:target {
-  transform: translate3d(0, 0, 0); /* affiche l'élément */
 }
 
 
@@ -263,7 +249,18 @@ li{
 {
 	background-color: #2F195F;
 
-		height: 60px;
+		height: 50px;
+}
+nav>label
+{
+
+	margin-bottom: 0px;
+}
+nav>label>svg
+{
+	height: 40px;
+	padding-bottom: 0px;
+	margin-top: 10px;
 }
 
 nav .menu
