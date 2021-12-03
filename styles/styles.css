@@ -1,6 +1,7 @@
 html body{
 	color: grey;
 	font-family: "Trebuchet MS";
+	font-size: 110%;
 	top:0;
 	margin-left:0;
 	margin-right:0;
@@ -10,13 +11,41 @@ html body{
 	background: radial-gradient(ellipse 100% 100% at 100% 100%, rgba(169,27,120,1) 17%, rgba(47,25,95,1) 100%);
 	background-image: radial-gradient(ellipse 100% 100% at 100% 100%,#9d162d 0%,#a91b78 46%,#2f195f  100%);
 	text-align: justify;
+}
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+	background: rgba(169,27,120,1);
+}
+
+::-webkit-scrollbar-track{
+	background: rgba(47,25,95,1);
 
 }
 
+.github{
+	color: white;
+	font-size:100PX;
+	transition: 0.5s;
+}
+.github:hover{
+	color:#ffe843;
+}
+
+.linkdin{
+	color: white;
+	font-size:100PX;
+	transition: 0.5s;
+}
+
+.linkdin:hover{
+	color: #ffe843;
+}
 
 header{
 	z-index: 2;
-
 	background-color: none;
 	margin:0;
 	position:fixed;
@@ -31,7 +60,7 @@ div{
 	margin-right:20%;
 	color: white;
 	border-radius: 10px;
-	border: 1vh solid white;
+	border: 4px solid white;
 }
 
 p{
@@ -63,6 +92,7 @@ h1{
     color: #fff;
     text-decoration: none;
     border-left:2px solid #000;
+		transition: 0.5s;
 }
 
 .menu a:hover{
@@ -92,16 +122,6 @@ label, #toggle
 	width: 30vh;
 	float:left;
 }
-#git{
-	object-fit: cover;
-	height: 10vh;
-	width: 10vh;
-}
-#linkdin{
-	object-fit: cover;
-	height: 10vh;
-	width: 10vh;
-}
 
 .centerImage{
 	justify-content: center;
@@ -119,35 +139,6 @@ label, #toggle
 #soft {
 	padding-top:0.2vh;
 	padding-bottom:1vh;
-}
-#compétences {
-	padding-top:0.2vh;
-	padding-bottom:1vh;
-
-}
-#compétences p{
-	font-weight: bolder;
-	padding-left:3vh;
-}
-#compétences li{
-	font-weight: normal;
-	padding-top:1vh;
-	padding-bottom:1vh;
-	height:20%;
-	min-width:10rem;
-}
-#compétences ul{
-	padding-left:10vh;
-}
-
-#compétences img{
-	margin-left: 5%;
-	margin-right: 5%;
-	padding-top:2vh;
-	object-fit: cover;
-	float:center;
-	height: 5%;
-	width: 5%;
 }
 
 #formation {
@@ -172,7 +163,7 @@ label, #toggle
 	margin-left:5vh;
 	margin-top:2vh;
 }
-a {
+#lien-ginko{
 	color:cyan;
 }
 #projets img{
@@ -223,6 +214,7 @@ li{
 	border-radius: 10px;
 	border: 0.4vh solid white;
 	margin-bottom: 1vh;
+	transition: 0.5s;
 
 }
 
@@ -313,22 +305,10 @@ label
 	#presentation h2{
 		margin-left: 2vh;
 	}
-	#git, #linkdin{
+	#github, #linkdin{
 		margin-bottom: 2vh;
 	}
-	#git{
-		margin-left: auto;
-		margin-right: auto;
-		}
-	#compétences ul{
-		padding-left: 10vh;
-	}
-	#compétences li{
-		margin-right: 2vh;
-		font-size:100%;
-		padding-top:1.3vh;
-		padding-bottom:1.3vh;
-	}
+
 	#projets iframe{
 		margin-left:auto;
 		margin-top:auto;
