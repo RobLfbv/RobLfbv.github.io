@@ -44,6 +44,22 @@ html body{
 	color: #ffe843;
 }
 
+#OW2{
+	width: 80%;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-left: 0;
+}
+#MD{
+	width: 50%;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+
+
+}
+
 header{
 	z-index: 2;
 	background-color: none;
@@ -160,17 +176,19 @@ label, #toggle
 }
 
 #projets iframe{
-	margin-left:5vh;
 	margin-top:2vh;
 }
 #lien-ginko{
 	color:cyan;
 }
+#projet h2{
+	margin:0;
+	padding: 0;
+}
 #projets img{
 	margin-left: 5vh;
-	padding-top:2vh;
+	margin-top:2vh;
 	object-fit: cover;
-	float:center;
 }
 #projets p{
 	margin-left: 5vh;
@@ -178,12 +196,16 @@ label, #toggle
 
 }
 #ply{
+	padding: 0;
+	border-radius: 10px;
 	height: 90%;
 	width: 90%;
 }
 #experience {
 	padding-top:0.2vh;
 	padding-bottom:1vh;
+	overflow:hidden;
+
 }
 #experience p{
 	padding-left:5vh;
@@ -301,6 +323,7 @@ label
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+		border-radius: 10px;
 	}
 	#presentation h2{
 		margin-left: 2vh;
