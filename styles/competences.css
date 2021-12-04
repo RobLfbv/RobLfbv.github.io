@@ -4,7 +4,6 @@
 #competences-section h2{
     margin-top: 2%;
     margin-bottom: 1%;
-    padding-left: 1%;
     font-size: 1.3em;
 }
 
@@ -13,21 +12,21 @@
     overflow-y: hidden;
     white-space: nowrap;
     margin-bottom: auto;
+    padding: 0;
+    margin: 0;
 }
 
 
 #competences-section img{
-  height: 20%;
-  width: 20%;
 }
 
 
-.competence-item{
+.competence-item,.competence-item-l{
     display: inline;
     position: relative;
 }
 
-.competence-item img{
+.competence-item img,.competence-item-l img{
     width: 150px;
     transition: 0.3s;
     margin: 1.5%;
@@ -39,12 +38,14 @@
     }
 }
 
-.competence-item img:hover{
+
+
+.competence-item img:hover,.competence-item-l img:hover{
     transform: scale(1.2,1.2);
 }
 
 
-.competence-item span {
+.competence-item span,.competence-item-l span {
     font-size: 1em;
     font-weight: bold;
 
@@ -66,17 +67,75 @@
     transition: 0.3s;
 }
 
-.competence-item span a{
+.competence-item span a,.competence-item-l span a{
     color: var(--title-color);
     transition: 0.3s;
 }
 
-.competence-item span a:hover{
+.competence-item span a:hover ,.competence-item-l span a:hover{
     color: var(--text-color);
 }
 
-.competence-item:hover span {
-    visibility: visible;
+.competence-item:hover span ,.competence-item-l:hover span{
     background: #2F195F;
     transform: translateX(-50%) translateY(20%);
+}
+
+@media (max-width : 900px){
+    .competence-item img,.competence-item-l img{
+        width: 75px;
+        display: block;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .competence-item,.competence-item-l{
+        display: list-item;
+        position: relative;
+        height: auto;
+    }
+
+    .competence-item span {
+        text-align: center;
+        position: absolute;
+
+        width: auto;
+        padding: 5%;
+        transform: translateX(-50%) translateY(180%);
+
+        bottom: 65%;
+        left: 50%;
+        z-index: 0;
+        text-decoration: underline;
+
+        transition: 0.3s;
+    }
+
+    .competence-item-l span {
+        text-align: center;
+        position: absolute;
+
+        width: auto;
+        padding: 5%;
+        transform: translateX(-50%) translateY(180%);
+
+        bottom: 100%;
+        left: 50%;
+        z-index: 0;
+        text-decoration: underline;
+
+        transition: 0.3s;
+    }
+
+
+
+
+    .competence-item:hover span {
+        background: #2F195F;
+        transform: translateX(-50%) translateY(120%);
+    }
+
+    .competence-item-l:hover span {
+        background: #2F195F;
+        transform: translateX(-50%) translateY(120%);
+    }
 }
