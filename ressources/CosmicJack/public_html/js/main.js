@@ -52,7 +52,7 @@ var pathCroix = "./images/croix.png";
 
 
 var pathJson = "./score/score.json";
-var pathPhp = "score.php";
+var pathPhp = "./score.php";
 
 
 var pathMusic = "./sounds/CJ_Song.mp3";

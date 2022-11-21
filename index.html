@@ -3,13 +3,11 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles/styles.css">
-
-    <link rel="stylesheet" href="./styles/competences.css">
     <script src="https://kit.fontawesome.com/25385cfdd8.js" crossorigin="anonymous"></script>
     <title>Portfolio Robin Lefebvre</title>
+</head>
 <header>
-
-	<!--<nav>
+	<nav>
     <label for="toggle">
       <svg>
       <rect fill="#FFFFFF" width="40" height="8"/>
@@ -19,23 +17,24 @@
     </label>
     <input type="checkbox" id="toggle">
 	<ul class="menu">
-    <a href="#presentation">Présentation</a>
+    <a href="./index.html">Présentation</a>
 
-    <a href="#projets">Projets</a>
+    <a href="./projet.html">Projets</a>
 
-    <a href="#contact">Contact</a>
-
+    <a href="./contacter.html">Contact</a>
 	</ul>
-	</nav>-->
-
+	</nav>
 </header>
+
 <body>
-	<div id="presentation">
+  <div id="presentation">
 		<h1>Présentation</h1>
 		<img id="photomoi" src="./img/Photo_perso.jpg"></img>
     <h2 id="nom">Robin LEFEBVRE</h2>
     <h4>Me contacter : robin.lefebvre12@gmail.com</h4>
-		<p>Bonjour ! Je suis étudiant en Game et Level Design je suis actuellement en recherche d'un stage dans ce domaine ! N'hésitez pas à lire mon CV et à me contacter si mon profil vous intéresse ! Voici le lien vers mon itch.io : <a id="lien-ginko" href="https://purpleluma.itch.io/">https://purpleluma.itch.io/</a></p>
+		<p>Bonjour ! Je suis étudiant à la licence professionnelle métier du jeux vidéo à Bobigny parcours Game et Level Design.<br>
+      Je suis actuellement en recherche d'un stage dans ces domaines ! <br>
+      N'hésitez pas à lire mon CV et à me contacter si mon profil vous intéresse !</p>
     <center>
     <form method="get" action="">
       <button id="CVBouton" type="submit" onclick="window.open('./ressources/Robin-Lefebvre_CV-11-2022.pdf')">Télécharger mon CV !</button>
@@ -48,61 +47,8 @@
     </center>
   </div>
 
-	<div id="projets">
-		<h1>Projets</h1>
-    <p class="contenue">
-		<ul>
-
-			<li><h2>The Wonderful Journey of Cosmic Jack</h2></li>
-    <center>
-			  <iframe src="https://ginko-conseil.com/wp-content/themes/Ginko/src/CosmicJack_ver1.0WP/public_html/index.html" width="700" height="540"></iframe>
-      </center>
-      <p>Cosmic jack est un jeu que j'ai développé avec mon frère ! Je me suis occupé de la programmation et lui de la partie de graphique ! Il se trouve <a id="lien-ginko" href="https://ginko-conseil.com/cosmic-jack/">ici</a> ou juste au-dessus !</p>
-      <center>
-      <form method="get" action="">
-        <button id="CVBouton" type="submit" onclick=" window.open('https://github.com/RobLfbv/ComsicJack','_blank')">Lien GitHub ! <i class="fab fa-github"></i></button>
-      </form>
-    </center>
-
-    <li><h2>Cosmic Unity</h2></li>
-    <center>
-			  <iframe src="./ressources/CosmicUnity/index.html" width="1000" height="700"></iframe>
-      </center>
-      <p>Une version Unity de Cosmic Jack que j'ai réalisé afin d'apprendre le logiciel.</p>
-      <center>
-      <form method="get" action="">
-        <button id="CVBouton" type="submit" onclick=" window.open('https://github.com/RobLfbv/CosmicUnity','_blank')">Lien GitHub ! <i class="fab fa-github"></i></button>
-      </form>
-    </center>
-    
-
-      <li><h2>Logiciel d'affichage de fichier PLY</h2></li>
-			<img id="ply" src="./img/CaptureProjet4.png"></img>
-			<p>Lecteur de fichier 3D PLY réaliser lors de ma formation en DUT Informatique en équipe de 4. Le projet a été réalisé en Java avec Javafx.</p>
-      <center>
-      <form method="get" action="">
-        <button id="CVBouton" type="submit" onclick=" window.open('https://github.com/RobLfbv/PLYReader','_blank')">Lien GitHub ! <i class="fab fa-github"></i></button>
-      </form>
-    </center>
-		</ul>
-	</div>
-
 	
-	<div id="contact">
-
-    <p>
-      <h1>Me contacter !</h1>
-      <center>
-        robin.lefebvre12@gmail.com</br></br>
-        <form method="get" action="">
-          <button id="CVBouton" type="submit" onclick="window.open('./ressources/Robin_Lefebvre_CV.pdf')">Télécharger mon CV !</button>
-        </form>
-        <a class="github" href="https://github.com/RobLfbv" target="_blank"><i class="fab fa-github"></i></a>
-        <a class="linkdin" href="https://www.linkedin.com/in/robin-l-9765541b9/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      </center>
-    </p>
-
-	</div>
+	
 
 </body>
 </html>
