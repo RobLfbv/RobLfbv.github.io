@@ -6,45 +6,40 @@
     <script src="https://kit.fontawesome.com/25385cfdd8.js" crossorigin="anonymous"></script>
     <title>Portfolio Robin Lefebvre</title>
 </head>
-<header>
-	<nav>
-    <label for="toggle">
-      <svg>
-      <rect fill="#FFFFFF" width="40" height="8"/>
-      <rect y="16" fill="#FFFFFF" width="40" height="8"/>
-      <rect y="33" fill="#FFFFFF" width="40" height="8"/>
-    </svg>
-    </label>
-    <input type="checkbox" id="toggle">
-	<ul class="menu">
-    <a href="./index.html">Présentation</a>
 
-    <a href="./projet.html">Projets</a>
-
-    <a href="./contacter.html">Contact</a>
-	</ul>
-	</nav>
-</header>
-
+<div class="sidebar">
+  <h1 class="sidebar-tittle">Menu</h1>
+  <ul>
+    <li><a href="#" class="sidebar-item">Link 1</a></li>
+    <li><a href="#" class="sidebar-item">Link 2</a></li>
+    <li><a href="#" class="sidebar-item">Link 3</a></li>
+  </ul>
+</div>
 <body>
-  <div id="presentation">
+  <div>
 		<h1>Présentation</h1>
-		<img id="photomoi" src="./img/Photo_perso.jpg"></img>
-    <h2 id="nom">Robin LEFEBVRE</h2>
+		<img src="./img/Photo_perso.jpg"></img>
+    <h2>Robin LEFEBVRE</h2>
     <h4>Me contacter : robin.lefebvre12@gmail.com</h4>
 		<p>Bonjour ! Je suis étudiant à la licence professionnelle métier du jeux vidéo à Bobigny parcours Game et Level Design.<br>
       Je suis actuellement en recherche d'un stage dans ces domaines ! <br>
       N'hésitez pas à lire mon CV et à me contacter si mon profil vous intéresse !</p>
-    <center>
     <form method="get" action="">
-      <button id="CVBouton" type="submit" onclick="window.open('./ressources/Robin-Lefebvre_CV-11-2022.pdf')">Télécharger mon CV !</button>
+      <button type="submit" onclick="window.open('./ressources/Robin-Lefebvre_CV-11-2022.pdf')">Télécharger mon CV !</button>
     </form>
-  </center>
-    <center>
-      <a class="github" href="https://github.com/RobLfbv" target="_blank"><i class="fab fa-github"></i></a>
-      <a class="linkdin" href="https://www.linkedin.com/in/robin-l-9765541b9/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a class="github" href="https://purpleluma.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
-    </center>
+      <a href="https://github.com/RobLfbv" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/robin-l-9765541b9/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://purpleluma.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+  </div>
+  <div>
+    <div>
+        <h3>Living Rock</h3>
+        <img src="./img/illustration-livingrock.png">
+        <form action="./pages/living-rock.html">
+          <input type="submit" value="En savoir plus"></input>
+      </form>
+      <a href="https://tiosstud.itch.io/living-rock" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+    </div>
   </div>
 
 	

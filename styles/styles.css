@@ -1,368 +1,42 @@
-html body{
-	color: grey;
-	font-family: "Trebuchet MS";
-	font-size: 110%;
+body{
+	position : relative;
+	min-height : 100vh;
+	width : 100%;
+	overflow: hidden;
+}
+ 
+
+.sidebar{
+	color:#fff;
+	position: fixed;
 	top:0;
-	margin-left:0;
-	margin-right:0;
-	margin-top:0;
-	margin-bottom:0;
-	background: rgb(169,27,120);
-	background: radial-gradient(ellipse 100% 100% at 100% 100%, rgba(169,27,120,1) 17%, rgba(47,25,95,1) 100%);
-	background-image: radial-gradient(ellipse 100% 100% at 100% 100%,#9d162d 0%,#a91b78 46%,#2f195f  100%);
-	text-align: justify;
-}
-::-webkit-scrollbar{
-	width: 10px;
+	left: 0;
+	height : 100%;
+	width: 15%;
+	background: #11101d;
+	padding: 6px 14px;
 }
 
-::-webkit-scrollbar-thumb{
-	background: rgba(169,27,120,1);
-}
-
-::-webkit-scrollbar-track{
-	background: rgba(47,25,95,1);
-
-}
-
-.github{
-	color: white;
-	font-size:100PX;
-	transition: 0.5s;
-}
-.github:hover{
-	color:#ffe843;
-}
-
-.linkdin{
-	color: white;
-	font-size:100PX;
-	transition: 0.5s;
-}
-
-.linkdin:hover{
-	color: #ffe843;
-}
-
-#OW2{
-	width: 80%;
-	border-radius: 10px;
-	margin-bottom: 20px;
-	margin-left: 0;
-}
-#MD{
-	width: 50%;
-	border-radius: 10px;
-	margin-bottom: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
-
-
-}
-
-header{
-	z-index: 2;
-	background-color: none;
-	margin:0;
-	position:fixed;
-	width:100%;
-	top:0;
-	left:0;
-	margin-top:0;
-}
-div{
-	margin:10vh;
-	margin-left:20%;
-	margin-right:20%;
-	color: white;
-	border-radius: 10px;
-	border: 4px solid white;
-}
-
-p{
-	font-weight: normal;
-}
-
-#compétences p{
-	margin-left: 2vh;
-	margin-bottom: 2vh;
-}
-
-h1{
-	margin-left: 2vh;
-}
-
-.menu{
-	display: flex;
-	margin:0;
-	padding:0;
-	background-color: none;
-}
-
-.menu a {
-	display:block;
-	min-width: 6rem;
-	padding: 0.4rem 0;
-    text-align: center;
-    background-color: #2F195F;
-    color: #fff;
-    text-decoration: none;
-    border-left:2px solid #000;
-		transition: 0.5s;
-}
-
-.menu a:hover{
- 	color: #ffe843;
-}
-label, #toggle
-{
-    display: none;
-}
-
-#presentation{
-	margin-top:10vh;
-	color: white;
-	overflow:hidden;
-}
-
-
-#presentation h1{
-	margin-bottom: 1vh;
-}
-#photomoi{
-	margin-left: 5%;
-	margin-right: 5%;
-	margin-bottom:10vh;
-	object-fit: cover;
-	height: 30vh;
-	width: 30vh;
-	float:left;
-}
-
-.centerImage{
-	justify-content: center;
+.sidebar h1{
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+	padding-left: 0;
 }
 
-#presentation p{
-	margin: 3vh;
-	margin-top:5vh;
-	margin-bottom:5vh;
-}
-
-#soft {
-	padding-top:0.2vh;
-	padding-bottom:1vh;
-}
-
-#formation {
-	padding-top:0.2vh;
-	padding-bottom:1vh;
-}
-#formation p{
-	padding-left:5vh;
-	padding-right:5vh;
-	padding-bottom:1vh;
-}
-#formation li{
-	padding-left:0vh;
-	padding-bottom:1vh;
-}
-#projets {
-	padding-top:0.2vh;
-	padding-bottom:1vh;
-}
-
-#projets iframe{
-	margin-top:2vh;
-}
-#lien-ginko{
-	color:cyan;
-}
-#projet h2{
-	margin:0;
+.sidebar ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
 	padding: 0;
 }
-#projets img{
-	margin-left: 5vh;
-	margin-top:2vh;
-	object-fit: cover;
-}
-#projets p{
-	margin-left: 5vh;
-	padding-right:5vh;
 
-}
-#ply{
-	padding: 0;
-	border-radius: 10px;
-	height: 90%;
-	width: 90%;
-}
-#experience {
-	padding-top:0.2vh;
-	padding-bottom:1vh;
-	overflow:hidden;
-
-}
-#experience p{
-	padding-left:5vh;
-	padding-right:5vh;
+.sidebar ul li{
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	font-size: 4vh;
+	margin: 0;
 }
 
-#loisirs {
-	padding-top:0.2vh;
-	padding-bottom:1vh;
-}
-#loisirs p{
-		padding-left:5vh;
-		padding-right:5vh;
-
-}
-
-li{
-	font-weight: bolder;
-	list-style: none;
-}
-
-#CVBouton{
-	font-family: "Trebuchet MS";
-	font-style: bold;
-	font-size: 2vh;
-	color:white;
-	background-color: rgba(255, 255, 255, 0);
-	border-radius: 10px;
-	border: 0.4vh solid white;
-	margin-bottom: 1vh;
-	transition: 0.5s;
-
-}
-
-#CVBouton:hover{
-	color:#ffe843;
-	border-radius: 10px;
-	border: 0.4vh solid white;
-}
-
-
-
-@media (min-width: 0px) and (max-width: 1500px) {
-
-	.menu a {
-		font-size: 2vh;
-		min-width: 6rem;
-		border:1px solid #fff;
-	}
-
-	.menu a:hover{
-	 	color: #ffe843;
-	}
-	nav
-{
-	background-color: #2F195F;
-
-		height: 60px;
-}
-nav>label
-{
-
-	margin-bottom: 0px;
-}
-nav>label>svg
-{
-	height: 40px;
-	padding-bottom: 0px;
-	margin-top: 10px;
-}
-
-nav .menu
-{
-		display: none;
-		flex-direction: column;
-		text-align: center;
-		align-items: center;
-
-		height: 220px;
-}
-
-nav .menu a {
-		width: 50%;
-}
-
-label
-{
-		width: 40px;
-		padding-right: 300px;
-		padding-left: 300px;
-		padding-bottom: 10px;
-
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
-		font-size: 40px;
-		color: white;
-		cursor: pointer;
-}
-#toggle:checked + .menu {
-		display: flex;
-}
-	div{
-		margin:5vh;
-		margin-left:10%;
-		margin-right:10%;
-	}
-	#presentation p{
-		margin:2vh;
-	}
-	#photomoi{
-		float:none;
-		margin-bottom:2vh;
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		border-radius: 10px;
-	}
-	#presentation h2{
-		margin-left: 2vh;
-	}
-	#github, #linkdin{
-		margin-bottom: 2vh;
-	}
-
-	#projets iframe{
-		margin-left:auto;
-		margin-top:auto;
-	}
-	#projets img{
-		margin-left: auto;
-		padding-top:auto;
-		object-fit: cover;
-		float:center;
-	}
-	#projets p{
-		margin: 1vh;
-		padding-left: 0.5vh;
-		padding-right: 1vh;
-		padding-bottom: 2vh;
-	}
-	#experience p{
-		margin: 1vh;
-		padding-left: 0.5vh;
-		padding-right: 1vh;
-		padding-bottom: 2vh;
-	}
-	#formation p{
-		margin: 1vh;
-		padding-left: 0.5vh;
-	}
-	#loisirs p{
-		margin: 1vh;
-		padding-left: 0.5vh;
-		padding-right: 1vh;
-		padding-bottom: 2vh;
-	}
-
+.sidebar a{
+ color:#fff;
 }
