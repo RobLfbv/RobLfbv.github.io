@@ -1,8 +1,9 @@
 body{
 	position : relative;
 	min-height : 100vh;
-	width : 100%;
-	overflow: hidden;
+	width : 75%;
+	margin-left:20%;
+	background-color: #fff;
 }
  
 
@@ -13,7 +14,7 @@ body{
 	left: 0;
 	height : 100%;
 	width: 15%;
-	background: #11101d;
+	background: #210b4d;
 	padding: 6px 14px;
 }
 
@@ -40,3 +41,19 @@ body{
 .sidebar a{
  color:#fff;
 }
+
+#image-perso{
+	height: auto;
+	max-width: 20%;
+	float: left;
+	margin : 1vh;
+}
+
+#presentation{
+	border-radius: 20px;
+	border-style: solid;
+	border-color: #cab1fc;
+	background-color: #cab1fc;
+	overflow:hidden;
+}
+
