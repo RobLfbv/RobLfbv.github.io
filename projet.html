@@ -3,53 +3,50 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/projet-styles.css">
     <script src="https://kit.fontawesome.com/25385cfdd8.js" crossorigin="anonymous"></script>
-    <title>Projets Robin Lefebvre</title>
+    <title>Portfolio Robin Lefebvre</title>
 </head>
 
-<header>
-	<nav>
-    <label for="toggle">
-      <svg>
-      <rect fill="#FFFFFF" width="40" height="8"/>
-      <rect y="16" fill="#FFFFFF" width="40" height="8"/>
-      <rect y="33" fill="#FFFFFF" width="40" height="8"/>
-    </svg>
-    </label>
-    <input type="checkbox" id="toggle">
-	<ul class="menu">
-    <a href="./index.html">Présentation</a>
-
-    <a href="./projet.html">Projets</a>
-
-    <a href="./contacter.html">Contact</a>
-	</ul>
-	</nav>
-</header>
+<div class="sidebar">
+  <h1 class="sidebar-tittle">Menu</h1>
+  <ul>
+    <li><a href="./index.html" class="sidebar-item">Présentation</a></li>
+    <li><a href="./projet.html" class="sidebar-item">Projets</a></li>
+    <li><a href="#" class="sidebar-item">Link 3</a></li>
+  </ul>
+</div>
 
 <body>
-	<div id="projets">
-		<h1>Projets</h1>
-    <p class="contenue">
-	<ul>
-        <li><h2>Living Rock</h2></li>
-        <center>
+    <div class="contenue-div">
+        <h1>Living Rock</h1>
+        <p>Living Rock est un jeu que j'ai réalisé avec une équipe de 7 personnes en tant que Level Designer/Game Designer lors de l'UniJam 2022 le temps d'un weekend.</p>
+        <div class="widget-itchio">
             <iframe frameborder="0" src="https://itch.io/embed/1798773?linkback=true&amp;dark=true" width="552" height="167"><a href="https://tiosstud.itch.io/living-rock">Living Rock by PurpleLuma, Tios, ManuDiet, LoukaDOZ, , VoHeLi</a></iframe>
-            <p>Living Rock est un jeu que j'ai réalisé avec une équipe de 7 personnes en tant que Level Designer/Game Designer lors de l'UniJam 2022 le temps d'un weekend.</p>
-            <form action="./pages/living-rock.html">
-                <input id="CVBouton" type="submit" value="Plus d'information sur le jeu ici"></input>
+        </div>
+            <form class="form-button" action="./pages/living-rock.html">
+                <button id="CVBouton" type="submit">Plus d'information sur le jeu ici</button>
             </form>
-        </center>
-        
-        <li><h2>The Wonderful Journey of Cosmic Jack</h2></li>
-        <center>
+    </div>
+
+
+    <div class="contenue-div">
+        <h1>The Wonderful Journey of Cosmic Jack</h1>
+        <p>Cosmic jack est le premier jeu que j'ai développé, on était deux et je me suis occupé de la partie développement. Je l'ai développé une première fois en web puis une seconde fois sur Unity afin d'avoir un rendu plus proche de ce que je voulais.</p>
+
+        <div class="widget-itchio">  
             <iframe frameborder="0" src="https://itch.io/embed/1478286?linkback=true&amp;dark=true" width="552" height="167"><a href="https://purpleluma.itch.io/cosmic-jack">Cosmic Unity by PurpleLuma</a></iframe>      
-            <br><button id="CVBouton" type="submit" onclick="window.open('https://ginko-conseil.com/cosmic-jack/')">Version Web</button>
-            <p>Cosmic jack est le premier jeu que j'ai développé, on était deux et je me suis occupé de la partie développement. Je l'ai développé une première fois en web puis une seconde fois sur Unity afin d'avoir un rendu plus proche de ce que je voulais.</p>
-            <form action="./pages/cosmicjack.html">
-                <input id="CVBouton" type="submit" value="Plus d'information sur le jeu ici"></input>
-            </form>
-        </center>
-	</ul>
+        </div>
+        <div class="buttonweb" id="cosmicjackweb">
+            <a href="https://ginko-conseil.com/cosmic-jack/" target="_blank"><div>
+                <h2>Version Web</h2>
+                <img src="./img/CosmicJackWeb.png">
+            </div></a>
+        </div>
+
+        <form class="form-button" action="./pages/cosmicjack.html">
+            <button id="CVBouton" type="submit">Plus d'information sur le jeu ici</button>
+        </form>
 	</div>
 </body>
+</html>

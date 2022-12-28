@@ -3,41 +3,29 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../styles/styles.css">
+    <!--<link rel="stylesheet" href="./styles/index-styles.css">-->
     <script src="https://kit.fontawesome.com/25385cfdd8.js" crossorigin="anonymous"></script>
-    <title>Projets Robin Lefebvre</title>
+    <title>Portfolio Robin Lefebvre</title>
 </head>
 
-<header>
-	<nav>
-    <label for="toggle">
-      <svg>
-      <rect fill="#FFFFFF" width="40" height="8"/>
-      <rect y="16" fill="#FFFFFF" width="40" height="8"/>
-      <rect y="33" fill="#FFFFFF" width="40" height="8"/>
-    </svg>
-    </label>
-    <input type="checkbox" id="toggle">
-	<ul class="menu">
-    <a href="./index.html">Présentation</a>
-
-    <a href="./projet.html">Projets</a>
-
-    <a href="./contacter.html">Contact</a>
-	</ul>
-	</nav>
-</header>
-
+<div class="sidebar">
+  <h1 class="sidebar-tittle">Menu</h1>
+  <ul>
+    <li><a href="./index.html" class="sidebar-item">Présentation</a></li>
+    <li><a href="./projet.html" class="sidebar-item">Créations</a></li>
+    <li><a href="#" class="sidebar-item">Link 3</a></li>
+  </ul>
+</div>
 <body>
-	<div id="projets">
+	<div class="contenue-div">
 		<h1>Living Rock</h1>
-    <p class="contenue">
-        <center>
-           <iframe frameborder="0" src="https://itch.io/embed-upload/6863395?color=2f195f" allowfullscreen="" width="1000" height="700"><a href="https://tiosstud.itch.io/living-rock">Play Living Rock on itch.io</a></iframe>   
-        </center>
-        <center>
+        <div class="widget-itchio">
+            <iframe frameborder="0" src="https://itch.io/embed-upload/6863395?color=556673" allowfullscreen="" width="1000" height="700"><a href="https://tiosstud.itch.io/living-rock">Play Living Rock on itch.io</a></iframe>   
+        </div>
+        <div class="widget-itchio">
             <iframe frameborder="0" src="https://itch.io/embed/1798773?linkback=true&amp;dark=true" width="552" height="167"><a href="https://tiosstud.itch.io/living-rock">Living Rock by PurpleLuma, Tios, ManuDiet, LoukaDOZ, , VoHeLi</a></iframe>
-            <p>Jeu que j'ai réalisé avec une équipe de 7 personnes en tant que Level Designer/Game Designer lors de l'UniJam 2022 en un weekend.</p>
-        </center>
-            
-        </center>
+        </div>
+        <p>Jeu que j'ai réalisé avec une équipe de 7 personnes en tant que Level Designer/Game Designer lors de l'UniJam 2022 en un weekend.</p>
+    </div>
 </body>
+</html>
