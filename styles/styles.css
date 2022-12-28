@@ -28,23 +28,28 @@ body {
 	padding-left:0
 }
 
-.sidebar ul {
+.sidebar>ul {
 	display:flex;
 	flex-direction:column;
 	list-style-type:none;
 	padding:0
 }
 
-.sidebar ul li {
+.sidebar>ul>li {
 	display:flex;
 	list-style-type:none;
-	justify-content:center;
 	font-size:4vh;
 	margin:0
 }
 
 .sidebar a {
 	color:#fff
+}
+
+.sous-liste>li>a{
+	font-size: 1em;
+	text-align: left;
+	justify-content: left;
 }
 
 .contenue-div {
@@ -58,7 +63,8 @@ body {
 
 .contenue-div>h3 {
 	font-size:1.5em;
-	margin-bottom:.5vh
+	margin-bottom:.5vh;
+	padding-left:4vh;
 }
 
 .contenue-div>p {
@@ -153,4 +159,3 @@ button:hover{
     width: 90%;
 	border-radius: 1vh;
 }
-
