@@ -38,8 +38,10 @@ body {
 .sidebar>ul>li {
 	display:flex;
 	list-style-type:none;
-	font-size:4vh;
-	margin:0
+	font-size:3.5vh;
+	margin:0;
+	margin-bottom:1vh;
+	margin-top:1vh;
 }
 
 .sidebar a {
@@ -47,7 +49,7 @@ body {
 }
 
 .sous-liste>li>a{
-	font-size: 1em;
+	font-size: 2vh;
 	text-align: left;
 	justify-content: left;
 }
@@ -130,6 +132,7 @@ button:hover{
 .buttonweb>a>div>h2 {
 	display:flex;
 	justify-content:center;
+	text-align: center;
 	color:#fff
 }
 .buttonweb>a>div>h3 {
