@@ -11,17 +11,7 @@
 	justify-content:center
 }
 
-#presentation>div>a {
-	color:#263547
-}
-
-#presentation>div>a:hover {
-	color:#f0e490
-}
 
 
-#hyperlien {
-	display:flex;
-	justify-content:center;
-	font-size:8em
-}
+
+
