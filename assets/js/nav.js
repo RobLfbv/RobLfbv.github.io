@@ -1,16 +1,17 @@
 const reseaux = [
-    { icon: "mail", name: "Email", link: "mailto:kieran@kieran.fr" },
-    { name: "Twitter", link: "https://twitter.com/kieranfr" },
-    { name: "GitHub", link: "https://github.com/kieranfr" },
-    { name: "LinkedIn", link: "https://www.linkedin.com/in/kieranfr/" },
-    { name: "Instagram", link: "https://www.instagram.com/kieranfr/" },
+    { icon: "mail", name: "Email", link: "mailto:robin.lefebvre12@gmail.com" },
+    //{ name: "Twitter", link: "https://twitter.com/kieranfr" },
+    { name: "Itch.io", link: "https://purpleluma.itch.io/"},
+    { name: "GitHub", link: "https://github.com/roblfbv" },
+    { name: "LinkedIn", link: "https://www.linkedin.com/in/robin-l-9765541b9/" },
+    /*{ name: "Instagram", link: "https://www.instagram.com/kieranfr/" },
     { name: "Facebook", link: "https://www.facebook.com/kieranfr/" },
     { name: "YouTube", link: "https://www.youtube.com/channel/UCY8YJ2ZQZ8ZQZ8ZQZ8ZQZ8Q" },
-    { name: "Twitch", link: "https://www.twitch.tv/kieranfr" },
+    { name: "Twitch", link: "https://www.twitch.tv/kieranfr" },*/
     { name: "Discord", link: "https://discord.gg/8Z8Z8Z8" },
-    { name: "Steam", link: "https://steamcommunity.com/id/kieranfr/" },
-    { name: "Mastodon", link: "https://mastodon.social/@kieranfr" },
-    { name: "Keybase", link: "https://keybase.io/kieranfr" },
+    //{ name: "Steam", link: "https://steamcommunity.com/id/kieranfr/" },
+    //{ name: "Mastodon", link: "https://mastodon.social/@kieranfr" },
+    //{ name: "Keybase", link: "https://keybase.io/kieranfr" },
     { name: "GitLab", link: "https://gitlab.com/kieranfr" }
 ]
 const anniv = new Date("12/12/2002");
