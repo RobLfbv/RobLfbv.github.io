@@ -1,0 +1,21 @@
+[{
+        "id": "gd",
+        "label": "Game Design"
+    },
+    {
+        "id": "ld",
+        "label": "Level Design"
+    },
+    {
+        "id": "2d",
+        "label": "Infographie 2D"
+    },
+    {
+        "id": "3d",
+        "label": "Infographie 3D"
+    },
+    {
+        "id": "web",
+        "label": "Projet Web"
+    }
+]

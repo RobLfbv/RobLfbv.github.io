@@ -1,0 +1,26 @@
+[{
+    "name": "Nom du projet",
+    "tags": ["ld", "gd"],
+    "img": "assets/img/robin.png",
+    "description": "Lorem Ipsum",
+    "images": [{ "url": "assets/img/robin.png", "legende": "Petite légende" }],
+    "buttons": [{
+        "name": "Voir le projet",
+        "icon": "launch",
+        "link": "https://davall.fr"
+    }]
+}, {
+    "name": "Site web",
+    "tags": ["web"],
+    "img": "assets/img/robin.png",
+    "description": "Lorem Ipsalum lol",
+    "images": [{ "url": "assets/img/cv.png", "legende": "Petite légende" }, { "url": "assets/img/robin.png", "legende": "Petite légende" }],
+    "buttons": [{
+        "name": "Voir le projet",
+        "icon": "launch",
+        "link": "https://davall.fr"
+    },{
+        "name": "Vidéo",
+        "link": "https://davall.fr"
+    }]
+}]

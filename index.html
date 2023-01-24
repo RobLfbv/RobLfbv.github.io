@@ -1,69 +1,74 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="fr">
+
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./styles/index-styles.css">
-    <script src="https://kit.fontawesome.com/25385cfdd8.js" crossorigin="anonymous"></script>
-    <title>Portfolio Robin Lefebvre</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin LEFEBVRE • Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<div class="sidebar">
-  <h1 class="sidebar-tittle">Menu</h1>
-  <ul>
-    <li><a href="./index.html" class="sidebar-item">Présentation</a></li>
-    <li><a href="./portfolio.html" class="sidebar-item">Portfolio</a></li>
-    <ul class="sous-liste">
-      <li><a href="./portfolio.html#jeux" class="sidebar-item">Jeux, GameJam et Prototype</a></li>
-      <li><a href="./portfolio.html#gameconcept" class="sidebar-item">Game Concept, Schéma et Créations</a></li> 
-      <li><a href="./portfolio.html#dev" class="sidebar-item">Développement</a></li>
-    </ul>
-    <li><a href="./contacter.html" class="sidebar-item">Me contacter</a></li>
-  </ul>
-</div>
 <body>
-
-  <div class="contenue-div" id="presentation">
-		<img id="image-perso" src="./img/Photo_perso-modified.png"></img>
-    <h1>Robin Lefebvre</h1>
-    <h2>En recherche de stage en Game Design ou Level Design</h2>
-    <h3>Contact : robin.lefebvre12@gmail.com</h3>
-		<br>
-    <p>Bonjour ! Je suis étudiant en licence professionnelle métier du jeu vidéo à Bobigny parcours Game Design et Level Design.<br>
-      Je suis actuellement en recherche d'un stage dans le Game Design ou le Level Design ! <br>
-      N'hésitez pas à lire mon CV et à me contacter si mon profil vous intéresse.</p>
-    <form class="form-button" method="get" action="">
-      <button type="submit" onclick="window.open('./ressources/Robin-Lefebvre_CV-Actuel.pdf')">Télécharger mon CV !</button>
-    </form>
-    <div id="hyperlien">
-      <a href="https://github.com/RobLfbv" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/robin-l-9765541b9/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="https://purpleluma.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
-    </div> 
-  </div>
-
-  <div class="contenue-div">
-    <h1>Mes dernières créations</h1>
-    <div class="buttonweb">
-      <a href="./pages/l4d2ld.html"><div>
-        <h2>Niveau de Left4Dead 2</h2>
-        <h3>Décembre 2022</h3>
-        <img src="./img/left4dead-plan-partie2-Robin_Lefebvre.png">
-    </div></a>
-    <a href="./pages/magazineOW.html"><div>
-        <h2>Première de magazine inspiré d'un jeu</h2>
-        <h3>Décembre 2022</h3>
-        <img style="height: 40vh; width: 28vh;" src="./img/Magazine-OuterWilds-Robin_Lefebvre.png">
-    </div></a>
-    <a href="./pages/screenOW.html"><div>
-        <h2>Screen modifié venant d'un jeu</h2>
-        <h3>Décembre 2022</h3>
-        <img src="./img/Screen-OuterWilds-Robin_Lefebvre.png">
-    </div></a>
-    </div>
-  </div>
-	
-	
-
+    <header>
+        <h2>Robin <b>LEFEBVRE</b></h2>
+        <ul></ul>
+    </header>
+    <main>
+        <section id="home">
+            <h2 class="title" style="display: none;">Accueil</h2>
+            <div class="text-nb">
+                <p>Étudiant dans le jeu-vidéo</p>
+                <h1>Robin <b>LEFEBVRE</b></h1>
+                <p>Actuellement étudiant en deuxième année du DUT MMI de l'IUT de Bobigny. Je suis actuellement à la recherche d'un stage dans le développement ou la programmation orientée objet. Passionné de jeux vidéo, j'ai dorénavant envie de les concevoir
+                    et de faire découvrir mes créations aux autres.</p>
+            </div>
+            <div class="big-square">
+                <img src="assets/img/robin.png" alt="">
+            </div>
+        </section>
+        <section id="cv">
+            <h2 class="title">Mon <b>profil</b></h2>
+            <p>Étudiant en Game Design et Level Design de <b class="age">20</b> ans, je suis actuellement à la recherche d'un <b>stage</b> dans le secteur du jeu vidéo.</p>
+            <p>Ce stage aurait pour but de consolider mes compétences acquises grâce ma license professionnelle et me permettrait d'entrer dans le monde professionnel. Il débute le <b>27 mars 2022</b> et a une durée minimum de <b>14</b> semaines.</p>
+            <div class="card">
+                <img src="assets/img/cv.png" alt="Mon CV">
+                <div class="content">
+                    <h2 class="title">Mon <b>CV</b></h2>
+                    <p>PDF • 1234 Ko</p>
+                    <div class="buttons">
+                        <a class="button" href="data/cv.pdf" download="KieranMIGNON-CV.pdf"><span class="material-symbols-outlined">download</span> Télécharger</a>
+                        <a class="button icon" href="data/cv.pdf" target="_blank"><span class="material-symbols-outlined">open_in_new</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="title">Mes <b>projets</b></h2>
+            <div id="tags-list"></div>
+            <div id="projects-list">
+                <div class="empty-projects">
+                    <p>Aucun projet n'a été trouvé.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2 class="title">Me <b>contacter</b></h2>
+            <p>Vous êtes intéressé par mon profil ? N'hésitez pas à me <b>contacter</b> sur mes réseaux sociaux :</p>
+            <div class="buttons socials"></div>
+        </section>
+    </main>
+    <section id="project-modal" style="display: none;">
+        <button class="close"><span>x</span></button>
+    </section>
+    <section id="image-modal" style="display: none;">
+        <button class="close"><span>x</span></button>
+    </section>
+    <footer>
+        <p>&copy; 2022. Site web développé par <a href="https://davall.fr">DavAll</a>.</p>
+    </footer>
+    <script src="assets/js/nav.js"></script>
+    <script src="assets/js/projects.js"></script>
 </body>
+
 </html>
