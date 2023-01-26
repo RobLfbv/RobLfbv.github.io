@@ -3,7 +3,7 @@
     "tags": ["ld", "gd"],
     "img": "assets/img/LivingRock.png",
     "description": "Living Rock est un jeu que j'ai réalisé avec une équipe de 7 personnes en tant que Level Designer/Game Designer lors de l'UniJam 2022 en un weekend. Le thème de l'Unijam était \"La distance rend toute chose infiniment plus précieuse\". \n\r\n L'idée de base était de réaliser un jeu de combat qui utilise la distance avec un élément pour certaines mécaniques. Mais ayant peur que ça soit une charge de travail trop importante nous nous sommes dirigés vers un jeu à énigme.\n\r\n Nous incarnons donc un personnage qui se voit lié à un cristal, s'il s'éloigne de trop il meurt, il va donc devoir le prendre avec lui à tout moment. Il va pouvoir utiliser le cristal pour résoudre des énigmes.\n\r\n Nous avons donc commencé à travailler sur le Game Concept afin de trouver les mécaniques les plus interessantes à réaliser dans le jeu. Nous avons travaillé à deux sur cette partie-là, j'avais un rôle de support puisque ma fonction principale était le Level Design.\n Une fois les mécaniques et le game concept terminés le Game Designer de l'équipe a commencé à faire le Game Document allant plus précisément dans les détails et moi j'ai commencé à faire le Level Design.\n\r\n Le Level Design a été un vrai défi pour moi puisque je n'avais jamais fait de niveau à énigmes et cela a été une vraie gymnastique d'esprit de faire des niveaux cohérents, montant en difficulté sans que ça soit trop complexe. J'ai cherché à utiliser les mécaniques en lien avec le cristal au maximum afin de rendre ça le plus intéressant possible. On avait également pensé à des mécaniques jouant avec la visibilité ou encore un niveau consacré uniquement à une mécanique de téléportation influençant le cristal mais nous n'avons pas eu le temps d'intégrer ces niveaux. Cette Game Ham fut très intéressante car c'était la première fois que j'en faisais une en équipe et j'ai beaucoup appris en ce qui concerne le travail d'équipe mais également en Level Design.\n",
-    "images": [{ "url": "assets/img/LivingRock.png", "legende": "Illustration faite pour le jeu" }],
+    "images": [{ "url": "assets/img/LivingRock.png", "legende": "Illustration faite pour le jeu" },{ "url": "assets/img/LivingRock.png", "legende": "Illustration faite pour le jeu" }],
     "buttons": [{
         "name": "Voir le projet",
         "icon": "launch",
@@ -14,13 +14,10 @@
     "tags": ["gj","gd","ld","dev"],
     "img": "assets/img/robin.png",
     "description": "Chrono Bullet Hell Prototype est un prototype de jeu Bullet Hell que j'ai créé lors de la Mini Jam 112 : Chrono. Cette Game Jam avait pour thème \"Chrono\" et pour contrainte \"Only 3 buttons\". \n\r\nLe jeu se situe donc sur un cadran d'horloge. Le personnage qu'on joue peut avancer ou reculer d'heure en heure afin d'éviter les tirs arrivants vers lui. Pour ce faire il peut également utiliser un multiplicateur qui lui permet d'avancer ou de reculer un plus grand nombre d'heures en une fois. \n\r\nLors de cette Game Jam, j'ai commencé en posant mes idées sur papier en imaginant autour du thème. Grâce à ce processus j'ai pu cette fois-ci définir un scope plus petit et plus réaliste. Malgré tout il est important de préciser que là où l'idée était plus claire, le projet lui manquait de structure ce qui m'a beaucoup freiné. \n\r\nJe voulais au début ajouter une mécanique de temps qui permettait d'avancer plus loin ou moins loin en fonction du temps qu'une des touches était retenue. Au final, j'ai rejeté cette idée car rendait trop injuste le jeu car tout n'était qu'histoire de timing. \n\r\nPour le moment le jeu n'est que de la survie mais par la suite on peut imaginer des niveaux utilisant des mécaniques différentes.\n\r\nPar exemple : \nUn niveau jouant avec la lumière.\nUn niveau avec des éléments à récupérer sur le cadran afin de vaincre un boss.\n\r\nPlus simplement, des patterns plus complexes demandant de la précisison.",
-    "images": [{ "url": "assets/img/cv.png", "legende": "Petite légende" }, { "url": "assets/img/robin.png", "legende": "Petite légende" }],
+    "images": [{ "url": "assets/img/chronobullethell-1.png", "legende": "Screen du jeux" }, { "url": "assets/img/chronobullethell-2.png", "legende": "Screen du jeux" }],
     "buttons": [{
         "name": "Voir le projet",
         "icon": "launch",
-        "link": "https://davall.fr"
-    },{
-        "name": "Vidéo",
-        "link": "https://davall.fr"
+        "link": "https://purpleluma.itch.io/chrono-bullet-hell"
     }]
 }]
