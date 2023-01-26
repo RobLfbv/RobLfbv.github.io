@@ -17,5 +17,13 @@
     {
         "id": "web",
         "label": "Projet Web"
+    },
+    {
+        "id": "dev",
+        "label": "Développement"
+    },
+    {
+        "id": "gj",
+        "label": "GameJam"
     }
 ]
