@@ -9,10 +9,10 @@
         "icon": "launch",
         "link": "https://tiosstud.itch.io/living-rock"
     }]
-}, {
-    "name": "Chrono Bullet Hell Prototype",
+}, 
+    {"name": "Chrono Bullet Hell Prototype",
     "tags": ["gj","gd","ld","dev"],
-    "img": "assets/img/robin.png",
+    "img": "assets/img/chronobullethell-2.png",
     "description": "Chrono Bullet Hell Prototype est un prototype de jeu Bullet Hell que j'ai créé lors de la Mini Jam 112 : Chrono. Cette Game Jam avait pour thème \"Chrono\" et pour contrainte \"Only 3 buttons\". \n\r\nLe jeu se situe donc sur un cadran d'horloge. Le personnage qu'on joue peut avancer ou reculer d'heure en heure afin d'éviter les tirs arrivants vers lui. Pour ce faire il peut également utiliser un multiplicateur qui lui permet d'avancer ou de reculer un plus grand nombre d'heures en une fois. \n\r\nLors de cette Game Jam, j'ai commencé en posant mes idées sur papier en imaginant autour du thème. Grâce à ce processus j'ai pu cette fois-ci définir un scope plus petit et plus réaliste. Malgré tout il est important de préciser que là où l'idée était plus claire, le projet lui manquait de structure ce qui m'a beaucoup freiné. \n\r\nJe voulais au début ajouter une mécanique de temps qui permettait d'avancer plus loin ou moins loin en fonction du temps qu'une des touches était retenue. Au final, j'ai rejeté cette idée car rendait trop injuste le jeu car tout n'était qu'histoire de timing. \n\r\nPour le moment le jeu n'est que de la survie mais par la suite on peut imaginer des niveaux utilisant des mécaniques différentes.\n\r\nPar exemple : \nUn niveau jouant avec la lumière.\nUn niveau avec des éléments à récupérer sur le cadran afin de vaincre un boss.\n\r\nPlus simplement, des patterns plus complexes demandant de la précisison.",
     "images": [{ "url": "assets/img/chronobullethell-1.png", "legende": "Screen du jeux" }, { "url": "assets/img/chronobullethell-2.png", "legende": "Screen du jeux" }],
     "buttons": [{
@@ -20,4 +20,24 @@
         "icon": "launch",
         "link": "https://purpleluma.itch.io/chrono-bullet-hell"
     }]
-}]
+},
+   {"name": "Black & White Prototype",
+    "tags": ["gj","gd","ld","dev"],
+    "img": "assets/img/chronobullethell-2.png",
+    "description": "Black & White Prototype est un prototype de jeu d'énigme que j'ai commencé lors de la Mini Jam 111 : Colors². Cette Game Jam avait pour thème \"Colors\" et pour contrainte \"You are your own ennemy\".\n\r\nC'est une Game Jam assez courte et ma première erreur lors de cette dernière a été de me lancer sans poser de manière précise ce que je voulais réaliser. Le résultat a été que je n'ai pas réussi à finir le jeu à temps pour la fin de la Jam.
+    
+    Mon idée principale était de réaliser un jeu d'énigme dans lequel, il fallait réaliser un parcours sans mourir sous peine de devoir le recommencer. Une fois le niveau terminé, notre double sur la partie droite de l'écran reproduit les déplacements réalisés. S'il finit le niveau, on perd, s'il perd on gagne.
+    
+    Le problème principal dans le prototype que j'ai réalisé en Juillet 2022 est que la mort de notre double dépend de timing et non pas de réflexion.
+    En repensant le jeu, quelques éléments de gameplay interessants pourrait être ajouter afin que cela soit de la reflexion et non pas du timing.
+    
+    Par exemple :\nUn piège qui s'active après un certain nombre d'actions, les siennes et celles du double. L'objectif serait que le joueur doit calculer son nombre d'actions pour piéger son double.
+    Au lieu de faire une division entre la partie du joueur et du double, il faudrait permettre aux joueurs d'intéragir avec des éléments du côté du double.",
+    "images": [{ "url": "assets/img/chronobullethell-1.png", "legende": "Screen du jeux" }, { "url": "assets/img/chronobullethell-2.png", "legende": "Screen du jeux" }],
+    "buttons": [{
+        "name": "Voir le projet",
+        "icon": "launch",
+        "link": "https://purpleluma.itch.io/chrono-bullet-hell"
+    }]
+   }
+]
