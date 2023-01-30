@@ -255,6 +255,10 @@ main #projects .project .text {
 main #projects .project .text .title {
   margin: 0;
 }
+main #projects .project .text .date {
+  margin: 0;
+  margin-top: 0.5rem;
+}
 main #projects .project .tags {
   display: flex;
   -moz-column-gap: 0.5rem;

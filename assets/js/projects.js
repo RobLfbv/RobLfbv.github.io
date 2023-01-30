@@ -29,16 +29,19 @@ function generateProjects() {
         const projectText = document.createElement("div");
         const projectTitle = document.createElement("h3");
         const projectTags = document.createElement("div");
+        const projectDate = document.createElement("h4");
 
         projectItem.className = "project";
         projectText.className = "text";
         projectTags.className = "tags";
         projectTitle.className = "title";
+        projectDate.className = "date";
 
         projectImg.src = project.img;
         projectImg.alt = project.name;
 
         projectTitle.innerText = project.name;
+        projectDate.innerText = project.date;
 
         project.tags.filter(tag => tags.filter(t => t.id == tag).length > 0).forEach(tagId => {
             const tag = tags.filter(t => t.id == tagId)[0];
@@ -55,6 +58,8 @@ function generateProjects() {
 
         projectText.appendChild(projectTitle);
         projectText.appendChild(projectTags);
+        projectText.appendChild(projectDate);
+        
         projectItem.appendChild(projectImg);
         projectItem.appendChild(projectText);
         document.querySelector("#projects-list").appendChild(projectItem);

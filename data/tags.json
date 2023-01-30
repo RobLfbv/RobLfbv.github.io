@@ -1,10 +1,15 @@
-[{
+[
+    {
         "id": "gd",
         "label": "Game Design"
     },
     {
         "id": "ld",
         "label": "Level Design"
+    },
+    {
+        "id": "gj",
+        "label": "GameJam"
     },
     {
         "id": "2d",
@@ -21,9 +26,5 @@
     {
         "id": "dev",
         "label": "Développement"
-    },
-    {
-        "id": "gj",
-        "label": "GameJam"
     }
 ]
