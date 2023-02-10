@@ -1,4 +1,16 @@
 [
+    {"name": "Niveau réalisé sur Unreal Engine",
+    "date" : "Janier 2023",
+    "tags": ["ld"],
+    "img": "assets/img/Niveau_froide_vengeance.png",
+    "description": "J'ai réalisé un niveau dans le cadre d'un Workshop de Level Design sur Unreal Engin organisé dans ma licence pro métier du jeu vidéo afin d'apprendre Unreal Engine tout en mettant en pratique nos connaissances en Level Design. L'objectif était de réaliser un niveau d'A à Z sur Unreal Engine. Il fallait intégrer une phase de combat et une phase d'infiltration. J'ai donc tout d'abord cherché un thème, je suis partie sur le médiéval avec une protagoniste voleuse utilisant une arbalète pour se défendre.\n\n Je suis ensuite partie sur un contexte permettant de développer le pourquoi du comment le personnage qu'on incarne est ici : \n\n\"Voleur de profession, notre personnage vit de prime grâce au vol commandité par des riches, des pauvres mais aussi des groupes de parias, de roublards ou encore de bandits. Elle est dans les petits papiers de tout le monde et elle en a payé le prix fort. En effet, lors d’une affaire de vol qui a mal tourné, elle s’est fait repérer par un groupe de bandits qu’elle était en train de voler. Ce n’est pas resté sans conséquence, le connaissant un peu trop bien, ils ont décidé de se venger en tuant son petit frère.\"\n\nCe qui m'a permie de tirer un titre pour mon niveau : \"Vengeance Froide\" et c'est la ligne directrice que j'ai suivie dans ce niveau. ",
+    "images": [{ "url": "assets/img/Niveau_froide_vengeance.png", "legende": "Le plan du niveau au complet" }, { "url": "assets/img/bubblediagram_vengeancefroide.png", "legende": "Bubble diagram" }, { "url": "assets/img/VengeanceFroide_1.png", "legende": "Screen du niveau en plein jeu" },{ "url": "assets/img/VengeanceFroide_2.png", "legende": "Screen du niveau en plein jeu" },{ "url": "assets/img/VengeanceFroide_3.png", "legende": "Screen du niveau en plein jeu" }],
+    "buttons": [{
+        "name": "Voir une vidéo du niveau",
+        "icon": "launch",
+        "link": "https://drive.google.com/file/d/18XHfE0M4usjr_Eu9Ivi6JMm8BjNadML1/view"
+    }]
+    },
     {"name": "Niveau de Left4Dead 2",
     "date" : "Décembre 2022",
     "tags": ["ld"],
@@ -72,6 +84,14 @@
         "icon": "launch",
         "link": "https://tiosstud.itch.io/living-rock"
     }]
+    },
+    {"name": "Jeu de société MashUp",
+    "date" : "Octobre 2022",
+    "tags": ["gd"],
+    "img": "assets/img/mashup1.jpg",
+    "description": "MashUp est un jeu de société que nous avons prototypé en 1 semaine. En effet, dans le cadre de ma formation, une Game Jam de jeux de société était organisée. L'objectif était de réaliser un prototype de jeu de société en 1 semaine avec pour thème \"The more you have the worst it gets\". \n\n J'ai travaillé sur MashUp principalement en tant que Game Designer, nous avons réfléchi le jeu afin qu'il soit fun à jouer à l'apéro ou en soirée.\n Dans MashUp on doit associer plusieurs cartes représentant quelques choses (par exemple : un personnage ou un objet) afin de répondre à une contrainte. \n\n Exemple : Créer  la combinaison la plus mignonne : un chat en robe de princesse en utilisant la carte \"chat\" et la carte \"robe de princesse\". Une fois que tous les joueurs ont proposé leur combinaison, chacun vote, la personne la plus votée remporte la partie.",
+    "images": [{ "url": "assets/img/mashup1.jpg", "legende": "Le dessus de la boîte." },{ "url": "assets/img/mashup3.jpg", "legende": "L'arrière de la boîte." },{ "url": "assets/img/mashup4.jpg", "legende": "L'intérieur de la boîte." }, { "url": "assets/img/mashup2.png", "legende": "Exemple de cartes" }],
+    "buttons": []
     },
     {"name": "Niveau d'infiltration GTA",
     "date" : "Octobre 2022",
