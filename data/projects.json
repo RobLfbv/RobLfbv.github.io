@@ -39,6 +39,50 @@
         ]
     },
     {
+        "name": "Game Concept pour un Animal Crossing RPG",
+        "date": "Février 2023",
+        "tags": [
+            "gd"
+        ],
+        "img": "assets/img/ACNH-RPG.png",
+        "description": "Ce travail est un Game Concept que nous avons produit en groupe de 3 dans le cadre d'une évaluation qui nous demandait de faire un game concept pour Animal Crossing New Horizon en version RPG.",
+        "images": [
+            {
+                "url": "assets/img/ACNH-RPG.png",
+                "legende": "Première page de document"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le document",
+                "icon": "launch",
+                "link": "data/Animal-Crossing_Game-Concept.pdf"
+            }
+        ]
+    },
+    {
+        "name": "Document de spécification d'une mécanique de craft de Cube World",
+        "date": "Février 2023",
+        "tags": [
+            "gd"
+        ],
+        "img": "assets/img/Doc-spe-craft.png",
+        "description": "Ce travail est un Document de Spécification que j'ai produit dans le cadre d'une évaluation qui nous demandait de faire un document de spécification sur une mécanique de craft, j'ai pris la mécanique de craft de Cube World.",
+        "images": [
+            {
+                "url": "assets/img/Doc-spe-craft.png",
+                "legende": "Première page de document"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le document",
+                "icon": "launch",
+                "link": "data/Doc-spe_craft-Cube-World-Alpha.pdf"
+            }
+        ]
+    },
+    {
         "name": "Cours-Je ?",
         "date": "Février 2023",
         "tags": [
