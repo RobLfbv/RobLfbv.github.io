@@ -8,8 +8,8 @@ import { createMaterialArray } from "./skyboxCreation.js";
 //Nom des differentes images pour la skybox dans les fichiers
 let skyboxImage = "nebula";
 //Nom des deux images pour la texture du cube
-let textureCubeTopBot = "/public/OakLog-topbot.png";
-let textureCubeSide = "/public/OakLog-side.png";
+let textureCubeTopBot = "../public/OakLog-topbot.png";
+let textureCubeSide = "../public/OakLog-side.png";
 //Vitesse de rotation des cubes
 let rotationSpeedCube1 = 0.05;
 let rotationSpeedCube2 = 0.01;
