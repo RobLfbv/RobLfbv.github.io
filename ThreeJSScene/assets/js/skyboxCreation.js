@@ -6,7 +6,7 @@ import * as THREE from 'three';
  * @return {String[]} - Une liste de tous les noms des images
  */
 function createPathStrings(filename) {
-    const basePath = "./ThreeJSScene/public/";
+    const basePath = "./public/";
     const baseFilename = basePath + filename;
     const fileType = ".png";
     const sides = ["xpos", "xneg", "ypos", "yneg", "zpos", "zneg"];

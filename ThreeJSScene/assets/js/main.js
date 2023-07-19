@@ -8,8 +8,8 @@ import { createMaterialArray } from "./skyboxCreation.js";
 //Nom des differentes images pour la skybox dans les fichiers
 let skyboxImage = "nebula";
 //Nom des deux images pour la texture du cube
-let textureCubeTopBot = "./ThreeJSScene/public/OakLog-topbot.png";
-let textureCubeSide = "./ThreeJSScene/public/OakLog-side.png";
+let textureCubeTopBot = "./public/OakLog-topbot.png";
+let textureCubeSide = "./public/OakLog-side.png";
 //Vitesse de rotation des cubes
 let rotationSpeedCube1 = 0.05;
 let rotationSpeedCube2 = 0.01;
@@ -41,7 +41,7 @@ camera.rotation.set(-0.6, 0.3, 0.2);
 /**
  * Creation des textures et des materials des differents objets 3D
  */
-const floorTexture = new THREE.TextureLoader().load('./ThreeJSScene/public/checkerboard.jpg');
+const floorTexture = new THREE.TextureLoader().load('./public/checkerboard.jpg');
 floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
 floorTexture.repeat.set(5, 5);
 var floorMaterial = new THREE.MeshPhongMaterial({ map: floorTexture, side: THREE.DoubleSide });
