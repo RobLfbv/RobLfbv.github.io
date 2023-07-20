@@ -1,5 +1,4 @@
 import * as THREE from 'three';
-import { Camera } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { createMaterialArray } from "./skyboxCreation.js";
 
@@ -11,6 +10,7 @@ let skyboxImage = "nebula";
 //Nom des deux images pour la texture du cube
 let textureCubeTopBot = "./public/OakLog-topbot.png";
 let textureCubeSide = "./public/OakLog-side.png";
+let textureGrass = "./public/Grass.png";
 //Vitesse de rotation des cubes
 let rotationSpeedCube1 = 0.05;
 let rotationSpeedCube2 = 0.01;
@@ -27,7 +27,8 @@ let yPosMaxCamera = 400;
  */
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 10000);
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+//const renderer = new THREE.WebGLRenderer({ antialias: true });
+const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
@@ -37,7 +38,7 @@ function render() {
     renderer.render(scene, camera);
 }
 controls.minDistance = 0;
-controls.maxDistance = 1000;
+controls.maxDistance = 800;
 document.body.appendChild(renderer.domElement);
 camera.position.set(50, 200, 140);
 camera.rotation.set(-0.6, 0.3, 0.2);
@@ -45,7 +46,8 @@ camera.rotation.set(-0.6, 0.3, 0.2);
 /**
  * Creation des textures et des materials des differents objets 3D
  */
-const floorTexture = new THREE.TextureLoader().load('./public/checkerboard.jpg');
+//const floorTexture = new THREE.TextureLoader().load('./public/checkerboard.jpg');
+const floorTexture = new THREE.TextureLoader().load(textureGrass);
 floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
 floorTexture.repeat.set(5, 5);
 var floorMaterial = new THREE.MeshPhongMaterial({ map: floorTexture, side: THREE.DoubleSide });
@@ -67,11 +69,13 @@ const materialSkybox = createMaterialArray(skyboxImage);
  * Creation de la lumiere
  */
 const light = new THREE.AmbientLight(0x404040, 0.5); // soft white light
-const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+const directionalLight = new THREE.DirectionalLight(0x404040, 0.2);
 directionalLight.position.set(1, 2, 0);
-
+const pointLight = new THREE.PointLight(0xe8cc97, 1, 800);
+pointLight.position.set(0,0,0);
 scene.add(directionalLight);
 scene.add(light);
+scene.add(pointLight);
 
 /**
  * Creation des différents objets 3D
@@ -100,51 +104,30 @@ scene.add(floor);
 scene.add(cube1);
 scene.add(cube2);
 
-document.addEventListener("keydown", onDocumentKeyDown, false);
-function onDocumentKeyDown(event) {
-    var keyCode = event.which;
-    if (keyCode == 32) {
-        controls.enabled = false;
-        cameraMovement = false;
-    }
-};
-document.addEventListener("keyup", onDocumentKeyUp, false);
-function onDocumentKeyUp(event) {
-    var keyCode = event.which;
-    if (keyCode == 32) {
-        controls.enabled = false;
-        cameraMovement = false;
-    }
-};
 
 addEventListener("mouseup", (event) => {
-    console.log('Click just happened')
     cameraMovement = true;
+    camera.position.y = 200;
+
 });
 
 addEventListener("mousedown", (event) => {
-    console.log('Click is happening');
     cameraMovement = false;
+    camera.position.y = 200;
+
 });
 
 var t = 0;
 var coef = 100;
 var cameraMovement = true;
-controls.target = new THREE.Vector3(0,0,0);
-controls.autoRotate = true;
-controls.autoRotateSpeed = 5;
 function animate() {
     requestAnimationFrame(animate);
-
-    cube1.rotation.y += rotationSpeedCube1;
-    cube2.rotation.y += rotationSpeedCube2;
-    /*if (cameraMovement) {
+    if (cameraMovement) {
         camera.position.x = 300 * Math.cos(t) + 0;
         camera.position.z = 300 * Math.sin(t) + 0;
         camera.lookAt(cube1.position);
         t += speedMovementInCircle;
-    }*/
-    controls.update();
+    }
     renderer.render(scene, camera);
 }
 animate();
