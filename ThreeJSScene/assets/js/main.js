@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { Camera } from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { createMaterialArray } from "./skyboxCreation.js";
 
@@ -14,7 +15,7 @@ let textureCubeSide = "./public/OakLog-side.png";
 let rotationSpeedCube1 = 0.05;
 let rotationSpeedCube2 = 0.01;
 //Vitesse de rotation de la camera
-let speedMovementInCircle = 0.1;
+let speedMovementInCircle = 0.01;
 let speedMovementOutward = 0.5;
 let speedMovementInward = 3;
 //Position Y max de la camera
@@ -31,11 +32,14 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 let controls = new OrbitControls(camera, renderer.domElement);
-controls.addEventListener('change', renderer);
+controls.addEventListener('change', render);
+function render() {
+    renderer.render(scene, camera);
+}
 controls.minDistance = 0;
-controls.maxDistance = 1500;
+controls.maxDistance = 1000;
 document.body.appendChild(renderer.domElement);
-camera.position.set(50, 100, 140);
+camera.position.set(50, 200, 140);
 camera.rotation.set(-0.6, 0.3, 0.2);
 
 /**
@@ -85,7 +89,7 @@ floor.position.y -= 55;
 floor.rotateX(90 * (Math.PI / 180));
 
 //Skybox
-const skyBoxGeometry = new THREE.BoxGeometry(10000, 10000, 10000);
+const skyBoxGeometry = new THREE.BoxGeometry(1001, 1001, 1001);
 const skyBox = new THREE.Mesh(skyBoxGeometry, materialSkybox);
 
 /**
@@ -96,50 +100,51 @@ scene.add(floor);
 scene.add(cube1);
 scene.add(cube2);
 
-var cameraMovement = false;
 document.addEventListener("keydown", onDocumentKeyDown, false);
 function onDocumentKeyDown(event) {
     var keyCode = event.which;
     if (keyCode == 32) {
         controls.enabled = false;
-        camera.position.set(0, 0, 0);
-        cameraMovement = true;
+        cameraMovement = false;
+    }
+};
+document.addEventListener("keyup", onDocumentKeyUp, false);
+function onDocumentKeyUp(event) {
+    var keyCode = event.which;
+    if (keyCode == 32) {
+        controls.enabled = false;
+        cameraMovement = false;
     }
 };
 
+addEventListener("mouseup", (event) => {
+    console.log('Click just happened')
+    cameraMovement = true;
+});
+
+addEventListener("mousedown", (event) => {
+    console.log('Click is happening');
+    cameraMovement = false;
+});
 
 var t = 0;
 var coef = 100;
-
+var cameraMovement = true;
+controls.target = new THREE.Vector3(0,0,0);
+controls.autoRotate = true;
+controls.autoRotateSpeed = 5;
 function animate() {
     requestAnimationFrame(animate);
 
     cube1.rotation.y += rotationSpeedCube1;
     cube2.rotation.y += rotationSpeedCube2;
-    if (cameraMovement) {
-        if (camera.position.y < yPosMaxCamera) {
-            camera.position.x = coef * Math.cos(t) + 0;
-            camera.position.z = coef * Math.sin(t) + 0;
-            camera.position.y += 1;
-            camera.lookAt(0, 0, 0)
-            coef += speedMovementOutward;
-            t += speedMovementInCircle;
-        } else {
-            if (camera.position.x >= 0 && camera.position.x < 5 && camera.position.z < 5 && camera.position.z >= 0 ) {
-                camera.position.set(0, camera.position.y, 0);
-                camera.lookAt(0, 0, 0)
-                cameraMovement = false;
-            } else {
-                camera.position.x = coef * Math.cos(t) + 0;
-                camera.position.z = coef * Math.sin(t) + 0;
-                camera.lookAt(0, 0, 0)
-                coef -= speedMovementInward;
-                t += speedMovementInCircle;
-            }
-
-        }
-
-    }
+    /*if (cameraMovement) {
+        camera.position.x = 300 * Math.cos(t) + 0;
+        camera.position.z = 300 * Math.sin(t) + 0;
+        camera.lookAt(cube1.position);
+        t += speedMovementInCircle;
+    }*/
+    controls.update();
     renderer.render(scene, camera);
 }
 animate();
