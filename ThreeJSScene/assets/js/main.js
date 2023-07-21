@@ -22,9 +22,9 @@ let yPosMaxCamera = 400;
  * Initialisation de la scene, de la camera et de sa position et ajout de la scene à la page html
  */
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1100);
-//const renderer = new THREE.WebGLRenderer({ antialias: true });
-const renderer = new THREE.WebGLRenderer();
+const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100000);
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+//const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
@@ -38,7 +38,7 @@ controls.maxDistance = 800;
 document.body.appendChild(renderer.domElement);
 camera.position.set(50, 200, 140);
 camera.rotation.set(-0.6, 0.3, 0.2);
-//scene.fog = new THREE.Fog(0xcccccc, 200, 600);
+//scene.fog = new THREE.Fog(0xcccccc, 600, 700);
 
 /**
  * Creation des textures et des materials des differents objets 3D
@@ -60,10 +60,6 @@ const materialCube = [
     new THREE.MeshPhongMaterial({ map: textureSideCube })];
 const materialCube2 = new THREE.MeshPhongMaterial({ color: 0xff0000 });
 const materialSkybox = createMaterialArray(skyboxImage);
-let textureStade = new THREE.TextureLoader().load('./public/10093_Wembley_stadion_V1_Diffuse.jpg');
-const materialStade = new THREE.MeshPhongMaterial({
-    map: textureStade
-});
 
 /**
  * Creation de la lumiere
@@ -71,11 +67,55 @@ const materialStade = new THREE.MeshPhongMaterial({
 const light = new THREE.AmbientLight(0x404040, 0); // soft white light
 const directionalLight = new THREE.DirectionalLight(0x404040, 0);
 directionalLight.position.set(1, 2, 0);
-const pointLight = new THREE.PointLight(0xe8cc97, 1, 500);
-pointLight.position.set(0, 100, 0);
+
+const pointLight1 = new THREE.PointLight(0xffffff, 0.5, 500);
+pointLight1.position.set(0, 100, 0);
+scene.add(pointLight1);
+
+const spotLight1 = new THREE.SpotLight(0xffffff, 0.6, 800, 30 * (Math.PI / 180));
+spotLight1.position.set(-50, 50, 100);
+const targetObject1 = new THREE.Object3D();
+targetObject1.position.set(300, 0,-300);
+scene.add(targetObject1);
+spotLight1.target = targetObject1;
+scene.add(spotLight1);
+
+const spotLight2 = new THREE.SpotLight(0xffffff, 0.6, 800, 30 * (Math.PI / 180));
+spotLight2.position.set(50, 50, 100);
+const targetObject2 = new THREE.Object3D();
+targetObject2.position.set(-300, 0, -300);
+scene.add(targetObject2);
+spotLight2.target = targetObject2;
+scene.add(spotLight2);
+
+const spotLight3 = new THREE.SpotLight(0xffffff, 0.6, 800, 30 * (Math.PI / 180));
+spotLight3.position.set(-50, 50, -100);
+const targetObject3 = new THREE.Object3D();
+targetObject3.position.set(300, 0, 300);
+scene.add(targetObject3);
+spotLight3.target = targetObject3;
+scene.add(spotLight3);
+
+const spotLight4 = new THREE.SpotLight(0xffffff, 0.6, 800, 30 * (Math.PI / 180));
+spotLight4.position.set(50, 50, -100);
+const targetObject4 = new THREE.Object3D();
+targetObject4.position.set(-300, 0, 300);
+scene.add(targetObject4);
+spotLight4.target = targetObject4;
+scene.add(spotLight4);
+
+const spotLight5 = new THREE.SpotLight(0xffffff, 1, 800, 20 * (Math.PI / 180));
+spotLight5.position.set(0, 500, 0);
+const targetObject5 = new THREE.Object3D();
+targetObject5.position.set(0, 0, 0);
+scene.add(targetObject5);
+spotLight5.target = targetObject5;
+scene.add(spotLight5);
+
 scene.add(directionalLight);
 scene.add(light);
-scene.add(pointLight);
+
+
 
 /**
  * Creation des différents objets 3D
@@ -87,19 +127,26 @@ const cube2 = new THREE.Mesh(geometryCube, materialCube2);
 cube1.position.y += 100;
 
 //Sol en damier
-const floorGeometry = new THREE.PlaneGeometry(1000, 1000, 10, 10);
+const floorGeometry = new THREE.PlaneGeometry(10000, 10000, 10, 10);
 const floor = new THREE.Mesh(floorGeometry, floorMaterial);
 floor.position.y -= 0;
 floor.rotateX(90 * (Math.PI / 180));
 
+//Montains
+const montainsGeometry = new THREE.ConeGeometry(800, 1600, 16);
+const mountainsMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff });
+const montains = new THREE.Mesh(montainsGeometry, mountainsMaterial);
+montains.position.set(4000, 800, 0);
+scene.add(montains);
+
 //Skybox
-const skyBoxGeometry = new THREE.BoxGeometry(1001, 1001, 1001);
+const skyBoxGeometry = new THREE.BoxGeometry(10001, 10001, 10001);
 const skyBox = new THREE.Mesh(skyBoxGeometry, materialSkybox);
 
 const loader = new GLTFLoader();
 
 loader.load('./public/stade.gltf', function (gltf) {
-    gltf.scene.position.set(0,0,0);
+    gltf.scene.position.set(0, 0, 0);
     scene.add(gltf.scene);
 
 }, undefined, function (error) {
