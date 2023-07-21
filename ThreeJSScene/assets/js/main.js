@@ -2,6 +2,7 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { createMaterialArray } from "./skyboxCreation.js";
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { Vector3 } from 'three';
 
 /**
  * Variables de la scene
@@ -14,8 +15,7 @@ let textureCubeSide = "./public/OakLog-side.png";
 let textureGrass = "./public/Grass.png";
 //Vitesse de rotation de la camera
 let speedMovementInCircle = 0.01;
-//Position Y max de la camera
-let yPosMaxCamera = 400;
+
 
 
 /**
@@ -46,7 +46,7 @@ camera.rotation.set(-0.6, 0.3, 0.2);
 //const floorTexture = new THREE.TextureLoader().load('./public/checkerboard.jpg');
 const floorTexture = new THREE.TextureLoader().load(textureGrass);
 floorTexture.wrapS = floorTexture.wrapT = THREE.RepeatWrapping;
-floorTexture.repeat.set(5, 5);
+floorTexture.repeat.set(100, 100);
 var floorMaterial = new THREE.MeshPhongMaterial({ map: floorTexture, side: THREE.DoubleSide });
 
 const textureSideCube = new THREE.TextureLoader().load(textureCubeSide);
@@ -75,7 +75,7 @@ scene.add(pointLight1);
 const spotLight1 = new THREE.SpotLight(0xffffff, 0.6, 800, 30 * (Math.PI / 180));
 spotLight1.position.set(-50, 50, 100);
 const targetObject1 = new THREE.Object3D();
-targetObject1.position.set(300, 0,-300);
+targetObject1.position.set(300, 0, -300);
 scene.add(targetObject1);
 spotLight1.target = targetObject1;
 scene.add(spotLight1);
@@ -132,13 +132,6 @@ const floor = new THREE.Mesh(floorGeometry, floorMaterial);
 floor.position.y -= 0;
 floor.rotateX(90 * (Math.PI / 180));
 
-//Montains
-const montainsGeometry = new THREE.ConeGeometry(800, 1600, 16);
-const mountainsMaterial = new THREE.MeshPhongMaterial({ color: 0xffffff });
-const montains = new THREE.Mesh(montainsGeometry, mountainsMaterial);
-montains.position.set(4000, 800, 0);
-scene.add(montains);
-
 //Skybox
 const skyBoxGeometry = new THREE.BoxGeometry(10001, 10001, 10001);
 const skyBox = new THREE.Mesh(skyBoxGeometry, materialSkybox);
@@ -153,6 +146,28 @@ loader.load('./public/stade.gltf', function (gltf) {
 
     console.error(error);
 
+});
+
+//Montains
+loader.load('./public/mountains.gltf', function (gltf) {
+    gltf.scene.position.set(0, -1000, 0);
+    gltf.scene.scale.x = 4000;
+    gltf.scene.scale.y = 4000;
+    gltf.scene.scale.z = 4000;
+    scene.add(gltf.scene);
+}, undefined, function (error) {
+    console.error(error);
+});
+
+loader.load('./public/mountains.gltf', function (gltf) {
+    gltf.scene.position.set(0, -2000, 0);
+    gltf.scene.scale.x = 4000;
+    gltf.scene.scale.y = 4000;
+    gltf.scene.scale.z = 4000;
+    gltf.scene.rotation.y = 180 * (Math.PI / 180);
+    scene.add(gltf.scene);
+}, undefined, function (error) {
+    console.error(error);
 });
 /**
  * Ajout a la scene de tous les objets 3D
@@ -179,6 +194,7 @@ var t = 0;
 var cameraMovement = true;
 function animate() {
     requestAnimationFrame(animate);
+    camera.aspect = window.innerWidth / window.innerHeight;
     if (cameraMovement) {
         camera.position.x = 400 * Math.cos(t) + 0;
         camera.position.z = 400 * Math.sin(t) + 0;
