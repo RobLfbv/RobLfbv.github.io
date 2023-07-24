@@ -14,7 +14,7 @@ let textureCubeTopBot = "./public/OakLog-topbot.png";
 let textureCubeSide = "./public/OakLog-side.png";
 let textureGrass = "./public/Grass.png";
 //Vitesse de rotation de la camera
-let speedMovementInCircle = 0.005;
+let speedMovementInCircle = 0.002;
 
 
 
@@ -36,7 +36,7 @@ function render() {
 controls.minDistance = 0;
 controls.maxDistance = 800;
 document.body.appendChild(renderer.domElement);
-camera.position.set(50, 400, 140);
+camera.position.set(50, 350, 140);
 camera.rotation.set(-0.6, 0.3, 0.2);
 //scene.fog = new THREE.Fog(0xcccccc, 600, 700);
 
@@ -217,8 +217,8 @@ function animate() {
     requestAnimationFrame(animate);
     camera.aspect = window.innerWidth / window.innerHeight;
     if (cameraMovement) {
-        camera.position.x = 500 * Math.cos(t) + 0;
-        camera.position.z = 500 * Math.sin(t) + 0;
+        camera.position.x = 600 * Math.cos(t) + 0;
+        camera.position.z = 600 * Math.sin(t) + 0;
         camera.lookAt(cube1.position);
         t += speedMovementInCircle;
     }
