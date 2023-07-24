@@ -14,7 +14,7 @@ let textureCubeTopBot = "./public/OakLog-topbot.png";
 let textureCubeSide = "./public/OakLog-side.png";
 let textureGrass = "./public/Grass.png";
 //Vitesse de rotation de la camera
-let speedMovementInCircle = 0.01;
+let speedMovementInCircle = 0.005;
 
 
 
@@ -36,7 +36,7 @@ function render() {
 controls.minDistance = 0;
 controls.maxDistance = 800;
 document.body.appendChild(renderer.domElement);
-camera.position.set(50, 200, 140);
+camera.position.set(50, 400, 140);
 camera.rotation.set(-0.6, 0.3, 0.2);
 //scene.fog = new THREE.Fog(0xcccccc, 600, 700);
 
@@ -149,22 +149,43 @@ loader.load('./public/stade.gltf', function (gltf) {
 });
 
 //Montains
+/*
 loader.load('./public/mountains.gltf', function (gltf) {
-    gltf.scene.position.set(0, -1000, 0);
-    gltf.scene.scale.x = 4000;
-    gltf.scene.scale.y = 4000;
-    gltf.scene.scale.z = 4000;
+    gltf.scene.position.set(0, -4000, 0);
+    gltf.scene.scale.x = 4500;
+    gltf.scene.scale.y = 8000;
+    gltf.scene.scale.z = 4500;
     scene.add(gltf.scene);
 }, undefined, function (error) {
     console.error(error);
 });
 
 loader.load('./public/mountains.gltf', function (gltf) {
-    gltf.scene.position.set(0, -2000, 0);
-    gltf.scene.scale.x = 4000;
-    gltf.scene.scale.y = 4000;
-    gltf.scene.scale.z = 4000;
-    gltf.scene.rotation.y = 180 * (Math.PI / 180);
+    gltf.scene.position.set(0, -4000, 0);
+    gltf.scene.scale.x = 4500;
+    gltf.scene.scale.y = 8000;
+    gltf.scene.scale.z = 4500;
+    gltf.scene.rotation.y = 80 * (Math.PI / 180);
+    scene.add(gltf.scene);
+}, undefined, function (error) {
+    console.error(error);
+});
+*/
+/*
+loader.load('./public/mountains2.gltf', function (gltf) {
+    gltf.scene.position.set(0, -0, 0);
+    gltf.scene.scale.x = 500;
+    gltf.scene.scale.y = 150;
+    gltf.scene.scale.z = 500;
+    scene.add(gltf.scene);
+}, undefined, function (error) {
+    console.error(error);
+});*/
+loader.load('./public/mountains3.gltf', function (gltf) {
+    gltf.scene.position.set(0, -10, 0);
+    gltf.scene.scale.x = 650;
+    gltf.scene.scale.y = 200;
+    gltf.scene.scale.z = 650;
     scene.add(gltf.scene);
 }, undefined, function (error) {
     console.error(error);
@@ -196,8 +217,8 @@ function animate() {
     requestAnimationFrame(animate);
     camera.aspect = window.innerWidth / window.innerHeight;
     if (cameraMovement) {
-        camera.position.x = 400 * Math.cos(t) + 0;
-        camera.position.z = 400 * Math.sin(t) + 0;
+        camera.position.x = 500 * Math.cos(t) + 0;
+        camera.position.z = 500 * Math.sin(t) + 0;
         camera.lookAt(cube1.position);
         t += speedMovementInCircle;
     }
