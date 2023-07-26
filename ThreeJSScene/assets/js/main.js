@@ -4,13 +4,12 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { CreateSkyBox } from "./skyboxCreation.js";
 import { InitLights } from "./Lights.js";
 import { Create3DObjects } from "./3DObjects.js";
-import { createFireworkRocket } from "./Fireworks.js";
 import { sendRandomFireworks } from "./Fireworks.js";
 
 /**
  * Variables de la scene
  */
-let nameTextureGrass = "./public/Grass.jpg";
+let nameTextureGrass = "./public/grass.jpg";
 let nameSkybox = "";
 //Vitesse de rotation de la camera
 let speedMovementInCircle = 0.001;
