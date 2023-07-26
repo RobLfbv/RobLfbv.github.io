@@ -9,7 +9,7 @@ import { sendRandomFireworks } from "./Fireworks.js";
 /**
  * Variables de la scene
  */
-let nameTextureGrass = "./public/grass.jpg";
+let pathTextureGrass = "./public/grass.jpg";
 let nameSkybox = "";
 //Vitesse de rotation de la camera
 let speedMovementInCircle = 0.001;
@@ -46,7 +46,7 @@ addEventListener("mousedown", (event) => {
 });
 
 CreateSkyBox(scene, nameSkybox);
-Create3DObjects(scene, nameTextureGrass);
+Create3DObjects(scene, pathTextureGrass);
 InitLights(scene);
 
 var t = 0;

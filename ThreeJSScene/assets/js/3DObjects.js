@@ -17,7 +17,6 @@ function CreateGround(scene, floorName) {
         side: THREE.DoubleSide,
     });
     floorMaterial.shininess = 0;
-    const materialCircle = new THREE.MeshPhongMaterial({ color: 0x517832 });
     const floorGeometry = new THREE.PlaneGeometry(10000, 10000, 10, 10);
     const floor = new THREE.Mesh(floorGeometry, floorMaterial);
     floor.position.y -= 0;
