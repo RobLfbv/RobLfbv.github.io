@@ -26,7 +26,7 @@ function createPathStrings(filename) {
  * @param {*} filename - Nom des differentes images qui composent la skybox
  * @returns - Une liste de toutes les textures de la skybox
  */
-export function createMaterialArray(filename) {
+function createMaterialArray(filename) {
   const skyboxImagepaths = createPathStrings(filename);
   /*const skyboxImagepaths = [];
   for (let i = 0; i < 6; i++) {
@@ -48,4 +48,12 @@ export function createMaterialArray(filename) {
   for (let i = 0; i < 6; i++) materialArray[i].side = THREE.BackSide;
 
   return materialArray;
+}
+
+export function CreateSkyBox(scene, filename) {
+  const materialSkybox = createMaterialArray(filename);
+  const skyBoxGeometry = new THREE.BoxGeometry(10001, 10001, 10001);
+  const skyBox = new THREE.Mesh(skyBoxGeometry, materialSkybox);
+  scene.add(skyBox);
+
 }
