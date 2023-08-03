@@ -1,6 +1,5 @@
 import * as THREE from "three";
 import * as TWEEN from 'tween';
-// fireworks.js
 
 export function createFireworkRocket(scene, position, sphereColor, trailColor, explosionSize, explosionDuration, particleSize) {
     const particleGeometry = new THREE.SphereGeometry(2, 16, 16);

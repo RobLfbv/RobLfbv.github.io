@@ -20,8 +20,10 @@ const fireworks = [];
  */
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 100000);
-const renderer = new THREE.WebGLRenderer({ antialias: true });
+//const camera = new THREE.PerspectiveCamera(60, 300 / 100, 0.1, 100000);
+const renderer = new THREE.WebGLRenderer({ antialias: true, canvas: containerCanva });
 renderer.setSize(window.innerWidth, window.innerHeight);
+//renderer.setSize(300, 100);
 document.body.appendChild(renderer.domElement);
 let controls = new OrbitControls(camera, renderer.domElement);
 controls.addEventListener("change", render);
