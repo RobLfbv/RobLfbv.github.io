@@ -8,6 +8,10 @@
         "img": "assets/img/logo-gdd-firedsimu.png",
         "description": "Ce travail est un Game Design Document de Don't Be Fired !! que j'ai réalisé basé sur le Game Concept du jeu",
         "images": [
+            {
+                "url": "assets/img/logo-gdd-firedsimu.png",
+                "legende": "GDD"
+            }
         ],
         "buttons": [
             {
