@@ -1,5 +1,23 @@
 [
     {
+        "name": "Game Design Document pour Don't Be Fired !!",
+        "date": "Avril 2023",
+        "tags": [
+            "gd"
+        ],
+        "img": "assets/img/logo-gdd-firedsimu.png",
+        "description": "Ce travail est un Game Design Document de Don't Be Fired !! que j'ai réalisé basé sur le Game Concept du jeu",
+        "images": [
+        ],
+        "buttons": [
+            {
+                "name": "Voir le document",
+                "icon": "launch",
+                "link": "data/Game-Design-Document_Dont-Be-Fired_Robin-LEFEBVRE.pdf"
+            }
+        ]
+    },
+    {
         "name": "Booom!",
         "date": "Fin Janvier 2023 à Fin Mars 2023",
         "tags": [
