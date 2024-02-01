@@ -8,7 +8,7 @@ const reseaux = [
     { name: "Facebook", link: "https://www.facebook.com/kieranfr/" },
     { name: "YouTube", link: "https://www.youtube.com/channel/UCY8YJ2ZQZ8ZQZ8ZQZ8ZQZ8Q" },
     { name: "Twitch", link: "https://www.twitch.tv/kieranfr" },*/
-    { name: "Discord", link: "https://discord.gg/8Z8Z8Z8" },
+    //{ name: "Discord", link: "https://discord.gg/8Z8Z8Z8" },
     //{ name: "Steam", link: "https://steamcommunity.com/id/kieranfr/" },
     //{ name: "Mastodon", link: "https://mastodon.social/@kieranfr" },
     //{ name: "Keybase", link: "https://keybase.io/kieranfr" },
