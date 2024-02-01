@@ -12,7 +12,7 @@ const reseaux = [
     //{ name: "Steam", link: "https://steamcommunity.com/id/kieranfr/" },
     //{ name: "Mastodon", link: "https://mastodon.social/@kieranfr" },
     //{ name: "Keybase", link: "https://keybase.io/kieranfr" },
-    { name: "GitLab", link: "https://gitlab.com/kieranfr" }
+    //{ name: "GitLab", link: "https://gitlab.com/kieranfr" }
 ]
 const anniv = new Date("12/12/2002");
 const age = Math.floor((new Date(Date.now() - anniv.getTime()) - 1970) / 31536000000);
