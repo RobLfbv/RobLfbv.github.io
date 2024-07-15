@@ -317,7 +317,7 @@
                 "link": "assets/img/Magazine-OuterWilds-Robin_Lefebvre.png"
             }
         ],
-        "keep": true,
+        "keep": false,
         "main": false
     },
     {
@@ -341,7 +341,7 @@
                 "link": "assets/img/Screen-OuterWilds-Robin_Lefebvre.png"
             }
         ],
-        "keep": true,
+        "keep": false,
         "main": false
     },
     {
