@@ -18,7 +18,7 @@ const anniv = new Date("12/12/2002");
 const age = Math.floor((new Date(Date.now() - anniv.getTime()) - 1970) / 31536000000);
 
 window.addEventListener("DOMContentLoaded", () => {
-    generateMenu();
+    //generateMenu();
     generateSocials();
     document.querySelectorAll(".age").forEach(element => element.innerText = age);
 });

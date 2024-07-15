@@ -74,9 +74,9 @@ function generateMainProjects() {
             const projectItem = document.createElement("div");
             const projectImg = document.createElement("img");
             const projectText = document.createElement("div");
-            const projectTitle = document.createElement("h3");
+            const projectTitle = document.createElement("h2");
+            const projectDate = document.createElement("p");
             const projectTags = document.createElement("div");
-            const projectDate = document.createElement("h4");
 
             projectItem.className = "projectMain";
             projectText.className = "text";
@@ -103,10 +103,10 @@ function generateMainProjects() {
             projectItem.addEventListener("click", () => {
                 focusProject(project);
             });
-            
+
             projectText.appendChild(projectTitle);
-            projectText.appendChild(projectTags);
             projectText.appendChild(projectDate);
+            projectText.appendChild(projectTags);
 
             projectItem.appendChild(projectImg);
             projectItem.appendChild(projectText);

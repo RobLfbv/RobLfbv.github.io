@@ -142,8 +142,7 @@ header ul li {
 
 .big-square {
   border: solid 3px #6099c6;
-  width: 30rem;
-  height: 30rem;
+  width: 25rem;
   border-radius: 100%;
   overflow: hidden;
   box-shadow: 0 0.5rem 2rem rgba(134, 177, 211, 0.25);
@@ -157,6 +156,8 @@ header ul li {
   width: 100%;
 }
 .big-square img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -305,48 +306,28 @@ main #projects #projects-list#projects-list .project {
   width: 100%;
   height: 100%;
 }
-main #mainProjects .tag:hover {
+main #mainProjects .projectMain:hover {
   cursor: pointer;
   box-shadow: 0 0.35rem 0.25rem rgba(0, 0, 0, 0.2);
 }
 main #mainProjects .projectMain {
   display: flex;
-  min-width: 20rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 50%;
+  height: 12rem;
   border-radius: 0.5rem;
-  padding: 1rem 1.5rem;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
   background: white;
   color: #142736;
-  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2);
-  align-items: center;
-  transition: 200ms ease-in-out box-shadow;
-  animation: project-appear 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 main #mainProjects .projectMain img {
-  width: 4rem;
-  height: 4rem;
+  width: 15rem;
+  height: 8rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
-  border-radius: 100%;
-  margin: auto 0;
-}
-main #mainProjects .projectMain .text {
-  display: flex;
-  flex-direction: column;
-}
-main #mainProjects .projectMain .text .title {
-  margin: 0;
-}
-main #mainProjects .projectMain .text .date {
-  margin: 0;
-  margin-top: 0.5rem;
+  box-shadow: 0.25rem 0 0.5rem rgba(134, 177, 211, 0.75);
 }
 main #mainProjects .projectMain .tags {
   display: flex;
@@ -366,9 +347,20 @@ main #mainProjects .projectMain .tags .tag.active {
   background: #6099c6;
   box-shadow: 0 0.25rem 0.25rem rgba(134, 177, 211, 0.75);
 }
-main #mainProjects .projectMain:hover {
-  cursor: pointer;
-  box-shadow: 0 0.35rem 0.25rem rgba(0, 0, 0, 0.3);
+main #mainProjects .projectMain .text {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 1rem 1rem;
+  border-left: solid 0.5px rgba(134, 177, 211, 0.75);
+}
+main #mainProjects .projectMain .text .title {
+  margin: 0;
+}
+main #mainProjects .projectMain .text p {
+  margin: 0 0 1rem 0;
+}
+main #mainProjects .projectMain .text .buttons {
+  margin: auto 0 0 0;
 }
 main #mainProjects .empty-projects {
   padding: 1rem 0 0 0;
@@ -389,14 +381,14 @@ main #mainProjects #mainProjects-list {
 }
 main #mainProjects #tags-list#mainProjects-list,
 main #mainProjects #mainProjects-list#mainProjects-list {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
   margin-top: 0.5rem;
   min-height: 8rem;
 }
 main #mainProjects #tags-list#mainProjects-list .projectMain,
 main #mainProjects #mainProjects-list#mainProjects-list .projectMain {
-  width: 100%;
+  width: 50%;
   height: 100%;
 }
 
@@ -673,19 +665,24 @@ footer {
     transform: translateY(0);
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 882px) {
   header {
     flex-direction: column;
     padding-bottom: 2rem;
+    width: 100%;
+    height: auto;
   }
   header ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     width: 100%;
     margin: 0;
     padding: 0;
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    -moz-column-gap: 0.85rem;
+         column-gap: 0.85rem;
+  }
+  header li > a {
+    font-size: 90%;
   }
   main #home {
     padding-top: 6rem;
@@ -698,14 +695,22 @@ footer {
     margin: 0 0 2rem 0;
   }
   main #home .big-square {
-    width: 100%;
-    height: 25rem;
+    width: 70%;
   }
   .card {
     width: 100%;
   }
   .card img {
     width: 30%;
+  }
+  .projectMain {
+    width: 100% !important;
+  }
+  .projectMain img {
+    width: 30% !important;
+  }
+  .project {
+    width: 80% !important;
   }
   #image-modal .modal.image-modal {
     width: 90%;
