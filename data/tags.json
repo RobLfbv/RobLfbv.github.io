@@ -22,5 +22,9 @@
     {
         "id": "dev",
         "label": "Développement"
+    },
+    {
+        "id": "qa",
+        "label": "QA Tester"
     }
 ]

@@ -1,10 +1,11 @@
 let projects = [];
 let tags = [];
 
-window.addEventListener("DOMContentLoaded", async() => {
+window.addEventListener("DOMContentLoaded", async () => {
     await loadTags();
     generateTags();
     await loadProjects();
+    generateMainProjects();
     generateProjects();
     filterProjects();
     document.querySelector("#project-modal .close").addEventListener("click", () => unfocusProject());
@@ -24,47 +25,96 @@ function loadProjects() {
 
 function generateProjects() {
     projects.forEach(project => {
-        const projectItem = document.createElement("div");
-        const projectImg = document.createElement("img");
-        const projectText = document.createElement("div");
-        const projectTitle = document.createElement("h3");
-        const projectTags = document.createElement("div");
-        const projectDate = document.createElement("h4");
+        if (project.keep) {
+            const projectItem = document.createElement("div");
+            const projectImg = document.createElement("img");
+            const projectText = document.createElement("div");
+            const projectTitle = document.createElement("h3");
+            const projectTags = document.createElement("div");
+            const projectDate = document.createElement("h4");
 
-        projectItem.className = "project";
-        projectText.className = "text";
-        projectTags.className = "tags";
-        projectTitle.className = "title";
-        projectDate.className = "date";
+            projectItem.className = "project";
+            projectText.className = "text";
+            projectTags.className = "tags";
+            projectTitle.className = "title";
+            projectDate.className = "date";
 
-        projectImg.src = project.img;
-        projectImg.alt = project.name;
+            projectImg.src = project.img;
+            projectImg.alt = project.name;
 
-        projectTitle.innerText = project.name;
-        projectDate.innerText = project.date;
+            projectTitle.innerText = project.name;
+            projectDate.innerText = project.date;
 
-        project.tags.filter(tag => tags.filter(t => t.id == tag).length > 0).forEach(tagId => {
-            const tag = tags.filter(t => t.id == tagId)[0];
-            const tagItem = document.createElement("div");
-            tagItem.classList.add("tag");
-            tagItem.setAttribute("data-tag", tag.id);
-            tagItem.textContent = tag.label;
-            projectTags.appendChild(tagItem);
-        });
+            project.tags.filter(tag => tags.filter(t => t.id == tag).length > 0).forEach(tagId => {
+                const tag = tags.filter(t => t.id == tagId)[0];
+                const tagItem = document.createElement("div");
+                tagItem.classList.add("tag");
+                tagItem.setAttribute("data-tag", tag.id);
+                tagItem.textContent = tag.label;
+                projectTags.appendChild(tagItem);
+            });
 
-        projectItem.addEventListener("click", () => {
-            focusProject(project);
-        });
+            projectItem.addEventListener("click", () => {
+                focusProject(project);
+            });
 
-        projectText.appendChild(projectTitle);
-        projectText.appendChild(projectTags);
-        projectText.appendChild(projectDate);
-        
-        projectItem.appendChild(projectImg);
-        projectItem.appendChild(projectText);
-        document.querySelector("#projects-list").appendChild(projectItem);
+            projectText.appendChild(projectTitle);
+            projectText.appendChild(projectTags);
+            projectText.appendChild(projectDate);
+
+            projectItem.appendChild(projectImg);
+            projectItem.appendChild(projectText);
+            document.querySelector("#projects-list").appendChild(projectItem);
+        }
     });
 }
+function generateMainProjects() {
+    projects.forEach(project => {
+        if (project.keep && project.main) {
+            const projectItem = document.createElement("div");
+            const projectImg = document.createElement("img");
+            const projectText = document.createElement("div");
+            const projectTitle = document.createElement("h3");
+            const projectTags = document.createElement("div");
+            const projectDate = document.createElement("h4");
+
+            projectItem.className = "projectMain";
+            projectText.className = "text";
+            projectTags.className = "tags";
+            projectTitle.className = "title";
+            projectDate.className = "date";
+
+            projectImg.src = project.img;
+            projectImg.alt = project.name;
+
+            projectTitle.innerText = project.name;
+            projectDate.innerText = project.date;
+
+
+            project.tags.filter(tag => tags.filter(t => t.id == tag).length > 0).forEach(tagId => {
+                const tag = tags.filter(t => t.id == tagId)[0];
+                const tagItem = document.createElement("div");
+                tagItem.classList.add("tag");
+                tagItem.setAttribute("data-tag", tag.id);
+                tagItem.textContent = tag.label;
+                projectTags.appendChild(tagItem);
+            });
+
+            projectItem.addEventListener("click", () => {
+                focusProject(project);
+            });
+            
+            projectText.appendChild(projectTitle);
+            projectText.appendChild(projectTags);
+            projectText.appendChild(projectDate);
+
+            projectItem.appendChild(projectImg);
+            projectItem.appendChild(projectText);
+            document.querySelector("#mainProjects-list").appendChild(projectItem);
+        }
+    });
+}
+
 
 function filterProjects() {
     const tagsActive = [...document.querySelectorAll("#tags-list .tag.active")].map(tag => tag.getAttribute("data-tag"));
@@ -90,6 +140,11 @@ function filterProjects() {
         }
     });
     const visibleProjects = projects.filter(p => p.style.display === "flex");
+    if (visibleProjects.length === 0) {
+        document.querySelector(".empty-main-projects").style.display = "flex";
+    } else {
+        document.querySelector(".empty-main-projects").style.display = "none";
+    }
     if (visibleProjects.length === 0) {
         document.querySelector(".empty-projects").style.display = "flex";
     } else {
@@ -138,7 +193,7 @@ function focusProject(project) {
         const linkIcon = document.createElement("span");
         linkIcon.className = "material-symbols-outlined";
         linkIcon.innerText = link.icon;
-        if(link.icon) linkItem.appendChild(linkIcon);
+        if (link.icon) linkItem.appendChild(linkIcon);
         linkItem.className = "button";
         linkItem.href = link.link;
         linkItem.target = "_blank";

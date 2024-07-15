@@ -1,5 +1,84 @@
 [
     {
+        "name": "Anthares",
+        "date": "Septembre 2023 à Février 2024",
+        "tags": [
+            "gd",
+            "ld",
+            "qa"
+        ],
+        "img": "assets/img/anthares-mainlogo.png",
+        "description": "Anthares est un jeu sur lequel j'ai travaillé en tant que Game Designer, Level Designer et QA Tester dans le cadre de la première année de mon master. \n\n Pitch : \"Dans un univers futuriste où chacun utilise la cyber-technologie, participez au grand tournoi Anthares organisé par The Talos Conglomerate. Affrontez vous en local avec des personnages aux compétences uniques et battez votre adversaire lors d’un 1 contre 1 dynamique et fluide dans une arène remplie de pièges et devenez une légende du show-bizness !\" \n\n Lors de la réalisation de ce projet nous avions plusieurs objectifs en tête: \n- Tout d'abord que le jeu soit hype, pour se faire nous avons intégré un système obligeant les joueurs à tuer avec une attaque moyenne ou lourde ce qui l'oblige à prendre des risques. \n - Ensuite, d'avoir une mécanique particulière et plus ou moins différente des autres jeux de combats, ce qui représenterait notre Key Selling Point. Nous avons décidé de choisir les pièges permettant de mettre un accent fort sur la carte qui représente aussi un danger pour le joueur. \n - Pour finir, nous voulions avoir un jeu avec une ambiance forte du show-business futuriste pour rendre notre jeu plus marquant par son univers.",
+        "images": [
+            {
+                "url": "assets/img/anthares-mainlogo.png",
+                "legende": "Banière du jeu sur Itch.io"
+            },
+            {
+                "url": "assets/img/anthares-screen1.png",
+                "legende": "Menu principal du jeu"
+            },
+            {
+                "url": "assets/img/anthares-screen2.png",
+                "legende": "Screen In-game"
+            },
+            {
+                "url": "assets/img/anthares-screen3.png",
+                "legende": "Screen In-game"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://robin-lefebvre.itch.io/anthares"
+            }
+        ],
+        "keep": true,
+        "main": true
+    },
+    {
+        "name": "Pafia Masta",
+        "date": "Janvier 2024 à Mars 2024",
+        "tags": [
+            "dev",
+            "gd"
+        ],
+        "img": "assets/img/pafiamasta-mainlogo.png",
+        "description": "Pafia Masta est un jeu sur lequel j'ai travaillé en tant que Développeur et Game Designer dans le cadre de la première année de mon master. \n Pitch : \"Un crime affreux a eu lieu dans le Pasta Village, quelqu’un a empoisonné la Carbonara Piscine avec de la crème fraîche 🤮 ! En tant que Gnocchi Détective la plus reconnue, interrogez les habitants, rendez leur un service, découvrez leurs routines, et trouvez le coupable !\" \n\n Pafia Masta est un jeu narratif et une murder party dans laquelle le joueur va devoir participer à plusieurs mini-jeux, résoudre des énigmes et parler avec les habitants pour savoir qui est la personne qui à empoisonné la Carbonara Piscine. ",
+        "images": [
+            {
+                "url": "assets/img/pafiamasta-mainlogo.png",
+                "legende": "Banière du jeu sur Itch.io"
+            },
+            {
+                "url": "assets/img/pafiamasta-screen1.png",
+                "legende": "Menu principal du jeu"
+            },
+            {
+                "url": "assets/img/pafiamasta-screen2.png",
+                "legende": "Screen In-game"
+            },
+            {
+                "url": "assets/img/pafiamasta-screen3.png",
+                "legende": "Screen In-game"
+            },
+            {
+                "url": "assets/img/pafiamasta-screen4.png",
+                "legende": "Screen In-game"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://xc3l.itch.io/pafia-masta"
+            }
+        ],
+        "keep": true,
+        "main": true
+    },
+    {
         "name": "Game Design Document pour Don't Be Fired !!",
         "date": "Avril 2023",
         "tags": [
@@ -19,11 +98,13 @@
                 "icon": "launch",
                 "link": "data/Game-Design-Document_Dont-Be-Fired_Robin-LEFEBVRE.pdf"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Booom!",
-        "date": "Fin Janvier 2023 à Fin Mars 2023",
+        "date": "Janvier 2023 à Mars 2023",
         "tags": [
             "dev",
             "gd"
@@ -58,7 +139,9 @@
                 "icon": "launch",
                 "link": "https://purpleluma.itch.io/booom"
             }
-        ]
+        ],
+        "keep": true,
+        "main": true
     },
     {
         "name": "Game Concept pour un Animal Crossing RPG",
@@ -80,7 +163,9 @@
                 "icon": "launch",
                 "link": "data/Animal-Crossing_Game-Concept.pdf"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Document de spécification d'une mécanique de craft de Cube World",
@@ -102,7 +187,9 @@
                 "icon": "launch",
                 "link": "data/Doc-spe_craft-Cube-World-Alpha.pdf"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Cours-Je ?",
@@ -141,7 +228,9 @@
                 "icon": "launch",
                 "link": "https://alans-tagioo.itch.io/cours-je"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Niveau réalisé sur Unreal Engine",
@@ -179,7 +268,9 @@
                 "icon": "launch",
                 "link": "https://drive.google.com/file/d/18XHfE0M4usjr_Eu9Ivi6JMm8BjNadML1/view"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Niveau de Left4Dead 2",
@@ -201,7 +292,9 @@
                 "icon": "launch",
                 "link": "assets/img/left4dead-plan-partie2-Robin_Lefebvre.png"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Première de magazine inspiré d'un jeu",
@@ -223,7 +316,9 @@
                 "icon": "launch",
                 "link": "assets/img/Magazine-OuterWilds-Robin_Lefebvre.png"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Screen modifié venant d'un jeu",
@@ -245,7 +340,9 @@
                 "icon": "launch",
                 "link": "assets/img/Screen-OuterWilds-Robin_Lefebvre.png"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "The Dark Labyrinth",
@@ -271,7 +368,9 @@
                 "icon": "launch",
                 "link": "data/THE-DARK-LABYRINTH.pdf"
             }
-        ]
+        ],
+        "keep": false,
+        "main": false
     },
     {
         "name": "Don't be Fired Simulator",
@@ -301,7 +400,9 @@
                 "icon": "launch",
                 "link": "data/Exercice_Party_Games-Game_design.pdf"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Living Rock",
@@ -332,7 +433,9 @@
                 "icon": "launch",
                 "link": "https://tiosstud.itch.io/living-rock"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Jeu de société MashUp",
@@ -360,7 +463,9 @@
                 "legende": "Exemple de cartes"
             }
         ],
-        "buttons": []
+        "buttons": [],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Niveau d'infiltration GTA",
@@ -382,7 +487,9 @@
                 "icon": "launch",
                 "link": "assets/img/Niveau_Discretion-Gta.png"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Niveau de Mario World",
@@ -404,7 +511,9 @@
                 "icon": "launch",
                 "link": "assets/img/LD-Mario.png"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Chrono Bullet Hell Prototype",
@@ -432,7 +541,9 @@
                 "icon": "launch",
                 "link": "https://purpleluma.itch.io/chrono-bullet-hell"
             }
-        ]
+        ],
+        "keep": false,
+        "main": false
     },
     {
         "name": "Black & White Prototype",
@@ -451,7 +562,9 @@
                 "legende": "Screen du jeu"
             }
         ],
-        "buttons": []
+        "buttons": [],
+        "keep": false,
+        "main": false
     },
     {
         "name": "Cosmic Jack",
@@ -484,7 +597,9 @@
                 "icon": "launch",
                 "link": "https://purpleluma.itch.io/cosmic-jack"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Analyseur de croquettes NicePet",
@@ -501,7 +616,9 @@
                 "legende": "Screen de l'interface web"
             }
         ],
-        "buttons": []
+        "buttons": [],
+        "keep": false,
+        "main": false
     },
     {
         "name": "Lecteur de fichier PLY",
@@ -527,7 +644,9 @@
                 "icon": "launch",
                 "link": "https://github.com/RobLfbv/PLYReader"
             }
-        ]
+        ],
+        "keep": true,
+        "main": false
     },
     {
         "name": "Rope Game Prototype",
@@ -552,6 +671,8 @@
                 "icon": "launch",
                 "link": "https://purpleluma.itch.io/rope-game-prototype"
             }
-        ]
+        ],
+        "keep": false,
+        "main": false
     }
 ]
