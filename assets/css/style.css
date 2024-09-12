@@ -146,7 +146,6 @@ header ul li {
   border-radius: 100%;
   overflow: hidden;
   box-shadow: 0 0.5rem 2rem rgba(134, 177, 211, 0.25);
-  animation: 5s ease-in-out infinite floatingAnimation;
   z-index: -1;
 }
 .big-square * {
