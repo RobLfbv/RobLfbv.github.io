@@ -206,8 +206,8 @@ function focusProject(project) {
     projectModal.appendChild(projectTitle);
     projectModal.appendChild(projectTags);
     projectModal.appendChild(projectDesc);
-    if (project.images && project.images.length > 0) projectModal.appendChild(projectImages);
     if (project.buttons && project.buttons.length > 0) projectModal.appendChild(projectButtons);
+    if (project.images && project.images.length > 0) projectModal.appendChild(projectImages);
     document.querySelector("#project-modal").appendChild(projectModal);
     document.querySelector("#project-modal").style.display = "flex";
 }

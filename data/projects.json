@@ -1,5 +1,31 @@
 [
     {
+        "name": "QBT",
+        "date": "Septembre 2024 à Février 2025",
+        "tags": [
+            "ld",
+            "ta",
+            "dev"
+        ],
+        "img": "assets/img/qbt-mainlogo.png",
+        "description": "QBT est un jeu à la première personne dans lequel on incarne un sujet dans un laboratoire en bichromie qui est capable de changer sa gravité. \nJe suis Level Designer, Technical Artist et Lead Développeur sur le projet. Le jeu est en cours de production, vous pouvez suivre les dev log sur le itch.io si cela vous intéresse.",
+        "images": [
+            {
+                "url": "assets/img/qbt-screen1-wip.png",
+                "legende": "Work in progress de la direction artistique"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://robin-lefebvre.itch.io/anthares"
+            }
+        ],
+        "keep": true,
+        "main": true
+    },
+    {
         "name": "Tekuteku : Fishing Adventure",
         "date": "Avril 2024 à Août 2024",
         "tags": [
@@ -127,7 +153,7 @@
             }
         ],
         "keep": true,
-        "main": true
+        "main": false
     },
     {
         "name": "Game Design Document pour Don't Be Fired !!",
