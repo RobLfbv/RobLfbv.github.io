@@ -146,7 +146,6 @@ header ul li {
   border-radius: 100%;
   overflow: hidden;
   box-shadow: 0 0.5rem 2rem rgba(134, 177, 211, 0.25);
-  z-index: -1;
 }
 .big-square * {
   margin: 0;
@@ -494,6 +493,10 @@ main #mainProjects #mainProjects-list#mainProjects-list .projectMain {
   line-height: 1.7rem;
   margin-top: -0.35rem;
 }
+#project-modal .desc,
+#image-modal .desc {
+  margin-bottom: 0;
+}
 #project-modal .modal,
 #image-modal .modal {
   position: fixed;
@@ -596,7 +599,7 @@ main #mainProjects #mainProjects-list#mainProjects-list .projectMain {
 #project-modal .modal .buttons,
 #image-modal .modal .buttons {
   padding: 1rem 0 0 0;
-  margin: auto 0 0 auto;
+  margin: auto 0 1rem auto;
 }
 
 footer {

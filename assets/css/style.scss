@@ -502,6 +502,10 @@ main {
         }
     }
 
+    .desc 
+    {
+        margin-bottom: 0;
+    }
     .modal {
         position: fixed;
         top: 50%;
@@ -597,7 +601,7 @@ main {
 
         .buttons {
             padding: 1rem 0 0 0;
-            margin: auto 0 0 auto;
+            margin: auto 0 1rem auto;
         }
     }
 }
