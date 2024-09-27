@@ -1,5 +1,78 @@
 [
     {
+        "name": "Tekuteku : Fishing Adventure",
+        "date": "Avril 2024 à Août 2024",
+        "tags": [
+            "ld",
+            "ta"
+        ],
+        "img": "assets/img/TekutekuMain1.png",
+        "description": "Tekuteku : Fishing Adventure est un jeu sur lequel j'ai travaillé en tant que Level Designer, et Technical Artist dans le cadre de la première année de mon master. \n\n Pitch : \"Incarnez un pêcheur capable de prendre le contrôle d’un oiseau et parcourez le monde tout en résolvant des énigmes pour atteindre votre objectif. Partez à la recherche de l’élu qui ne donne plus de nouvelles depuis plusieurs mois.",
+        "images": [
+            {
+                "url": "assets/img/Tekuteku1.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku2.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku3.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku4.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku5.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku6.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku7.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku8.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku9.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku10.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku11.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku12.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/Tekuteku13.png",
+                "legende": "Screenshot du jeu"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://xc3l.itch.io/tekuteku-fishing-adventure"
+            }
+        ],
+        "keep": true,
+        "main": true
+    },
+    {
         "name": "Anthares",
         "date": "Septembre 2023 à Février 2024",
         "tags": [
@@ -141,7 +214,7 @@
             }
         ],
         "keep": true,
-        "main": true
+        "main": false
     },
     {
         "name": "Game Concept pour un Animal Crossing RPG",

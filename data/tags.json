@@ -18,5 +18,9 @@
     {
         "id": "qa",
         "label": "QA Tester"
+    },    
+    {
+        "id": "ta",
+        "label": "Technical Artist"
     }
 ]
