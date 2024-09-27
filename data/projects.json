@@ -19,7 +19,7 @@
             {
                 "name": "Voir le projet",
                 "icon": "launch",
-                "link": "https://robin-lefebvre.itch.io/anthares"
+                "link": "https://robin-lefebvre.itch.io/qbt"
             }
         ],
         "keep": true,
@@ -109,6 +109,11 @@
                 "name": "Voir le projet",
                 "icon": "launch",
                 "link": "https://robin-lefebvre.itch.io/anthares"
+            }, 
+            {
+                "name": "Voir le Game Design Document",
+                "icon": "launch",
+                "link": "data/GDD-Anthares.pdf"
             }
         ],
         "keep": true,
