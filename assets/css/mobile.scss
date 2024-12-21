@@ -49,8 +49,10 @@
     }
 
     .projectMain {
-        width: 100% !important;
+        //width: 100% !important;
 
+        //width: 70%;
+        height: 100%;
         img {
             width: 30% !important;
         }
@@ -64,6 +66,17 @@
         .modal.image-modal {
             width: 90%;
             height: auto;
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .projectMain {
+        width: 100% !important;
+
+        //width: 70%;
+        height: 100%;
+        img {
+            width: 30% !important;
         }
     }
 }

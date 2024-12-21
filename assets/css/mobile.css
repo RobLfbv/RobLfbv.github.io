@@ -37,7 +37,7 @@
     width: 30%;
   }
   .projectMain {
-    width: 100% !important;
+    height: 100%;
   }
   .projectMain img {
     width: 30% !important;
@@ -48,5 +48,14 @@
   #image-modal .modal.image-modal {
     width: 90%;
     height: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .projectMain {
+    width: 100% !important;
+    height: 100%;
+  }
+  .projectMain img {
+    width: 30% !important;
   }
 }/*# sourceMappingURL=mobile.css.map */

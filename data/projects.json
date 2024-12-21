@@ -32,7 +32,7 @@
             "ld",
             "ta"
         ],
-        "img": "assets/img/TekutekuMain1.png",
+        "img": "assets/img/TekutekuMain4.png",
         "description": "Tekuteku : Fishing Adventure est un jeu d'aventure et de pêche se déroulant sur le dos d’une baleine volante dans lequel on incarne un pêcheur de l'espèce des Tekuteku.Sur ce projet,j'ai travaillé en tant que Level Designer et Technical Artist dans le cadre de la première année de mon master.\n J’ai fait la conception du niveau. un assez grand niveau mettant en avant les différents oiseaux du jeu. Le jeu s'axe autour de plusieurs oiseaux contrôlable par le joueur à l'aide d'un autel sur lequel on pose des poissons. J'ai également intégrés avec Unity ce qui m’a appris à utiliser les différents outils que Unity mettait à disposition ainsi que de choisir la meilleure solution pour notre jeu. \n\n Pitch : \"Incarnez un pêcheur capable de prendre le contrôle d’un oiseau et parcourez le monde tout en résolvant des énigmes pour atteindre votre objectif. Partez à la recherche de l’élu qui ne donne plus de nouvelles depuis plusieurs mois.",
        
 

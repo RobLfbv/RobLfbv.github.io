@@ -319,12 +319,10 @@ main #mainProjects .projectMain {
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 }
 main #mainProjects .projectMain img {
-  width: 15rem;
-  height: 8rem;
+  max-width: 17rem;
+  max-height: 16rem;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
   box-shadow: 0.25rem 0 0.5rem rgba(134, 177, 211, 0.75);
 }
 main #mainProjects .projectMain .tags {
@@ -706,7 +704,7 @@ footer {
     width: 30%;
   }
   .projectMain {
-    width: 100% !important;
+    height: 100%;
   }
   .projectMain img {
     width: 30% !important;
@@ -717,5 +715,14 @@ footer {
   #image-modal .modal.image-modal {
     width: 90%;
     height: auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .projectMain {
+    width: 100% !important;
+    height: 100%;
+  }
+  .projectMain img {
+    width: 30% !important;
   }
 }/*# sourceMappingURL=style.css.map */
