@@ -11,8 +11,12 @@
         "description": "QBT est un jeu à la première personne dans lequel on incarne un sujet dans un laboratoire en bichromie qui est capable de changer sa gravité. \nJe suis Level Designer, Technical Artist et Lead Développeur sur le projet. Le jeu est en cours de production, vous pouvez suivre les dev log sur le itch.io si cela vous intéresse.",
         "images": [
             {
-                "url": "assets/img/qbt-screen1-wip.png",
-                "legende": "Work in progress de la direction artistique"
+                "url": "assets/img/qbt-screen1.png",
+                "legende": "Direction artistique de l'intérieur du laboratoire"
+            },            
+            {
+                "url": "assets/img/qbt-screen2.png",
+                "legende": "Direction artistique de l'intérieur du laboratoire"
             }
         ],
         "buttons": [
