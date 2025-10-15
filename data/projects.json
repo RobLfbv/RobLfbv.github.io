@@ -396,6 +396,7 @@
         "tags": [
             "ld"
         ],
+        "type": "Concept",
         "img": "assets/img/L4D2-Jacket.png",
         "description": "Ce travail est un plan de level design pour le jeu Left4Dead 2. L'objectif était de créer une suite de niveau cohérent dans le jeu en groupe.\nNous avons décidé de faire un niveau dans des montagnes car c'est un cadre qui n'est pas utilisé dans le jeu de base et nous pensons que cela peut être un cadre interessant.\n\r\nJe me suis donc occupé de la 2ème partie du niveau. Cette partie correspond à la montée d'une montagne dans un cadre de tempête de neige.\nJ'ai réalisé un document détaillant tout le niveau disponible juste en dessous.",
         "images": [
@@ -593,6 +594,7 @@
         "tags": [
             "ld"
         ],
+        "type": "Concept",
         "img": "assets/img/GTADiscretion-Jacket.png",
         "description": "Ce travail est un plan de level design pour le jeu GTA réalisé dans le cadre d'un cours de Level Design. L'objectif était de faire un niveau d'infiltration pour un jeu d'action aventure, ici, GTA.\n\r\nLe héros se réveille dans une cave. En sortant de cette cave, il arrive dans une maison traditionnelle japonaise controler par des yakuzas. Il va donc devoir s'infiltrer dans cette maison pour trouver un moyen de sortir.\n Deux moyens s'offrent à lui, soit trouver de l'essence et faire brûler un tas de bois inflamable dans le fond du jardin de la résidence afin de s'extirper discrétement une fois toute l'attention sur le tas de bois. Soit il trouve des explosifs pour faire exploser le mur près de la porte afin de s'enfuir. \nAu cours de son parcours, il peut chercher des trésors présents un peu partout dans la maison.",
         "images": [
@@ -617,6 +619,7 @@
         "tags": [
             "ld"
         ],
+        "type": "Concept",
         "img": "assets/img/Mario-Jacket.png",
         "description": "Ce travail est un plan de level design pour le jeu Mario World.\nL'objectif était de prendre une mécanique du jeu et de faire un niveau en l'exploitant.\nLa mécanique que j'ai décidé d'exploiter est le saut sur les ennemis afin de faire des sauts plus hauts.\n\r\nJ'ai donc divisé le niveau en 4 parties. \nTout d'abord la partie apprentissage qui met le joueur dans un cadre où il peut difficilement mourir afin qu'il apprenne la mécanique. \nEnsuite la partie application dans laquelle j'ai essayé d'appliquer la mécanique à plusieurs cas différents. \nPuis la partie twist dans laquelle j'ai essayé de prendre la mécanique à revers, à la place de sauter il faut gérer son saut pour éviter d'aller trop haut sous peine de se faire toucher par des piques. \nPour finir, la partie maîtrise plus complexe qui demande vitesse et adresse au joueur.",
         "images": [
