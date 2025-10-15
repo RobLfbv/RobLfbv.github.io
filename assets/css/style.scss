@@ -1,9 +1,39 @@
 @use "sass:color";
 @import "fonts.scss";
-$white: #DFE4E4;
-$gray: #142736;
-$cyan: #6099c6;
+//$gray: #142736;
+//$cyan: #6099c6;
+
 $red: #c04d4d;
+//$MainColor : #6099c6;
+$MainColor : #2379bb;
+$SecondColor : #142736;
+$ButtonHoverColor : rgb(53, 100, 136);
+$AColor : #DFE4E4;
+$AHoverColor : #DFE4E4;
+$IconColor : #DFE4E4;
+$ButtonCV: #BB6523;
+$ButtonHoverCV: #a55c23;
+$BoxShadow: #142736;
+$TextColor : #DFE4E4;
+$ProjectTextColor : #142736;
+$BackgroundColor : #142736;
+$ProjectColor : #DFE4E4;
+
+:root {
+    --visible-items: 4.5;
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --visible-items: 2.5;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        --visible-items: 1.5;
+    }
+}
 
 html,
 body {
@@ -20,43 +50,67 @@ body {
 }
 
 body {
-    background: url(../img/bg.svg);
+    background: url(../img/bg.png);
+    background-color: $BackgroundColor;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    color: white;
+    color: $TextColor;
 }
 
 header,
 footer {
     display: flex;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    z-index: 10;
 }
 
 b {
-    color: $cyan;
+    color: $MainColor;
 }
 
 a {
-    color: white;
+    color: $TextColor;
     text-decoration: none;
     transition: 200ms ease-in-out color;
 
     .active {
-        color: $cyan;
+        color: $MainColor;
     }
 
     &:hover {
-        color: color.adjust($cyan, $lightness: -5%);
+        color: color.adjust($MainColor, $lightness: -5%);
+    }
+}
+
+#profil,
+#contact {
+    font-size: 1.1rem;
+}
+
+#contact>p>b>a {
+    color: $MainColor;
+    text-decoration: underline;
+    &:hover {
+        color:$TextColor;
+    }
+}
+
+#profil,
+#contact,
+#mainProjects,
+#projects {
+    &>h2 {
+        font-size: 2.5rem;
     }
 }
 
 button,
 a.button {
-    background: $cyan;
-    color: white;
+    background: $MainColor;
+    color: $TextColor;
     border: none;
     border-radius: .5rem;
     padding: .5rem 1rem;
@@ -69,18 +123,18 @@ a.button {
     font-size: .9rem;
 
     &:hover {
-        background: color.adjust($cyan, $lightness: -5%);
+        background: color.adjust($ButtonHoverColor, $lightness: -5%);
         box-shadow: 0 .25rem .55rem rgba(0, 0, 0, .3);
         cursor: pointer;
     }
 
     &.icon {
-        color: $cyan;
-        background: white;
+        color: $MainColor;
+        background: $IconColor;
         padding: .5rem .75rem;
 
         &:hover {
-            background: color.adjust($white, $alpha: -.25);
+            background: color.adjust($TextColor, $alpha: -.25);
         }
     }
 }
@@ -90,6 +144,18 @@ a.button {
     column-gap: .5rem;
     flex-wrap: wrap;
     row-gap: .5rem;
+    margin-top: 1rem;
+}
+
+.cv {
+    .button {
+        background-color: $ButtonCV;
+        color: $TextColor;
+    }
+
+    .button:hover {
+        background: color.adjust($ButtonHoverCV, $lightness: -5%);
+    }
 }
 
 header {
@@ -98,16 +164,23 @@ header {
     justify-content: space-between;
     left: 50%;
     transform: translateX(-50%);
-    padding: 1rem 2rem;
-    background: $gray;
-    border-radius: 0 0 3rem 3rem;
-    box-shadow: 0 0 2rem 2rem #142736;
+    //padding: 1rem 2rem;
+    padding-left: 5%;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    padding-right: 5%;
+    background: $SecondColor;
+    box-shadow: 0 0 2rem 2.5rem $BoxShadow;
+    height: 10%;
+    align-items: center;
+    border-radius: 0% 0% 0.5rem 0.5rem;
 
     ul {
         list-style: none;
         display: flex;
         column-gap: 2rem;
         align-items: center;
+        padding: 0;
 
         li {
             padding: 0;
@@ -116,12 +189,12 @@ header {
 }
 
 .big-square {
-    border: solid 3px $cyan;
+    border: solid 3px $MainColor;
     width: 20rem;
 
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0.5rem 2rem color.adjust($cyan, $alpha: -.75, $lightness: 10%);
+    box-shadow: 0 0.5rem 2rem color.adjust($MainColor, $alpha: -.75, $lightness: 10%);
 
     * {
         margin: 0;
@@ -142,6 +215,10 @@ header {
     display: flex;
     flex-direction: column;
 
+    p {
+        font-size: 1.5rem;
+    }
+
     &.text {
         background: white;
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
@@ -159,8 +236,17 @@ main {
     row-gap: 1rem;
     padding-top: 8rem;
 
-    h2.title {
+    /*    h2.title {
         margin: 1.5rem 0 .5rem 0;
+    }
+    */
+    .socials {
+        margin-top: 0.7rem;
+
+        img {
+            height: 1.5rem;
+            fill: white;
+        }
     }
 
     #home {
@@ -187,7 +273,7 @@ main {
 
                 &:first-child {
                     margin: 0 0 -.75rem 0;
-                    color: color.adjust($cyan, $lightness: -20%);
+                    color: color.adjust($MainColor, $lightness: 20%);
                 }
 
                 max-width: 40rem;
@@ -195,204 +281,168 @@ main {
         }
     }
 
+    #mainProjects,
     #projects {
-        .tag:hover {
-            cursor: pointer;
-            box-shadow: 0 0.35rem 0.25rem rgb(0 0 0 / 20%);
-        }
-
-        .project {
-            display: flex;
-            min-width: 20rem;
-            width: fit-content;
-            height: fit-content;
-            border-radius: .5rem;
-            padding: 1rem 1.5rem;
-            column-gap: 1rem;
-            background: white;
-            color: $gray;
-            box-shadow: 0 .25rem .25rem rgba(0, 0, 0, .2);
-            align-items: center;
-            transition: 200ms ease-in-out box-shadow;
-            animation: project-appear 300ms cubic-bezier(0.4, 0, 0.2, 1);
-
-            img {
-                width: 4rem;
-                height: 4rem;
-                object-fit: cover;
-                object-position: center;
-                border-radius: 100%;
-                margin: auto 0;
-            }
-
-            .text {
-                display: flex;
-                flex-direction: column;
-
-                .title {
-                    margin: 0;
-                }
-
-                .date {
-                    margin: 0;
-                    margin-top: 0.5rem;
-                }
-            }
-
-            .tags {
-                display: flex;
-                column-gap: .5rem;
-                row-gap: .25rem;
-                padding-top: .25rem;
-                flex-wrap: wrap;
-
-                .tag {
-                    color: white;
-                    background: $gray;
-                    font-size: .8rem;
-                    padding: .35rem .75rem;
-
-                    &.active {
-                        background: $cyan;
-                        box-shadow: 0 0.25rem 0.25rem color.adjust($cyan, $alpha: -.25, $lightness: 10%);
-                    }
-                }
-            }
-
-            &:hover {
-                cursor: pointer;
-                box-shadow: 0 .35rem .25rem rgba(0, 0, 0, .3);
-            }
-        }
-
-        .empty-projects {
-            padding: 1rem 0 0 0;
-            display: flex;
-            width: 100%;
-            animation: project-appear 300ms cubic-bezier(0.4, 0, 0.2, 1);
-
-            p {
-                margin: 0;
-            }
-        }
-
-        #tags-list,
-        #projects-list {
-            display: flex;
-            flex-wrap: wrap;
-            column-gap: 0.5rem;
-            row-gap: 0.5rem;
-
-            &#projects-list {
-                display: grid;
-                grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-                margin-top: .5rem;
-                min-height: 8rem;
-
-                .project {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
+        position: relative;
+        max-width: 100%;
     }
 
-    #mainProjects {
-        .projectMain:hover {
+    .nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: $MainColor;
+        color: $TextColor;
+        border: none;
+        padding: 0.5rem 1.25rem;
+        cursor: pointer;
+        border-radius: 0.5rem;
+        font-size: 1.5rem;
+        z-index: 1;
+        transition: background 0.2s ease;
+    }
+
+    .nav-btn:hover {
+        background: $ButtonHoverColor;
+    }
+
+    .nav-btn.left {
+        left: 0.5rem;
+    }
+
+    .nav-btn.right {
+        right: 0.5rem;
+    }
+
+    #mainProjects-list,
+    #projects-list {
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: calc((100% - (var(--visible-items) - 1) * 1rem) / var(--visible-items));
+        gap: 1rem;
+        overflow-x: auto;
+        //scroll-snap-type: x proximity;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+        padding-left: 0rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        margin: auto;
+    }
+
+    #mainProjects-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    #projects-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .tags-list {
+        display: inline-flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        img {
+            width: 2rem;
+        }
+
+        margin-bottom: 0.5rem;
+    }
+
+
+    .projectMain,
+    .project {
+        background-color: $ProjectColor;
+        color: $ProjectTextColor;
+        border-radius: 1rem;
+        overflow: hidden;
+        position: relative;
+        box-sizing: border-box;
+        z-index: 0;
+        transition: opacity 0.2s ease;
+        transition: scale 0.1s ease;
+        scroll-snap-align: start;
+
+        &:hover {
             cursor: pointer;
-            box-shadow: 0 0.35rem 0.25rem rgb(0 0 0 / 20%);
+            scale: 1.01;
+            box-shadow: $BoxShadow;
         }
 
-        .projectMain {
-            display: flex;
-            width: 50%;
-            height: 12rem;
-            border-radius: .5rem;
-            background: white;
-            color: $gray;
-            overflow: hidden;
-            box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .2);
-
-            img {
-                //width: auto;
-                //height: auto;
-                max-width: 17rem;
-                max-height: 16rem;
-                object-fit: cover;
-
-                //object-position: center;
-                box-shadow: .25rem 0 .5rem color.adjust($cyan, $alpha: -.25, $lightness: 10%);
-            }
-
-            .tags {
-                display: flex;
-                column-gap: .5rem;
-                row-gap: .25rem;
-                padding-top: .25rem;
-                flex-wrap: wrap;
-
-                .tag {
-                    color: white;
-                    background: $gray;
-                    font-size: .8rem;
-                    padding: .35rem .75rem;
-
-                    &.active {
-                        background: $cyan;
-                        box-shadow: 0 0.25rem 0.25rem color.adjust($cyan, $alpha: -.25, $lightness: 10%);
-                    }
-                }
-            }
-
-
-            .text {
-                display: flex;
-                flex-direction: column;
-                padding: 1rem 0 1rem 1rem;
-                border-left: solid .5px color.adjust($cyan, $alpha: -.25, $lightness: 10%);
-
-                .title {
-                    margin: 0;
-                }
-
-                p {
-                    margin: 0 0 1rem 0;
-                }
-
-                .buttons {
-                    margin: auto 0 0 0;
-                }
-            }
+        .imgDiv {
+            position: relative;
+            justify-content: center;
         }
 
-        .empty-projects {
-            padding: 1rem 0 0 0;
-            display: flex;
+        img {
             width: 100%;
-            animation: project-appear 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
 
-            p {
-                margin: 0;
+        .type {
+            position: absolute;
+            bottom: 0%;
+            background-color: $SecondColor;
+            color: $TextColor;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            padding: 0.15rem 0.7rem 0.15rem 0.7rem;
+            border-radius: 0.5rem;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            //font-size: max(1.25rem, 16px);
+            //font-size: 16px;
+            text-align: center;
+            height: 2.5rem;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+        }
+
+        @media screen and (max-width: 1600px) {
+            .title {
+                font-size: 1.1rem;
             }
         }
 
-        #tags-list,
-        #mainProjects-list {
+        @media screen and (max-width: 1000px) {
+            .title {
+                font-size: 1rem;
+            }
+        }
+
+        .desc {
+            font-size: 0.85rem;
+            text-align: center;
+            margin-top: 0.75rem;
+        }
+
+        .text {
+            margin-top: 0.25rem;
+        }
+
+        .tags {
+            position: absolute;
+            top: 1%;
+            left: 2%;
             display: flex;
+            gap: 0.2rem;
             flex-wrap: wrap;
-            column-gap: 0.5rem;
-            row-gap: 0.5rem;
+        }
 
-            &#mainProjects-list {
-                display: flex;
-                grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
-                margin-top: .5rem;
-                min-height: 8rem;
+        .tag {
+            font-size: 0.7rem;
+            background-color: $TextColor;
+            color: $SecondColor;
+            color: #000;
+            width: fit-content;
+            border-radius: .5rem;
 
-                .projectMain {
-                    width: 50%;
-                    height: 100%;
-                }
+            &:hover {
+                cursor: default;
+                background-color: $TextColor;
             }
         }
     }
@@ -400,27 +450,28 @@ main {
 
 .card {
     display: flex;
-    width: 50%;
-    height: 12rem;
+    width: fit-content;
+    height: fit-content;
     border-radius: .5rem;
     background: white;
-    color: $gray;
+    color: $SecondColor;
     overflow: hidden;
     box-shadow: 0 .25rem .5rem rgba(0, 0, 0, .2);
+    padding-right: 1rem;
 
     img {
         width: 50%;
         height: 100%;
         object-fit: cover;
         object-position: center;
-        box-shadow: .25rem 0 .5rem color.adjust($cyan, $alpha: -.25, $lightness: 10%);
+        box-shadow: .25rem 0 .5rem color.adjust($MainColor, $alpha: -.25, $lightness: 10%);
     }
 
     .content {
         display: flex;
         flex-direction: column;
         padding: 1rem 0 1rem 1rem;
-        border-left: solid .5px color.adjust($cyan, $alpha: -.25, $lightness: 10%);
+        border-left: solid .5px color.adjust($MainColor, $alpha: -.25, $lightness: 10%);
 
         .title {
             margin: 0;
@@ -436,30 +487,37 @@ main {
     }
 }
 
+
 .tag {
-    background: white;
-    color: $gray;
+    background: $MainColor;
+    color: $TextColor;
     padding: .4rem 1rem;
     font-size: .95rem;
     border-radius: .5rem;
     box-shadow: 0 0.25rem 0.25rem rgb(0 0 0 / 10%);
     transition: 200ms ease-in-out box-shadow, 200ms ease-in-out background, 200ms ease-in-out color;
+    width: fit-content;
 
     &.active {
-        background: $cyan;
+        background: $MainColor;
         color: white;
-        box-shadow: 0 0.35rem 0.25rem color.adjust($gray, $alpha: -.25);
+        box-shadow: 0 0.35rem 0.25rem color.adjust($SecondColor, $alpha: -.25);
     }
 
     &::selection {
         background: transparent;
     }
+
+    &:hover {
+        cursor: pointer;
+        background-color: $ButtonHoverColor;
+    }
 }
 
 #project-modal,
 #image-modal {
-    background: color.adjust($gray, $alpha: -.05);
-    color: $gray;
+    background: color.adjust($SecondColor, $alpha: -.05);
+    color: $SecondColor;
     position: fixed;
     top: 0;
     left: 0;
@@ -503,23 +561,23 @@ main {
         }
     }
 
-    .desc 
-    {
+    .desc {
         margin-bottom: 0;
     }
+
     .modal {
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: white;
+        background: rgb(255, 255, 255);
         border-radius: .5rem;
         box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .2);
         padding: 1rem 2rem;
-        width: 75%;
-        min-height: 40%;
+        width: 90%;
+        min-height: 50%;
         height: fit-content;
-        max-height: 80%;
+        max-height: 90%;
         overflow-y: auto;
         overflow-x: hidden;
         display: flex;
@@ -564,7 +622,7 @@ main {
 
             .tag {
                 color: white;
-                background: $gray;
+                background: $SecondColor;
                 font-size: .8rem;
                 padding: .35rem .75rem;
 
@@ -595,7 +653,7 @@ main {
                 &:hover {
                     transform: translateY(-.5%);
                     cursor: pointer;
-                    box-shadow: 0 .35rem .25rem color.adjust($cyan, $alpha: -.25, $lightness: 10%);
+                    box-shadow: 0 .35rem .25rem color.adjust($MainColor, $alpha: -.25, $lightness: 10%);
                 }
             }
         }
@@ -610,9 +668,9 @@ main {
 footer {
     padding: 4rem 0 3rem 0;
     justify-content: center;
-    background: linear-gradient(180deg, transparent, color.adjust($gray, $alpha: -.2) 90%);
+    background: linear-gradient(180deg, transparent, color.adjust($SecondColor, $alpha: -.2) 90%);
     width: 100%;
-    color: color.adjust($cyan, $lightness: -10%);
+    color: color.adjust($MainColor, $lightness: -10%);
 }
 
 @keyframes project-appear {

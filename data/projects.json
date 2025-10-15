@@ -1,23 +1,40 @@
 [
     {
         "name": "QBT",
-        "date": "Septembre 2024 à Février 2025",
+        "date": "Sept. 2024 à Fév. 2025",
+        "period": "6 mois",
+        "year": "2024/2025",
         "tags": [
             "ld",
             "ta",
             "dev"
         ],
-        "img": "assets/img/qbt-mainlogo.png",
-        "description": "QBT est un jeu à la première personne dans lequel on incarne un sujet dans un laboratoire en bichromie qui est capable de changer sa gravité. \nJe suis Level Designer, Technical Artist et Lead Développeur sur le projet. Le jeu est en cours de production, vous pouvez suivre les dev log sur le itch.io si cela vous intéresse.",
+        "contexte": "Universitaire",
+        "type": "Universitaire",
+        "img": "assets/img/JacketQBT.png",
+        "smalldesc": "Jeu de puzzle narratif",
+        "description": "QBT est un jeu à la première personne dans lequel on incarne un sujet dans un laboratoire en bichromie qui est capable de changer sa gravité. \nJ'étais Level Designer, Level Artist, Technical Artist et Lead Développeur sur le projet. Nous avons pu présenter le jeu au Festival international du Jeu de 2025 à Cannes.\n\n Le jeu présente actuellement une dizaine de niveaux terminé, mais nous avons encore quelques niveaux qui n'ont pas eu le temps d'être terminé. C'est pourquoi nous allons encore travailler sur QBT pour pouvoir présenter une expérience complète la plus proche de ce que nous avions imaginé.",
         "images": [
-            {
-                "url": "assets/img/qbt-screen1.png",
-                "legende": "Direction artistique de l'intérieur du laboratoire"
-            },            
-            {
-                "url": "assets/img/qbt-screen2.png",
-                "legende": "Direction artistique de l'intérieur du laboratoire"
-            }
+                {
+                    "url": "assets/img/qbt-1.png",
+                    "legende": ""
+                },
+                {
+                    "url": "assets/img/qbt-2.png",
+                    "legende": ""
+                },
+                {
+                    "url": "assets/img/qbt-3.png",
+                    "legende": ""
+                },
+                {
+                    "url": "assets/img/qbt-4.png",
+                    "legende": ""
+                },
+                {
+                    "url": "assets/img/qbt-5.png",
+                    "legende": ""
+                }
         ],
         "buttons": [
             {
@@ -27,7 +44,7 @@
             }
         ],
         "keep": true,
-        "main": true
+        "jeux": true
     },
     {
         "name": "Tekuteku : Fishing Adventure",
@@ -36,10 +53,10 @@
             "ld",
             "ta"
         ],
-        "img": "assets/img/TekutekuMain4.png",
+        "type": "Universitaire",
+        "img": "assets/img/Tekuteku-Jacket.png",
+        "smalldesc": "Jeu d'aventure et de pêche",
         "description": "Tekuteku : Fishing Adventure est un jeu d'aventure et de pêche se déroulant sur le dos d’une baleine volante dans lequel on incarne un pêcheur de l'espèce des Tekuteku.Sur ce projet,j'ai travaillé en tant que Level Designer et Technical Artist dans le cadre de la première année de mon master.\n J’ai fait la conception du niveau. un assez grand niveau mettant en avant les différents oiseaux du jeu. Le jeu s'axe autour de plusieurs oiseaux contrôlable par le joueur à l'aide d'un autel sur lequel on pose des poissons. J'ai également intégrés avec Unity ce qui m’a appris à utiliser les différents outils que Unity mettait à disposition ainsi que de choisir la meilleure solution pour notre jeu. \n\n Pitch : \"Incarnez un pêcheur capable de prendre le contrôle d’un oiseau et parcourez le monde tout en résolvant des énigmes pour atteindre votre objectif. Partez à la recherche de l’élu qui ne donne plus de nouvelles depuis plusieurs mois.",
-       
-
         "images": [
             {
                 "url": "assets/img/TekutekuMain1.png",
@@ -78,17 +95,20 @@
             }
         ],
         "keep": true,
-        "main": true
+        "jeux": true
     },
     {
         "name": "Anthares",
-        "date": "Septembre 2023 à Février 2024",
+        "date": "Sept. 2023 à Fév. 2024",
         "tags": [
             "gd",
             "ld",
-            "qa"
+            "qa",
+            "dev"
         ],
-        "img": "assets/img/anthares-mainlogo.png",
+        "type": "Universitaire",
+        "img": "assets/img/Anthares-Jacket.png",
+        "smalldesc": "Platforme figther cyberfuturiste",
         "description": "Anthares est un jeu sur lequel j'ai travaillé en tant que Game Designer, Level Designer et QA Tester dans le cadre de la première année de mon master. J’ai pu réaliser le Game Design Document ainsi que les différents Documents de Spécification ainsi que Level Design du jeu. J’ai également équilibré les différentes attaques, les déplacements et les pièges. En tant que QA Tester, j’ai réalisé des procédures de test à suivre à chaque build, de nombreux tickets ainsi que la mise en place du Jira sur lequel on les a répertorié. \n\n Pitch : \"Dans un univers futuriste où chacun utilise la cyber-technologie, participez au grand tournoi Anthares organisé par The Talos Conglomerate. Affrontez vous en local avec des personnages aux compétences uniques et battez votre adversaire lors d’un 1 contre 1 dynamique et fluide dans une arène remplie de pièges et devenez une légende du show-bizness !\" \n\n Lors de la réalisation de ce projet nous avions plusieurs objectifs en tête: \n- Tout d'abord que le jeu soit hype, pour se faire nous avons intégré un système obligeant les joueurs à tuer avec une attaque moyenne ou lourde ce qui l'oblige à prendre des risques. \n - Ensuite, d'avoir une mécanique particulière et plus ou moins différente des autres jeux de combats, ce qui représenterait notre Key Selling Point. Nous avons décidé de choisir les pièges permettant de mettre un accent fort sur la carte qui représente aussi un danger pour le joueur. \n - Pour finir, nous voulions avoir un jeu avec une ambiance forte du show-business futuriste pour rendre notre jeu plus marquant par son univers.",
         "images": [
             {
@@ -113,7 +133,7 @@
                 "name": "Voir le projet",
                 "icon": "launch",
                 "link": "https://robin-lefebvre.itch.io/anthares"
-            }, 
+            },
             {
                 "name": "Voir le Game Design Document",
                 "icon": "launch",
@@ -121,16 +141,17 @@
             }
         ],
         "keep": true,
-        "main": true
+        "jeux": true
     },
     {
         "name": "Pafia Masta",
-        "date": "Janvier 2024 à Mars 2024",
+        "date": "Jan. 2024 à Mars 2024",
         "tags": [
             "dev",
             "gd"
         ],
-        "img": "assets/img/pafiamasta-mainlogo.png",
+        "type": "Universitaire",
+        "img": "assets/img/PafiaMasta-Jacket.png",
         "description": "Pafia Masta est un jeu sur lequel j'ai travaillé en tant que Développeur et Game Designer dans le cadre de la première année de mon master. \n Pitch : \"Un crime affreux a eu lieu dans le Pasta Village, quelqu’un a empoisonné la Carbonara Piscine avec de la crème fraîche 🤮 ! En tant que Gnocchi Détective la plus reconnue, interrogez les habitants, rendez leur un service, découvrez leurs routines, et trouvez le coupable !\" \n\n Pafia Masta est un jeu narratif et une murder party dans laquelle le joueur va devoir participer à plusieurs mini-jeux, résoudre des énigmes et parler avec les habitants pour savoir qui est la personne qui à empoisonné la Carbonara Piscine. ",
         "images": [
             {
@@ -162,15 +183,16 @@
             }
         ],
         "keep": true,
-        "main": false
+        "jeux": true
     },
     {
-        "name": "Game Design Document pour Don't Be Fired !!",
+        "name": "Game Concept et GDD - Don't Be Fired !!",
         "date": "Avril 2023",
         "tags": [
             "gd"
         ],
-        "img": "assets/img/logo-gdd-firedsimu.png",
+        "type": "Document",
+        "img": "assets/img/dontbefired-Jacket.png",
         "description": "Ce travail est un Game Design Document de Don't Be Fired !! que j'ai réalisé basé sur le Game Concept du jeu",
         "images": [
             {
@@ -186,16 +208,17 @@
             }
         ],
         "keep": true,
-        "main": false
+        "jeux": false
     },
     {
         "name": "Booom!",
-        "date": "Janvier 2023 à Mars 2023",
+        "date": "Jan. 2023 à Mars 2023",
         "tags": [
             "dev",
             "gd"
         ],
-        "img": "assets/img/Booom-logo.png",
+        "type": "Universitaire",
+        "img": "assets/img/Booom-Jacket.png",
         "description": "Booom! est un jeu que j'ai réalisé en équipe pour le projet de fin d'études de notre licence professionnelle métier du jeu vidéo parcours Game design et Level design. Nous étions une équipe de 5 et j'étais développeur et Game designer. \r\n\r\n  Le pitch :\"La vie sur Terre se déroule paisiblement ne se doutant pas qu'un astéroïde fonce tout droit sur elle ! Vous incarnez cet astéroïde faisant sa course vers la Terre tout en accumulant des débris pour gagner en masse et en vitesse afin de faire un maximum de dégâts à la planète !\" \r\n\r\n Nous avons pensé ce jeu comme étant \"juicy\", fun et simple à jouer avec une forte inspiration des jeux flashs et des références d'autres univers avec des débris spéciaux. \r\n Nous avons eu 8 semaines de la conception à la réalisation. Ce fut une expérience très intéressante qui m'a permis de m'améliorer en Game Design et en développement Unity. C'est également une expérience qui m'a permis de voir l'importance de la communication et de l'organisation dans un groupe afin de mener le projet à bien.",
         "images": [
             {
@@ -227,15 +250,16 @@
             }
         ],
         "keep": true,
-        "main": false
+        "jeux": true
     },
     {
-        "name": "Game Concept pour un Animal Crossing RPG",
-        "date": "Février 2023",
+        "name": "Game Concept - Animal Crossing RPG",
+        "date": "Fév. 2023",
         "tags": [
             "gd"
         ],
-        "img": "assets/img/ACNH-RPG.png",
+        "type": "Document",
+        "img": "assets/img/AC-Jacket.png",
         "description": "Ce travail est un Game Concept que nous avons produit en groupe de 3 dans le cadre d'une évaluation qui nous demandait de faire un game concept pour Animal Crossing New Horizon en version RPG.",
         "images": [
             {
@@ -251,15 +275,16 @@
             }
         ],
         "keep": true,
-        "main": false
+        "jeux": false
     },
     {
-        "name": "Document de spécification d'une mécanique de craft de Cube World",
-        "date": "Février 2023",
+        "name": "Document de spécification : Mécanique de craft - Cube World",
+        "date": "Fév. 2023",
+        "type": "Document",
         "tags": [
             "gd"
         ],
-        "img": "assets/img/Doc-spe-craft.png",
+        "img": "assets/img/CubeWorld-Jacket.png",
         "description": "Ce travail est un Document de Spécification que j'ai produit dans le cadre d'une évaluation qui nous demandait de faire un document de spécification sur une mécanique de craft, j'ai pris la mécanique de craft de Cube World.",
         "images": [
             {
@@ -275,16 +300,17 @@
             }
         ],
         "keep": true,
-        "main": false
+        "jeux": false
     },
     {
         "name": "Cours-Je ?",
-        "date": "Février 2023",
+        "date": "Fév. 2023",
         "tags": [
             "dev",
             "gd"
         ],
-        "img": "assets/img/cours-je-1.png",
+        "img": "assets/img/CoursJe-Jacket.png",
+        "type": "GameJam",
         "description": "Cours-je? est un jeu que j'ai réalisé 2 semaines après la Global Game Jam 2023 avec une équipe de 4 personnes. J'avais pour rôle développeur. Le thème de cette Game Jam était \"Root\". Nous sommes donc partis sur les plantes et le reggae roots. \r\n\r\n Le pitch : \"Vous incarnez un hippie qui doit collecter des courges et de drôles d'herbes depuis son terrain à pousse super rapide afin d'éviter la pauvreté.\".\r\n\r\nCe fut une expérience très intéressante et enrichissante en tant que développeur et Game designer. Étant la personne qui développait le jeu, j'étais en contact en permanence avec les autres membres de l'équipe pour faire un jeu le plus proche possible de ce qu'on avait imaginé. De plus, j'ai beaucoup appris sur la communication entre Game Designer et développeur, car je me suis assez vite rendu compte des problèmes que pouvait rencontrer un développeur lorsque, par exemple, le document de spécification n'était pas assez détaillé. J'ai donc pu en tirer des leçons sur la manière dont je dois rédiger ce genre de document.",
         "images": [
             {
@@ -316,15 +342,16 @@
             }
         ],
         "keep": true,
-        "main": false
+        "jeux": true
     },
     {
         "name": "Niveau réalisé sur Unreal Engine",
-        "date": "Janvier 2023",
+        "date": "Jan. 2023",
         "tags": [
             "ld"
         ],
-        "img": "assets/img/Niveau_froide_vengeance.png",
+        "img": "assets/img/VengeanceFroide-Jacket.png",
+        "type": "Concept",
         "description": "J'ai réalisé un niveau dans le cadre d'un Workshop de Level Design sur Unreal Engin organisé dans ma licence pro métier du jeu vidéo afin d'apprendre Unreal Engine tout en mettant en pratique nos connaissances en Level Design. L'objectif était de réaliser un niveau d'A à Z sur Unreal Engine. Il fallait intégrer une phase de combat et une phase d'infiltration. J'ai donc tout d'abord cherché un thème, je suis partie sur le médiéval avec une protagoniste voleuse utilisant une arbalète pour se défendre.\n\n Je suis ensuite partie sur un contexte permettant de développer le pourquoi du comment le personnage qu'on incarne est ici : \n\n\"Voleur de profession, notre personnage vit de prime grâce au vol commandité par des riches, des pauvres mais aussi des groupes de parias, de roublards ou encore de bandits. Elle est dans les petits papiers de tout le monde et elle en a payé le prix fort. En effet, lors d’une affaire de vol qui a mal tourné, elle s’est fait repérer par un groupe de bandits qu’elle était en train de voler. Ce n’est pas resté sans conséquence, le connaissant un peu trop bien, ils ont décidé de se venger en tuant son petit frère.\"\n\nCe qui m'a permie de tirer un titre pour mon niveau : \"Vengeance Froide\" et c'est la ligne directrice que j'ai suivie dans ce niveau. ",
         "images": [
             {
@@ -356,15 +383,15 @@
             }
         ],
         "keep": true,
-        "main": false
+        "jeux": true
     },
     {
         "name": "Niveau de Left4Dead 2",
-        "date": "Décembre 2022",
+        "date": "Déc. 2022",
         "tags": [
             "ld"
         ],
-        "img": "assets/img/left4dead-plan-partie2-Robin_Lefebvre.png",
+        "img": "assets/img/L4D2-Jacket.png",
         "description": "Ce travail est un plan de level design pour le jeu Left4Dead 2. L'objectif était de créer une suite de niveau cohérent dans le jeu en groupe.\nNous avons décidé de faire un niveau dans des montagnes car c'est un cadre qui n'est pas utilisé dans le jeu de base et nous pensons que cela peut être un cadre interessant.\n\r\nJe me suis donc occupé de la 2ème partie du niveau. Cette partie correspond à la montée d'une montagne dans un cadre de tempête de neige.\nJ'ai réalisé un document détaillant tout le niveau disponible juste en dessous.",
         "images": [
             {
@@ -384,7 +411,7 @@
     },
     {
         "name": "Première de magazine inspiré d'un jeu",
-        "date": "Décembre 2022",
+        "date": "Déc. 2022",
         "tags": [
             "2d"
         ],
@@ -404,11 +431,11 @@
             }
         ],
         "keep": false,
-        "main": false
+        "jeux": false
     },
     {
         "name": "Screen modifié venant d'un jeu",
-        "date": "Décembre 2022",
+        "date": "Déc. 2022",
         "tags": [
             "2d"
         ],
@@ -428,11 +455,11 @@
             }
         ],
         "keep": false,
-        "main": false
+        "jeux": false
     },
     {
         "name": "The Dark Labyrinth",
-        "date": "Novembre 2022",
+        "date": "Nov. 2022",
         "tags": [
             "gd"
         ],
@@ -456,11 +483,11 @@
             }
         ],
         "keep": false,
-        "main": false
+        "jeux": false
     },
     {
         "name": "Don't be Fired Simulator",
-        "date": "Novembre 2022",
+        "date": "Nov. 2022",
         "tags": [
             "gd"
         ],
@@ -487,17 +514,18 @@
                 "link": "data/Exercice_Party_Games-Game_design.pdf"
             }
         ],
-        "keep": true,
-        "main": false
+        "keep": false,
+        "jeux": false
     },
     {
         "name": "Living Rock",
-        "date": "Octobre 2022",
+        "date": "Oct. 2022",
         "tags": [
             "ld",
             "gd"
         ],
-        "img": "assets/img/LivingRock.png",
+        "img": "assets/img/LivingRock-Jacket.png",
+        "type": "GameJam",
         "description": "Living Rock est un jeu que j'ai réalisé avec une équipe de 7 personnes en tant que Level Designer/Game Designer lors de l'UniJam 2022 en un weekend. Le thème de l'Unijam était \"La distance rend toute chose infiniment plus précieuse\". \n\r\n L'idée de base était de réaliser un jeu de combat qui utilise la distance avec un élément pour certaines mécaniques. Mais ayant peur que ça soit une charge de travail trop importante nous nous sommes dirigés vers un jeu à énigme.\n\r\n Nous incarnons donc un personnage qui se voit lié à un cristal, s'il s'éloigne de trop il meurt, il va donc devoir le prendre avec lui à tout moment. Il va pouvoir utiliser le cristal pour résoudre des énigmes.\n\r\n Nous avons donc commencé à travailler sur le Game Concept afin de trouver les mécaniques les plus interessantes à réaliser dans le jeu. Nous avons travaillé à deux sur cette partie-là, j'avais un rôle de support puisque ma fonction principale était le Level Design.\n Une fois les mécaniques et le game concept terminés le Game Designer de l'équipe a commencé à faire le Game Document allant plus précisément dans les détails et moi j'ai commencé à faire le Level Design.\n\r\n Le Level Design a été un vrai défi pour moi puisque je n'avais jamais fait de niveau à énigmes et cela a été une vraie gymnastique d'esprit de faire des niveaux cohérents, montant en difficulté sans que ça soit trop complexe. J'ai cherché à utiliser les mécaniques en lien avec le cristal au maximum afin de rendre ça le plus intéressant possible. On avait également pensé à des mécaniques jouant avec la visibilité ou encore un niveau consacré uniquement à une mécanique de téléportation influençant le cristal mais nous n'avons pas eu le temps d'intégrer ces niveaux. Cette Game Jam fut très intéressante car c'était la première fois que j'en faisais une en équipe et j'ai beaucoup appris en ce qui concerne le travail d'équipe mais également en Level Design.\n",
         "images": [
             {
@@ -521,15 +549,16 @@
             }
         ],
         "keep": true,
-        "main": false
+        "jeux": true
     },
     {
         "name": "Jeu de société MashUp",
-        "date": "Octobre 2022",
+        "date": "Oct. 2022",
         "tags": [
             "gd"
         ],
-        "img": "assets/img/mashup1.jpg",
+        "img": "assets/img/Mashup-Jacket.png",
+        "type": "GameJam",
         "description": "MashUp est un jeu de société que nous avons prototypé en 1 semaine. En effet, dans le cadre de ma formation, une Game Jam de jeux de société était organisée. L'objectif était de réaliser un prototype de jeu de société en 1 semaine avec pour thème \"The more you have the worst it gets\". \n\n J'ai travaillé sur MashUp principalement en tant que Game Designer, nous avons réfléchi le jeu afin qu'il soit fun à jouer à l'apéro ou en soirée.\n Dans MashUp on doit associer plusieurs cartes représentant quelques choses (par exemple : un personnage ou un objet) afin de répondre à une contrainte. \n\n Exemple : Créer  la combinaison la plus mignonne : un chat en robe de princesse en utilisant la carte \"chat\" et la carte \"robe de princesse\". Une fois que tous les joueurs ont proposé leur combinaison, chacun vote, la personne la plus votée remporte la partie.",
         "images": [
             {
@@ -551,15 +580,15 @@
         ],
         "buttons": [],
         "keep": true,
-        "main": false
+        "jeux": true
     },
     {
         "name": "Niveau d'infiltration GTA",
-        "date": "Octobre 2022",
+        "date": "Oct. 2022",
         "tags": [
             "ld"
         ],
-        "img": "assets/img/Niveau_Discretion-Gta.png",
+        "img": "assets/img/GTADiscretion-Jacket.png",
         "description": "Ce travail est un plan de level design pour le jeu GTA réalisé dans le cadre d'un cours de Level Design. L'objectif était de faire un niveau d'infiltration pour un jeu d'action aventure, ici, GTA.\n\r\nLe héros se réveille dans une cave. En sortant de cette cave, il arrive dans une maison traditionnelle japonaise controler par des yakuzas. Il va donc devoir s'infiltrer dans cette maison pour trouver un moyen de sortir.\n Deux moyens s'offrent à lui, soit trouver de l'essence et faire brûler un tas de bois inflamable dans le fond du jardin de la résidence afin de s'extirper discrétement une fois toute l'attention sur le tas de bois. Soit il trouve des explosifs pour faire exploser le mur près de la porte afin de s'enfuir. \nAu cours de son parcours, il peut chercher des trésors présents un peu partout dans la maison.",
         "images": [
             {
@@ -575,15 +604,15 @@
             }
         ],
         "keep": true,
-        "main": false
+        "jeux": false
     },
     {
         "name": "Niveau de Mario World",
-        "date": "Octobre 2022",
+        "date": "Oct. 2022",
         "tags": [
             "ld"
         ],
-        "img": "assets/img/LD-Mario.png",
+        "img": "assets/img/Mario-Jacket.png",
         "description": "Ce travail est un plan de level design pour le jeu Mario World.\nL'objectif était de prendre une mécanique du jeu et de faire un niveau en l'exploitant.\nLa mécanique que j'ai décidé d'exploiter est le saut sur les ennemis afin de faire des sauts plus hauts.\n\r\nJ'ai donc divisé le niveau en 4 parties. \nTout d'abord la partie apprentissage qui met le joueur dans un cadre où il peut difficilement mourir afin qu'il apprenne la mécanique. \nEnsuite la partie application dans laquelle j'ai essayé d'appliquer la mécanique à plusieurs cas différents. \nPuis la partie twist dans laquelle j'ai essayé de prendre la mécanique à revers, à la place de sauter il faut gérer son saut pour éviter d'aller trop haut sous peine de se faire toucher par des piques. \nPour finir, la partie maîtrise plus complexe qui demande vitesse et adresse au joueur.",
         "images": [
             {
@@ -599,7 +628,7 @@
             }
         ],
         "keep": true,
-        "main": false
+        "jeux": false
     },
     {
         "name": "Chrono Bullet Hell Prototype",
@@ -629,7 +658,7 @@
             }
         ],
         "keep": false,
-        "main": false
+        "jeux": false
     },
     {
         "name": "Black & White Prototype",
@@ -650,18 +679,18 @@
         ],
         "buttons": [],
         "keep": false,
-        "main": false
+        "jeux": false
     },
     {
         "name": "Cosmic Jack",
-        "date": "Novembre 2021 et Mai 2022",
+        "date": "Nov. 2021 et Mai 2022",
         "tags": [
             "gj",
             "gd",
             "dev"
         ],
         "img": "assets/img/CosmicJackWeb.png",
-        "description": "Jeu que j'ai réalisé une première fois en JavaScript en Novembre 2021 pour l'entrepise dans laquelle travaillait mon frère. J'ai donc réalisé la partie développement et mon frère la partie graphique. \nOn a fait un jeu inspiré du jeu du T-Rex car on voulait qu'il soit facilement jouable par tous et que ça soit un jeu à score. J'ai par la suite refait le jeu en Mai 2022 sur Unity afin de prendre en main le logiciel mais également afin d'avoir un jeu plus proche de ce que j'attendais.",
+        "description": "Jeu que j'ai réalisé une première fois en JavaScript en Nov. 2021 pour l'entrepise dans laquelle travaillait mon frère. J'ai donc réalisé la partie développement et mon frère la partie graphique. \nOn a fait un jeu inspiré du jeu du T-Rex car on voulait qu'il soit facilement jouable par tous et que ça soit un jeu à score. J'ai par la suite refait le jeu en Mai 2022 sur Unity afin de prendre en main le logiciel mais également afin d'avoir un jeu plus proche de ce que j'attendais.",
         "images": [
             {
                 "url": "assets/img/CosmicJackWeb.png",
@@ -684,8 +713,8 @@
                 "link": "https://purpleluma.itch.io/cosmic-jack"
             }
         ],
-        "keep": true,
-        "main": false
+        "keep": false,
+        "jeux": false
     },
     {
         "name": "Analyseur de croquettes NicePet",
@@ -704,7 +733,7 @@
         ],
         "buttons": [],
         "keep": false,
-        "main": false
+        "jeux": false
     },
     {
         "name": "Lecteur de fichier PLY",
@@ -731,12 +760,12 @@
                 "link": "https://github.com/RobLfbv/PLYReader"
             }
         ],
-        "keep": true,
-        "main": false
+        "keep": false,
+        "jeux": false
     },
     {
         "name": "Rope Game Prototype",
-        "date": "Janvier 2022",
+        "date": "Jan. 2022",
         "tags": [
             "gj",
             "gd",
@@ -759,6 +788,6 @@
             }
         ],
         "keep": false,
-        "main": false
+        "jeux": false
     }
 ]

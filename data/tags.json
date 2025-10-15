@@ -1,26 +1,27 @@
 [
     {
         "id": "gd",
-        "label": "Game Design"
+        "label": "Game Design",
+        "shortlabel":"GD"
     },
     {
         "id": "ld",
-        "label": "Level Design"
-    },
-    {
-        "id": "gj",
-        "label": "GameJam"
+        "label": "Level Design",
+        "shortlabel":"LD"
     },
     {
         "id": "dev",
-        "label": "Développement"
+        "label": "Développement",
+        "shortlabel":"Dev."
     },
     {
         "id": "qa",
-        "label": "QA Tester"
+        "label": "QA Tester",
+        "shortlabel":"QA"
     },    
     {
         "id": "ta",
-        "label": "Technical Artist"
+        "label": "Technical Artist",
+        "shortlabel":"TechArt"
     }
 ]

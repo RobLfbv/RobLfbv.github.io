@@ -1,26 +1,29 @@
 @media screen and (max-width: 882px) {
-    header {
+    /*header {
         flex-direction: column;
         padding-bottom: 2rem;
         width: 100%;
         height: auto;
 
         ul {
-            display: grid;
+            display: inline-flex;
             grid-template-columns: repeat(5, 1fr);
             width: 100%;
             margin: 0;
             padding: 0;
-            column-gap: 0.85rem;
+            //column-gap: 0.85rem;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+
+        li {
+            width: fit-content;
         }
 
         li>a {
-            font-size: 90%;
+            font-size: 100%;
         }
-
-
-
-    }
+    }*/
 
     main {
         #home {
@@ -48,19 +51,15 @@
         }
     }
 
-    .projectMain {
-        //width: 100% !important;
-
-        //width: 70%;
+    .projectMain,
+    .project {
         height: 100%;
+
         img {
-            width: 30% !important;
+            width: 100% !important;
         }
     }
 
-    .project {
-        width: 80% !important;
-    }
 
     #image-modal {
         .modal.image-modal {
@@ -68,15 +67,80 @@
             height: auto;
         }
     }
-}
-@media screen and (max-width: 1000px) {
-    .projectMain {
-        width: 100% !important;
 
-        //width: 70%;
-        height: 100%;
-        img {
-            width: 30% !important;
+    .tags {
+        justify-content: center;
+    }
+
+    .tag {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    header {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        //padding-bottom: 2rem;
+        width: 100%;
+        height: auto;
+
+        ul {
+            display: inline-flex;
+            grid-template-columns: repeat(5, 1fr);
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            //column-gap: 0.85rem;
+            gap: 0.5rem;
+            justify-content: center;
         }
+
+        li {
+            width: fit-content;
+        }
+
+        li>a {
+            font-size: 80%;
+        }
+    }
+    footer{
+        p{
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #socialsTop {
+        justify-content: center;
+    }
+
+    .projectMain {
+        img {
+            width: 100% !important;
+        }
+
+        .date {
+            font-size: 0.8rem;
+        }
+
+        .tag {
+            font-size: 1rem;
+        }
+    }
+
+    #projects-list {
+        max-width: 90% !important;
+    }
+
+    #mainProjects-list {
+        max-width: 90% !important;
     }
 }

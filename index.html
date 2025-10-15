@@ -13,10 +13,10 @@
     <header>
         <h2>Robin <b>LEFEBVRE</b></h2>
         <ul>
-            <li><a href="#home" bis_skin_checked="1">Accueil</a></li>
-            <li><a href="#cv" bis_skin_checked="1">Profil</a></li>
-            <li><a href="#mainProjects" bis_skin_checked="1">Derniers projets</a></li>
-            <li><a href="#projects" bis_skin_checked="1">Projets</a></li>
+            <li><a href="#" bis_skin_checked="1">Accueil</a></li>
+            <li><a href="#profil" bis_skin_checked="1">Profil</a></li>
+            <li><a href="#mainProjects" bis_skin_checked="1">Jeux</a></li>
+            <li><a href="#projects" bis_skin_checked="1">Documentations</a></li>
             <li><a href="#contact" bis_skin_checked="1">Contact</a></li>
         </ul>
     </header>
@@ -25,65 +25,77 @@
             <h2 class="title" style="display: none;">Accueil</h2>
             <div class="text-nb">
                 <p>Level Designer, Game Designer, Technical Artist</p>
-                <h1>Robin <b>LEFEBVRE</b></h1>
-                <p>Bonjour ! Je suis un Level Designer, Game Designer et Technical Artist qui vient de finir son Master Humanités et Industries Créatives, parcours Management, Jeux vidéo, Image, Créativité (MAJIC). Passionné de création de jeux vidéo, je travaille sur plusieurs projets en ce moment !
+                <h1>Robin LEFEBVRE</h1>
+                <p>
                 </p>
+                <div class="buttons cv">
+                    <a class="button" href="data/cv.pdf" download="RobinLEFEBVRE-CV.pdf"><span
+                            class="material-symbols-outlined">download</span> Télécharger mon CV</a>
+                    <a class="button icon" href="data/cv.pdf" target="_blank"><span
+                            class="material-symbols-outlined">open_in_new</span></a>
+                </div>
+                <div class="buttons socials" id="socialsTop"></div>
             </div>
             <div class="big-square">
                 <img src="assets/img/robin.png" alt="">
             </div>
         </section>
-        <section id="cv">
+        <section id="profil">
             <h2 class="title">Mon <b>profil</b></h2>
-            <p>Game Designer, Level Designer et Technical Artist, je suis actuellement 
-                à la <b>recherche d'un poste</b> dans l'un de ces domaines. Je suis disponible <b>au plus vite</b> et <b>dans toute la France</b>.</p>
-            <div class="card">
-                <img src="assets/img/cv.png" alt="Mon CV">
-                <div class="content">
-                    <h2 class="title">Mon <b>CV</b></h2>
-                    <p>PDF • 1.12 Mo</p>
-                    <div class="buttons">
-                        <a class="button" href="data/cv.pdf" download="RobinLEFEBVRE-CV.pdf"><span
-                                class="material-symbols-outlined">download</span> Télécharger</a>
-                        <a class="button icon" href="data/cv.pdf" target="_blank"><span
-                                class="material-symbols-outlined">open_in_new</span></a>
-                    </div>
-                </div>
-            </div>
+            <p>Bonjour ! <br>Je suis un <b>Level Designer</b>, <b>Game Designer</b> et <b>Technical Artist</b> qui vient
+                de finir son Master
+                Humanités et Industries Créatives, parcours Management, Jeux vidéo, Image, Créativité (MAJIC).
+                Passionné de création de jeux vidéo, je travaille sur plusieurs projets en ce moment ! <br><br> Je suis
+                actuellement
+                à la <b>recherche d'un poste</b> dans l'un de ces domaines. Je suis disponible <b>au plus vite</b> et
+                <b>dans toute la France</b>.
+            </p>
 
         </section>
         <section id="mainProjects">
-            <h2 class="title">Mes derniers <b>projets</b></h2>
+            <h2 class="title">Mes <b>jeux</b></h2>
+            <div class="tags-list" id="tags-listMain">
+                <img src="data/svg/filter.svg" alt="">
+            </div>
+            <button class="nav-btn left" id="prevBtnMain">‹</button>
             <div id="mainProjects-list">
-                <div class="empty-main-projects">
+                <div id="empty-projectsMain">
                     <p>Aucun projet n'a été trouvé.</p>
                 </div>
             </div>
+            <button class="nav-btn right" id="nextBtnMain">›</button>
         </section>
 
         <section id="projects">
-            <h2 class="title">Mes <b>projets</b></h2>
-            <div id="tags-list"></div>
+            <h2 class="title">Mes <b>documentations</b></h2>
+            <div class="tags-list" id="tags-listSecond">
+                <img src="data/svg/filter.svg" alt="">
+            </div>
+            <button class="nav-btn left" id="prevBtnSecond">‹</button>
             <div id="projects-list">
-                <div class="empty-projects">
+                <div id="empty-projectsSecond">
                     <p>Aucun projet n'a été trouvé.</p>
                 </div>
             </div>
+            <button class="nav-btn right" id="nextBtnSecond">›</button>
         </section>
         <section id="contact">
             <h2 class="title">Me <b>contacter</b></h2>
-            <p>Vous êtes intéressé par mon profil ? N'hésitez pas à me <b>contacter</b> sur mes réseaux sociaux :</p>
-            <div class="buttons socials"></div>
+            <p>Vous êtes intéressé par mon profil ? N'hésitez pas à me <b><a
+                            href="mailto:robin.lefebvre12@gmail.com">contacter</a></b> sur mes réseaux sociaux :</p>
+            <div class="buttons socials" id="socialsBot"></div>
         </section>
     </main>
     <section id="project-modal" style="display: none;">
-        <button class="close"><span>x</span></button>
+        <button id="closeProject" class="close"><span>x</span></button>
     </section>
     <section id="image-modal" style="display: none;">
-        <button class="close"><span>x</span></button>
+        <button id="closeImage" class="close"><span>x</span></button>
     </section>
     <footer>
-        <p>&copy; 2024. Site web développé par <a href="https://davall.fr">DavAll</a> et modifié par <a href="https://robin-lefebvre.fr">Robin LEFEBVRE</a>.</p>
+        <p>&copy; 2025. Site web développé par <a href="https://robin-lefebvre.fr">Robin LEFEBVRE</a> à partir de la
+            base de <a href="https://davall.fr">DavAll</a>.
+        </p>
     </footer>
     <script src="assets/js/nav.js"></script>
     <script src="assets/js/projects.js"></script>
