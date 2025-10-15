@@ -15,26 +15,26 @@
         "smalldesc": "Jeu de puzzle narratif",
         "description": "QBT est un jeu à la première personne dans lequel on incarne un sujet dans un laboratoire en bichromie qui est capable de changer sa gravité. \nJ'étais Level Designer, Level Artist, Technical Artist et Lead Développeur sur le projet. Nous avons pu présenter le jeu au Festival international du Jeu de 2025 à Cannes.\n\n Le jeu présente actuellement une dizaine de niveaux terminé, mais nous avons encore quelques niveaux qui n'ont pas eu le temps d'être terminé. C'est pourquoi nous allons encore travailler sur QBT pour pouvoir présenter une expérience complète la plus proche de ce que nous avions imaginé.",
         "images": [
-                {
-                    "url": "assets/img/qbt-1.png",
-                    "legende": ""
-                },
-                {
-                    "url": "assets/img/qbt-2.png",
-                    "legende": ""
-                },
-                {
-                    "url": "assets/img/qbt-3.png",
-                    "legende": ""
-                },
-                {
-                    "url": "assets/img/qbt-4.png",
-                    "legende": ""
-                },
-                {
-                    "url": "assets/img/qbt-5.png",
-                    "legende": ""
-                }
+            {
+                "url": "assets/img/qbt-1.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt-2.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt-3.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt-4.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt-5.png",
+                "legende": ""
+            }
         ],
         "buttons": [
             {
@@ -177,7 +177,7 @@
         ],
         "buttons": [
             {
-                "name": "Voir le projet",
+                "name": "Voir le GDD",
                 "icon": "launch",
                 "link": "https://xc3l.itch.io/pafia-masta"
             }
@@ -192,8 +192,8 @@
             "gd"
         ],
         "type": "Document",
-        "img": "assets/img/dontbefired-Jacket.png",
-        "description": "Ce travail est un Game Design Document de Don't Be Fired !! que j'ai réalisé basé sur le Game Concept du jeu",
+        "img": "assets/img/DontBeFired-Jacket.png",
+        "description": "Voici le Game Concept ainsi que le Game Design Document de \"Don't be Fired\"",
         "images": [
             {
                 "url": "assets/img/logo-gdd-firedsimu.png",
@@ -202,9 +202,14 @@
         ],
         "buttons": [
             {
-                "name": "Voir le document",
+                "name": "Voir le GDD",
                 "icon": "launch",
                 "link": "data/Game-Design-Document_Dont-Be-Fired_Robin-LEFEBVRE.pdf"
+            },
+            {
+                "name": "Voir le Game Conept",
+                "icon": "launch",
+                "link": "data/Exercice_Party_Games-Game_design.pdf"
             }
         ],
         "keep": true,
