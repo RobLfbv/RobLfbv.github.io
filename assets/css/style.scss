@@ -93,8 +93,9 @@ a {
 #contact>p>b>a {
     color: $MainColor;
     text-decoration: underline;
+
     &:hover {
-        color:$TextColor;
+        color: $TextColor;
     }
 }
 
@@ -417,6 +418,8 @@ main {
             font-size: 0.85rem;
             text-align: center;
             margin-top: 0.75rem;
+            margin-left: 0.5rem;
+            margin-right: 0.5rem;
         }
 
         .text {

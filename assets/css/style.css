@@ -394,6 +394,8 @@ main .project .desc {
   font-size: 0.85rem;
   text-align: center;
   margin-top: 0.75rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 main .projectMain .text,
 main .project .text {
