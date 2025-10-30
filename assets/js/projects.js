@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", async () => {
     document.querySelector("#project-modal .close").addEventListener("click", () => unfocusProject());
     document.querySelector("#project-modal").addEventListener("click", () => unfocusProject());
     document.querySelector("#image-modal .close").addEventListener("click", () => unfocusImage());
-    document.querySelector("#image-modal").addEventListener("click", () => unfocusImage());
+    document.querySelector("#leaveScreen").addEventListener("click", () => unfocusImage());
     mainItems = carouselMain.querySelectorAll(carouselMainName);
     secondItems = carouselSecond.querySelectorAll(carouselSecondName);
     updateOpacity(mainItems, carouselMain, nextBtnMain, prevBtnMain);
@@ -221,20 +221,31 @@ function filterProjects() {
 
 function focusProject(project) {
     const projectModal = document.createElement("section");
+    const projectInfoList = document.createElement("div");
     const projectTitle = document.createElement("h2");
+    const projectPeriod = document.createElement("p");
+    const projectYear = document.createElement("p");
+    const projectTeam = document.createElement("p");
+    const projectContext = document.createElement("p");
     const projectTags = document.createElement("div");
     const projectDesc = document.createElement("p");
     const projectImages = document.createElement("div");
     const projectButtons = document.createElement("div");
 
     projectModal.className = "modal";
+    projectInfoList.className = "info-list";
     projectTitle.className = "title";
     projectTags.className = "tags";
     projectDesc.className = "desc";
     projectImages.className = "images";
     projectButtons.className = "buttons";
 
+    projectPeriod.innerHTML = project.period != null ? "<b>Durée :</b> " + project.period : "";
+    projectYear.innerHTML = project.year != null ? "<b>Années :</b> " + project.year : "";
+    projectTeam.innerHTML = project.team != null ? "<b>Équipe :</b> " + project.team : "";
+    projectContext.innerHTML = project.context != null ? "<b>Projet : </b> " + project.context : "";
     projectTitle.innerText = project.name;
+
     project.tags.filter(tag => tags.filter(t => t.id == tag).length > 0).forEach(tagId => {
         const tag = tags.filter(t => t.id == tagId)[0];
         const tagItem = document.createElement("div");
@@ -243,52 +254,47 @@ function focusProject(project) {
         tagItem.textContent = tag.label;
         projectTags.appendChild(tagItem);
     });
-    var allTitle = [];
-    var allDesc = [];
-    var allImage = [];
-    if (project.titles != null) {
-        for (var i = 0; i < project.description.length; i++) {
-            if (project.titles != null) {
-                projectTitleTemp = document.createElement("h3");
-                projectTitleTemp.innerText = project.titles[i];
-                allTitle.push(projectTitleTemp);
-            }
 
-            projectDescTemp = document.createElement("p");
-            projectDescTemp.innerText = project.description[i];
-            allDesc.push(projectDescTemp);
-            var tempProjectImages = document.createElement("div");
-            if (project.images[0][0] != null) {
-                tempProjectImages.classList = "images";
-                if (project.images && project.images[i] && project.images.length > 0) project.images[i].forEach(image => {
-                    const imageItem = document.createElement("img");
-                    imageItem.src = image.url;
-                    imageItem.alt = image.legende || project.name;
+    var textToModif = project.description;
+    const regexReplace = /\$[!img=\d{1,}!]{1,}\$/i;
+    const regexMatch1 = /\$(.*?)\$/gm;
+    const regexMatch2 = /(?<=!img=)\d+(?=!)/gm;
 
-                    imageItem.addEventListener("click", e => {
-                        focusImage(image.url, image.legende || "");
-                    });
-
-                    tempProjectImages.appendChild(imageItem);
+    const startDiv = "<div class=images>";
+    const endDiv = "</div>";
+    const startImg = "<img src=\"";
+    const altImg = "\" alt=\"";
+    const endImg = "\">";
+    var allDivToReplace = [];
+    var allDiv = textToModif.match(regexMatch1);
+    if (allDiv != null) {
+        for (let i = 0; i < allDiv.length; i++) {
+            var allImages = allDiv[i].match(regexMatch2);
+            var images = "";
+            if (allImages != null) {
+                allImages.forEach(image => {
+                    images += startImg + project.images[image].url + altImg + project.images[image].legende + endImg;
                 });
-                allImage.push(tempProjectImages)
             }
-            //projectDescImage
+
+            allDivToReplace.push(startDiv + images + endDiv);
         }
-    } else {
-        projectDesc.innerText = project.description;
-        if (project.images && project.images.length > 0) project.images.forEach(image => {
-            const imageItem = document.createElement("img");
-            imageItem.src = image.url;
-            imageItem.alt = image.legende || project.name;
-
-            imageItem.addEventListener("click", e => {
-                focusImage(image.url, image.legende || "");
-            });
-
-            projectImages.appendChild(imageItem);
+        allDivToReplace.forEach(div => {
+            textToModif = textToModif.replace(regexReplace, div);
         });
     }
+
+
+    projectDesc.innerHTML = textToModif;
+    var imagesDiv = projectDesc.querySelectorAll(".images");
+    imagesDiv.forEach(div => {
+        const imagesDiv = div.querySelectorAll("img");
+        for (let i = 0; i < imagesDiv.length; i++) {
+            imagesDiv[i].addEventListener("click", e => {
+                focusImage(imagesDiv[i].src, imagesDiv[i].alt || "", div, i);
+            });
+        }
+    });
 
     if (project.buttons && project.buttons.length > 0) project.buttons.forEach(link => {
         const linkItem = document.createElement("a");
@@ -304,27 +310,29 @@ function focusProject(project) {
     });
 
     projectModal.addEventListener("click", e => e.stopPropagation());
-
     projectModal.appendChild(projectTitle);
-    projectModal.appendChild(projectTags);
-    if (allTitle[0] != null) {
-        for (var i = 0; i < allDesc.length; i++) {
-            if (allTitle[0] != null)
-                projectModal.appendChild(allTitle[i]);
-            if (allDesc[0] != null)
-                projectModal.appendChild(allDesc[i]);
-            if (allImage[0] != null)
-                projectModal.appendChild(allImage[i]);
-        }
-    } else {
-        projectModal.appendChild(projectDesc);
-    }
+    if (projectContext.innerText != "")
+        projectInfoList.appendChild(projectContext);
+    if (projectTeam.innerText != "")
+        projectInfoList.appendChild(projectTeam);
+    if (projectPeriod.innerText != "")
+        projectInfoList.appendChild(projectPeriod);
+    if (projectYear.innerText != "")
+        projectInfoList.appendChild(projectYear);
 
-    if (project.buttons && project.buttons.length > 0) projectModal.appendChild(projectButtons);
+    if (project.buttons && project.buttons.length > 0) projectInfoList.appendChild(projectButtons);
+
+    projectModal.appendChild(projectInfoList);
+
+    projectModal.appendChild(projectTags);
+    projectModal.appendChild(projectDesc);
+
+    //if (project.buttons && project.buttons.length > 0) projectModal.appendChild(projectButtons);
     if (project.images && project.images.length > 0) projectModal.appendChild(projectImages);
     var toInsertBefore = document.getElementById("closeProject");
     document.querySelector("#project-modal").insertBefore(projectModal, toInsertBefore);
     document.querySelector("#project-modal").style.display = "flex";
+    document.querySelector("body").className = "bodyHidden";
 }
 
 function unfocusProject() {
@@ -335,32 +343,92 @@ function unfocusProject() {
         document.querySelector("#project-modal").classList.remove("disappear");
         document.querySelectorAll("#project-modal .modal").forEach(modal => modal.remove());
     }, 280);
+    document.querySelector("body").className = "";
+
 }
 
-function focusImage(img, legende) {
-    const imageModal = document.createElement("section");
+function focusImage(img, legende, div, index) {
+    const imageModal = document.createElement("label");
     const image = document.createElement("img");
     const imageLegende = document.createElement("p");
+    const zoom = document.createElement("input");
+    const prevBtn = document.createElement("button");
+    const nextBtn = document.createElement("button");
+    const buttonsLegend = document.createElement("div");
+
+    prevBtn.id = "prevBtnImg";
+    nextBtn.id = "nextBtnImg";
+
+    prevBtn.className = "nav-btn left";
+    nextBtn.className = "nav-btn right";
+
+    prevBtn.innerText = "<";
+    nextBtn.innerText = ">";
+
+    buttonsLegend.className = "buttons-legend";
 
     imageModal.className = "modal image-modal";
     image.className = "image";
     imageLegende.className = "legende";
+    zoom.type = "checkbox";
 
     image.src = img;
     image.alt = legende;
     imageLegende.innerText = legende;
 
-    imageModal.addEventListener("click", e => e.stopPropagation());
 
+    imageModal.appendChild(zoom);
     imageModal.appendChild(image);
-    imageModal.appendChild(imageLegende);
-    document.querySelector("#image-modal").appendChild(imageModal);
+    const allImg = div.querySelectorAll("img");
+    if (allImg.length > 1)
+        buttonsLegend.appendChild(prevBtn);
+
+    document.querySelector("#image-modal").appendChild(imageLegende);
+
+    if (allImg.length > 1)
+        buttonsLegend.appendChild(nextBtn);
+
+    var toInsertBefore = document.getElementById("closeImage");
+    document.querySelector("#image-modal").insertBefore(imageModal, toInsertBefore);
     document.querySelector("#image-modal").style.display = "flex";
+    document.querySelector("#image-modal").appendChild(buttonsLegend)
+
+
+    function fastUnfocusImage() {
+        prevBtn.removeEventListener("click", PrevButtonImage, true);
+        nextBtn.removeEventListener("click", NextButtonImage, true);
+        document.querySelector(".buttons-legend").remove();
+        document.querySelector(".legende").remove();
+        document.querySelectorAll("#image-modal .modal").forEach(modal => modal.classList.add("disappear"));
+        document.querySelector("#image-modal").classList.add("disappear");
+        document.querySelector("#image-modal").style.display = "none";
+        document.querySelector("#image-modal").classList.remove("disappear");
+        document.querySelectorAll("#image-modal .modal").forEach(modal => modal.remove());
+    }
+    function PrevButtonImage() {
+        fastUnfocusImage();
+        var prevIdx = index - 1;
+        prevIdx = prevIdx < 0 ? allImg.length - 1 : prevIdx;
+        focusImage(allImg[prevIdx].src, allImg[prevIdx].alt || "", div, prevIdx);
+    }
+    function NextButtonImage() {
+        console.log("next");
+        fastUnfocusImage();
+        const nextIdx = (index + 1) % allImg.length;
+        focusImage(allImg[nextIdx].src, allImg[nextIdx].alt || "", div, nextIdx);
+    }
+
+
+    prevBtn.addEventListener("click", PrevButtonImage, { once: true });
+    nextBtn.addEventListener("click", NextButtonImage, { once: true });
 }
 
 function unfocusImage() {
     document.querySelectorAll("#image-modal .modal").forEach(modal => modal.classList.add("disappear"));
     document.querySelector("#image-modal").classList.add("disappear");
+    document.querySelector(".buttons-legend").remove();
+    document.querySelector(".legende").remove();
+
     setTimeout(() => {
         document.querySelector("#image-modal").style.display = "none";
         document.querySelector("#image-modal").classList.remove("disappear");
@@ -463,11 +531,11 @@ function generateTab(items, list, next, prev) {
     });
     if (currentItem[0] == items[0]) {
         currentItem.unshift(null);
-    } 
+    }
 
     if (currentItem[currentItem.length - 1] == items[items.length - 1]) {
         currentItem.push(null);
-    } 
+    }
     var count = 0;
     items.forEach(item => {
         if (item != null && item.style.display != 'none')

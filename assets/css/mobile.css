@@ -51,15 +51,42 @@
   .project img {
     width: 100% !important;
   }
+  .modal .images {
+    grid: none !important;
+  }
+  .modal .images img {
+    height: 8rem !important;
+  }
   #image-modal .modal.image-modal {
     width: 90%;
     height: auto;
   }
-  .tags {
-    justify-content: center;
+  .buttons-legend #nextBtnImg {
+    bottom: 10% !important;
+  }
+  .buttons-legend #prevBtnImg {
+    bottom: 10% !important;
+  }
+  .buttons-legend #nextBtnImg,
+  .buttons-legend #prevBtnImg {
+    width: 4rem !important;
+    height: 4rem !important;
+    font-size: 2rem !important;
   }
   .tag {
     font-size: 0.8rem;
+  }
+  .info-list {
+    -moz-column-gap: 2rem !important;
+         column-gap: 2rem !important;
+    display: inline !important;
+  }
+  .info-list p {
+    padding-top: 0.4rem;
+    font-size: 0.9rem;
+  }
+  .info-list .buttons {
+    padding-top: 0.4rem !important;
   }
 }
 @media screen and (max-width: 850px) {

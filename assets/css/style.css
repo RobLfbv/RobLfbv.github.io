@@ -69,6 +69,10 @@ body {
   color: #DFE4E4;
 }
 
+.bodyHidden {
+  overflow: hidden;
+}
+
 header,
 footer {
   display: flex;
@@ -338,8 +342,7 @@ main .project {
   position: relative;
   box-sizing: border-box;
   z-index: 0;
-  transition: opacity 0.2s ease;
-  transition: scale 0.1s ease;
+  transition: opacity 0.2s ease, scale 0.1s ease;
   scroll-snap-align: start;
 }
 main .projectMain:hover,
@@ -476,7 +479,7 @@ main .project .tag:hover {
   width: fit-content;
 }
 .tag.active {
-  background: #2379bb;
+  background: #142736;
   color: white;
   box-shadow: 0 0.35rem 0.25rem rgba(20, 39, 54, 0.75);
 }
@@ -506,6 +509,24 @@ main .project .tag:hover {
 #project-modal.disappear,
 #image-modal.disappear {
   animation: project-modal-disappear 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+#project-modal .info-list,
+#image-modal .info-list {
+  display: flex;
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-wrap: wrap;
+}
+#project-modal .info-list p,
+#image-modal .info-list p {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#project-modal .info-list b,
+#image-modal .info-list b {
+  color: #142736;
 }
 #project-modal .close,
 #image-modal .close {
@@ -541,6 +562,65 @@ main .project .tag:hover {
 #project-modal .desc,
 #image-modal .desc {
   margin-bottom: 0;
+  margin-top: 0;
+}
+#project-modal #leaveScreen,
+#image-modal #leaveScreen {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#project-modal .buttons-legend,
+#image-modal .buttons-legend {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #000;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: 50%;
+  bottom: 0%;
+}
+#project-modal .buttons-legend #nextBtnImg,
+#image-modal .buttons-legend #nextBtnImg {
+  position: fixed;
+  right: 4%;
+  bottom: 50%;
+}
+#project-modal .buttons-legend #prevBtnImg,
+#image-modal .buttons-legend #prevBtnImg {
+  position: fixed;
+  left: 4%;
+  bottom: 50%;
+}
+#project-modal .buttons-legend #nextBtnImg,
+#project-modal .buttons-legend #prevBtnImg,
+#image-modal .buttons-legend #nextBtnImg,
+#image-modal .buttons-legend #prevBtnImg {
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+}
+#project-modal .buttons-legend p,
+#image-modal .buttons-legend p {
+  padding: 0.5rem 1.5rem;
+  color: white;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 0 0 0.2rem #000;
+  text-align: center;
+  transform: translate(-50%);
+}
+#project-modal .legende,
+#image-modal .legende {
+  position: fixed;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1.5rem;
+  color: white;
+  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 0 0 0.2rem #000;
+  text-align: center;
 }
 #project-modal .modal,
 #image-modal .modal {
@@ -565,25 +645,43 @@ main .project .tag:hover {
 }
 #project-modal .modal.image-modal,
 #image-modal .modal.image-modal {
+  overflow-y: scroll;
+  overflow-x: scroll;
   background: transparent;
   padding: 0;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 90%;
+  width: 80%;
+  height: 95%;
+  scrollbar-color: #2379bb #142736;
+  background-color: rgba(223, 228, 228, 0.4039215686);
+  justify-content: center;
+  /*label {
+      height: fit-content;
+      overflow-y: auto;
+      width: 100%;
+      object-fit: contain;
+  }*/
+}
+#project-modal .modal.image-modal input[type=checkbox],
+#image-modal .modal.image-modal input[type=checkbox] {
+  display: none;
+}
+#project-modal .modal.image-modal img,
+#image-modal .modal.image-modal img {
+  transition: transform 0.25s ease;
+  cursor: zoom-in;
+  transform-origin: 0% 0%;
+}
+#project-modal .modal.image-modal input[type=checkbox]:checked ~ img,
+#image-modal .modal.image-modal input[type=checkbox]:checked ~ img {
+  transform: scale(1.75);
+  cursor: zoom-out;
 }
 #project-modal .modal.image-modal img,
 #image-modal .modal.image-modal img {
   height: 100%;
-}
-#project-modal .modal.image-modal p,
-#image-modal .modal.image-modal p {
-  position: fixed;
-  bottom: 2.5%;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0.5rem 1.5rem;
-  color: white;
-  text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 0 0 0.2rem #000;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 #project-modal .modal.disappear,
 #image-modal .modal.disappear {
@@ -625,7 +723,7 @@ main .project .tag:hover {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 15rem;
   max-height: 15rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -643,8 +741,8 @@ main .project .tag:hover {
 }
 #project-modal .modal .buttons,
 #image-modal .modal .buttons {
-  padding: 1rem 0 0 0;
-  margin: auto 0 1rem auto;
+  padding: 0rem 0 0 0;
+  margin: auto 0 0rem auto;
 }
 
 footer {
@@ -765,15 +863,42 @@ footer {
   .project img {
     width: 100% !important;
   }
+  .modal .images {
+    grid: none !important;
+  }
+  .modal .images img {
+    height: 8rem !important;
+  }
   #image-modal .modal.image-modal {
     width: 90%;
     height: auto;
   }
-  .tags {
-    justify-content: center;
+  .buttons-legend #nextBtnImg {
+    bottom: 10% !important;
+  }
+  .buttons-legend #prevBtnImg {
+    bottom: 10% !important;
+  }
+  .buttons-legend #nextBtnImg,
+  .buttons-legend #prevBtnImg {
+    width: 4rem !important;
+    height: 4rem !important;
+    font-size: 2rem !important;
   }
   .tag {
     font-size: 0.8rem;
+  }
+  .info-list {
+    -moz-column-gap: 2rem !important;
+         column-gap: 2rem !important;
+    display: inline !important;
+  }
+  .info-list p {
+    padding-top: 0.4rem;
+    font-size: 0.9rem;
+  }
+  .info-list .buttons {
+    padding-top: 0.4rem !important;
   }
 }
 @media screen and (max-width: 850px) {

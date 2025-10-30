@@ -59,6 +59,10 @@ body {
     color: $TextColor;
 }
 
+.bodyHidden {
+    overflow: hidden;
+}
+
 header,
 footer {
     display: flex;
@@ -361,8 +365,7 @@ main {
         position: relative;
         box-sizing: border-box;
         z-index: 0;
-        transition: opacity 0.2s ease;
-        transition: scale 0.1s ease;
+        transition: opacity 0.2s ease, scale 0.1s ease;
         scroll-snap-align: start;
 
         &:hover {
@@ -502,7 +505,7 @@ main {
     width: fit-content;
 
     &.active {
-        background: $MainColor;
+        background: $SecondColor;
         color: white;
         box-shadow: 0 0.35rem 0.25rem color.adjust($SecondColor, $alpha: -.25);
     }
@@ -531,6 +534,22 @@ main {
 
     &.disappear {
         animation: project-modal-disappear 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .info-list {
+        display: flex;
+        column-gap: 4rem;
+        height: fit-content;
+        flex-wrap: wrap;
+
+        p {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        b {
+            color: $SecondColor;
+        }
     }
 
     .close {
@@ -566,6 +585,62 @@ main {
 
     .desc {
         margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    #leaveScreen {
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .buttons-legend {
+        width: fit-content;
+        background-color: #000;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        left: 50%;
+        bottom: 0%;
+
+        #nextBtnImg {
+            position: fixed;
+            right: 4%;
+            bottom: 50%;
+        }
+
+        #prevBtnImg {
+            position: fixed;
+            left: 4%;
+            bottom: 50%;
+        }
+
+        #nextBtnImg,
+        #prevBtnImg {
+            width: 5rem;
+            height: 5rem;
+            font-size: 3rem;
+        }
+
+        p {
+            padding: .5rem 1.5rem;
+            color: white;
+            text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 0 0 .2rem #000;
+            text-align: center;
+            transform: translate(-50%);
+        }
+    }
+
+    .legende {
+        position: fixed;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: .5rem 1.5rem;
+        color: white;
+        text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 0 0 .2rem #000;
+        text-align: center;
     }
 
     .modal {
@@ -588,24 +663,45 @@ main {
         animation: modal-appear 300ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &.image-modal {
+            overflow-y: scroll;
+            overflow-x: scroll;
             background: transparent;
             padding: 0;
-            width: fit-content;
-            height: 90%;
+            width: 80%;
+            height: 95%;
+            scrollbar-color: $MainColor $SecondColor;
+            background-color: #dfe4e467;
+            justify-content: center;
+            /*label {
+                height: fit-content;
+                overflow-y: auto;
+                width: 100%;
+                object-fit: contain;
+            }*/
+
+            input[type=checkbox] {
+                display: none
+            }
+
+            img {
+                transition: transform 0.25s ease; //, padding-left 0.25s ease;
+                cursor: zoom-in;
+                transform-origin: 0% 0%;
+            }
+
+            input[type=checkbox]:checked~img {
+                //padding-left: 20%;
+                transform: scale(1.75);
+                cursor: zoom-out
+            }
 
             img {
                 height: 100%;
+                width: 100%;
+                object-fit: contain;
             }
 
-            p {
-                position: fixed;
-                bottom: 2.5%;
-                left: 50%;
-                transform: translateX(-50%);
-                padding: .5rem 1.5rem;
-                color: white;
-                text-shadow: 2px 0 #000, -2px 0 #000, 0 2px #000, 0 -2px #000, 1px 1px #000, -1px -1px #000, 1px -1px #000, -1px 1px #000, 0 0 .2rem #000;
-            }
+
         }
 
         &.disappear {
@@ -645,7 +741,7 @@ main {
                 margin: 0;
                 padding: 0;
                 width: 100%;
-                height: 100%;
+                height: 15rem;
                 max-height: 15rem;
                 object-fit: cover;
                 object-position: center;
@@ -662,8 +758,8 @@ main {
         }
 
         .buttons {
-            padding: 1rem 0 0 0;
-            margin: auto 0 1rem auto;
+            padding: 0rem 0 0 0;
+            margin: auto 0 0rem auto;
         }
     }
 }
