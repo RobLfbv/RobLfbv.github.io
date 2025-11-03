@@ -218,6 +218,7 @@ header ul li {
 .text-nb {
   display: flex;
   flex-direction: column;
+  margin-left: 0;
 }
 .text-nb p {
   font-size: 1.5rem;
@@ -258,7 +259,7 @@ main #home {
   padding: 1rem 0 0 0;
 }
 main #home .text-nb {
-  margin: auto 0 auto 2rem;
+  margin: auto 0 auto 0;
   text-align: left;
   align-items: flex-start;
 }
