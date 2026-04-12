@@ -88,6 +88,10 @@
   .info-list .buttons {
     padding-top: 0.4rem !important;
   }
+  iframe {
+    width: auto;
+    height: auto;
+  }
 }
 @media screen and (max-width: 850px) {
   header {

@@ -117,6 +117,15 @@ a:hover {
   font-size: 2.5rem;
 }
 
+.embed {
+  margin: auto;
+}
+
+iframe {
+  width: 32rem;
+  height: 18rem;
+}
+
 button,
 a.button {
   background: #2379bb;
@@ -271,11 +280,13 @@ main #home .text-nb h1 {
 }
 main #home .text-nb p {
   margin: 0;
-  max-width: 40rem;
 }
 main #home .text-nb p:first-child {
   margin: 0 0 -0.75rem 0;
   color: rgb(98.3243243243, 170.3783783784, 225.6756756757);
+}
+main #home .text-nb p {
+  max-width: 40rem;
 }
 main #mainProjects,
 main #projects {
@@ -329,10 +340,12 @@ main .tags-list {
   display: inline-flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 main .tags-list img {
   width: 2rem;
+}
+main .tags-list {
+  margin-bottom: 0.5rem;
 }
 main .projectMain,
 main .project {
@@ -900,6 +913,10 @@ footer {
   }
   .info-list .buttons {
     padding-top: 0.4rem !important;
+  }
+  iframe {
+    width: auto;
+    height: auto;
   }
 }
 @media screen and (max-width: 850px) {

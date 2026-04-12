@@ -283,6 +283,35 @@ function focusProject(project) {
             textToModif = textToModif.replace(regexReplace, div);
         });
     }
+    const regexReplaceEmbed = /\£[!emb=\d{1,}!]{1,}\£/i;
+    const regexMatch1Embed = /\£(.*?)\£/gm;
+    const regexMatch2Embed = /(?<=!emb=)\d+(?=!)/gm;
+    const startDivEmbed = "<div class=embed>";
+    const endDivEmbed = "</div>";
+    const startEmbed = "<iframe";
+    const widthEmbed = " width=\"";
+    const heightEmbed = "\" height=\""
+    const srcEmbed = "\" src=\"";
+    const titleEmbed = "\" title=\"";
+    const endEmbed = "\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
+    var allDivToReplace = [];
+    var allDiv = textToModif.match(regexMatch1Embed);
+    if (allDiv != null) {
+        for (let i = 0; i < allDiv.length; i++) {
+            var allEmbed = allDiv[i].match(regexMatch2Embed);
+            var embeds = "";
+            if (allEmbed != null) {
+                allEmbed.forEach(embed => {
+                    embeds += startEmbed + widthEmbed + project.embed[embed].width + heightEmbed + project.embed[embed].height + srcEmbed + project.embed[embed].url + titleEmbed + project.embed[embed].title + endEmbed;
+                });
+            }
+
+            allDivToReplace.push(startDivEmbed + embeds + endDivEmbed);
+        }
+        allDivToReplace.forEach(div => {
+            textToModif = textToModif.replace(regexReplaceEmbed, div);
+        });
+    }
 
 
     projectDesc.innerHTML = textToModif;

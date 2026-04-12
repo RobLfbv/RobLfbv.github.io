@@ -112,6 +112,15 @@ a {
     }
 }
 
+.embed {
+    margin: auto;
+}
+
+iframe {
+    width: 32rem;
+    height: 18rem;
+}
+
 button,
 a.button {
     background: $MainColor;
@@ -220,6 +229,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: 0;
+
     p {
         font-size: 1.5rem;
     }

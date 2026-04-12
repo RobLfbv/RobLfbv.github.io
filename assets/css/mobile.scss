@@ -63,6 +63,7 @@
     .modal {
         .images {
             grid: none !important;
+
             img {
                 height: 8rem !important;
             }
@@ -116,6 +117,11 @@
         .buttons {
             padding-top: 0.4rem !important;
         }
+    }
+
+    iframe {
+        width: auto;
+        height: auto;
     }
 }
 
