@@ -1,0 +1,16 @@
+# Dépendances (Le plus important !)
+node_modules/
+
+# Dossier de build (Généré localement)
+_site/  <-- Lis la note ci-dessous avant de décommenter
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs et debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
