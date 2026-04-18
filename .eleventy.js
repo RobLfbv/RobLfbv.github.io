@@ -1,5 +1,7 @@
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("assets");
+    eleventyConfig.addPassthroughCopy("data");
+    eleventyConfig.addPassthroughCopy("data/svg");
     // Notre filtre "Tech Art"
     eleventyConfig.addFilter("transformCustomTags", function (text, project) {
         let output = text;
