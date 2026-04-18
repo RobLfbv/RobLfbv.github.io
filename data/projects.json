@@ -1,0 +1,1073 @@
+[
+    {
+        "name": "Niveau Portal 2",
+        "date": "Février 2026",
+        "period": "2 jours",
+        "year": "2026",
+        "team": "Seul",
+        "context": "Personnel",
+        "tags": [
+            "ld"
+        ],
+        "type": "Level Design",
+        "img": "assets/img/portal2/portal2-jacket.png",
+        "smalldesc": "Court niveau créé sur Portal 2 nommé \"Checked Pattern\"",
+        "description": "<h2>Présentation du niveau</h2> Ce travail est un niveau que j'ai réalisé dans l'éditeur de niveaux de <b>Portal 2</b> dans l'objectif de m'entraîner en <b>Level Design</b>.<h2>Intention de design</h2>Dès le début, l’objectif est de donner des informations au joueur. À l’instant où il rentre dans la salle, il voit un bloc en face de lui avec un fil le reliant, un fil passant également au sol et allant sur la gauche lui permet de savoir qu’il y a quelque chose sur la gauche. Ces fils ont un réel rôle de <b>breadcrumbs</b> attirant le joueur aux différents points d’intérêt du niveau. Le joueur a les outils de la complétion de la première partie du niveau dès le début.$!img=5!!!img=12!$<br>Après cela, le joueur avance dans le niveau et arrive dans une grande salle présentant un damier sur les murs. J’ai utilisé le pattern de <b>damier</b>, car il représente une <b>limite</b> pour le joueur au niveau du placement des portails en plus d’être esthétique. En arrivant dans cette salle, le joueur voit également des blocs au milieu de la salle ainsi qu’un bouton. Le bouton un peu discret a un fil le reliant qui passe au sol et monte sur le bloc cible, ce qui permet au joueur d’avoir <b>son regard amené à cet endroit.</b><br><br> En explorant cette salle, le joueur pourra voir la suite du niveau, inaccessible pour le moment, cette suite est mise en avant par des lumières, <b>landmarks</b> important dans tout le niveau et qui guide le joueur entre les différents objectifs. Un pont de lumière bloqué pour le moment est aussi présent.$!img=6!img=13!$<br>Le joueur doit trouver un moyen d’atteindre le bouton afin de débloquer par la suite le pont de lumière, ce qui représente un défi. Il y a plusieurs moyens pour le joueur de l’atteindre. Dans tous les cas, il doit utiliser son <b>momentum</b> à travers les portails et faire <b>un saut</b>. $!img=7!$<br>Après avoir réussi à débloquer le pont de lumière, le joueur peut atteindre la deuxième partie du niveau.$!img=8!$ <br>En arrivant dans cette salle, le joueur voit directement la sortie et doit maintenant chercher un moyen d’y accéder. Dans cette partie de niveau, j’ai voulu mettre en avant l’utilisation du pont de lumière et plus qu’un aspect puzzle, <b>un aspect parkour</b>. $!img=9!!img=14!$ <br>Le joueur doit donc trouver un chemin de manière progressive en sautant et en plaçant son portail relié au pont de lumière dans les airs afin de progresser verticalement ou horizontalement.<br>Le joueur finit par atteindre la fin du niveau grâce au tremplin et au pont de lumière.$!img=10!!img=11!$ <h2>Full Playthrough</h2>£!emb=0!£ $!img=0!!img=1!!img=2!!img=3!!img=4!$",
+        "images": [
+            {
+                "url": "assets/img/portal2/portal2-1.jpg",
+                "legende": "Image du niveau"
+            },
+            {
+                "url": "assets/img/portal2/portal2-2.jpg",
+                "legende": "Image du niveau"
+            },
+            {
+                "url": "assets/img/portal2/portal2-3.jpg",
+                "legende": "Image du niveau"
+            },
+            {
+                "url": "assets/img/portal2/portal2-4.jpg",
+                "legende": "Image du niveau dans l'éditeur"
+            },
+            {
+                "url": "assets/img/portal2/portal2-5.jpg",
+                "legende": "Image du niveau dans l'éditeur"
+            },
+            {
+                "url": "assets/img/portal2/Screen1.png",
+                "legende": "Première partie de niveau vue dans l'éditeur"
+            },
+            {
+                "url": "assets/img/portal2/Screen2.png",
+                "legende": "Seconde partie de niveau vue dans l'éditeur"
+            },
+            {
+                "url": "assets/img/portal2/Screen3.png",
+                "legende": "Parcours de complétion de la seconde partie de niveau dans l'éditeur"
+            },
+            {
+                "url": "assets/img/portal2/Screen4.png",
+                "legende": "Transition entre la seconde et dernière partie de niveau"
+            },
+            {
+                "url": "assets/img/portal2/Screen5-1.png",
+                "legende": "Arrivé dans la dernière partie de niveau vue dans l'éditeur"
+            },
+            {
+                "url": "assets/img/portal2/Screen6.png",
+                "legende": "Parcours de complétion de la dernière partie de niveau dans l'éditeur"
+            }
+            ,
+            {
+                "url": "assets/img/portal2/Screen5-2.png",
+                "legende": "Arrivé à la sortie de la dernière partie de niveau"
+            },
+            {
+                "url": "assets/img/portal2/InGame-1.png",
+                "legende": "Première partie de niveau vue dans le jeu"
+            },
+            {
+                "url": "assets/img/portal2/InGame-2.png",
+                "legende": "Seconde partie de niveau vue dans le jeu"
+            },
+            {
+                "url": "assets/img/portal2/InGame-3.png",
+                "legende": "Dernière partie de niveau vue dans le jeu"
+            }
+        ],
+        "embed": [
+            {
+                "url":"https://www.youtube.com/embed/PazuoibiBBc",
+                "title" : "Checked Pattern a Portal 2 Level by BtwLuma",
+                "width":"100",
+                "height":"100"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le niveau",
+                "icon": "launch",
+                "link": "https://steamcommunity.com/sharedfiles/filedetails/?id=3676649396"
+            }
+        ],
+        "keep": true,
+        "jeux": true
+    },
+    {
+        "name": "QBT",
+        "date": "Sept. 2024 à Fév. 2025",
+        "period": "6 mois",
+        "year": "2024/2025",
+        "team": "12 personnes",
+        "context": "Universitaire",
+        "tags": [
+            "ld",
+            "ta",
+            "dev"
+        ],
+        "type": "Universitaire",
+        "img": "assets/img/qbt/QBT-Jacket.png",
+        "smalldesc": "Jeu de puzzle narratif utilisant la gravité",
+        "description": "<h2>Qu’est-ce qu’est QBT ?</h2> QBT est un jeu à la <b>première personne</b> dans lequel on incarne un sujet dans un laboratoire en bichromie qui est capable de changer sa gravité.<br> J'étais <b>Level Designer</b>, <b>Level Artist</b>, <b>Technical Artist</b> et <b>Lead Développeur</b> sur le projet. Nous avons pu présenter le jeu au Festival International des Jeux de Cannes 2025.<br><br> Le jeu présente actuellement une dizaine de niveaux, mais nous avons encore quelques niveaux qui n'ont pas eu le temps d'être terminés. C'est pourquoi nous allons encore travailler sur QBT pour pouvoir présenter une expérience complète la plus proche de ce que nous avions imaginé.<br><br> Notre équipe comportait douze personnes avec pour beaucoup de multiples rôles. L’équipe entière ainsi que les différents rôles sont disponibles sur la page itch.io du jeu.<br><br> $!img=0!!img=1!!img=2!$<br> <h2>Résumé de mes rôles sur QBT</h2> Mon rôle sur QBT était transversal. En effet, comme mentionné plus tôt j’ai travaillé en tant que <b>Level Designer</b>, <b>Level Artist</b>, <b>Technical Artist</b> et <b>Lead développeur</b>. Cette position m’a permis d’avoir en permanence une vision d’ensemble sur la production et sa cohérence. Chaque tâche que je réalisais impactait mes autres rôles, parfois positivement, parfois négativement. <br><br> Étant du côté <b>design</b> mais aussi du côté <b>développement</b>, j’ai pu me rendre compte des difficultés que les Level Designer rencontraient et j’ai développé <b>un outil</b> pour faciliter la création des niveaux ce qui nous a fait gagner un temps précieux.<br> En tant que <b>Technical Artist</b>, j’avais en permanence en tête le rendu visuel de mes niveaux ce qui m’a permis d’avoir <b>un point d’ancrage</b> sur l’aspect que je visais.<br> En tant que développeur, je connaissais les limites <b>techniques</b> et de <b>conception</b> imposées par notre calendrier de production. Je savais poser les limites sur les nouvelles idées, l’objectif n’était pas d’être un frein créatif mais bien d'essayer de rester plus <b>simple</b> dans le design afin de garder le contrôle sur la production d’un <b>jeu ambitieux pour des étudiants</b>.<br><br> Ces exemples montrent comment un profil comme le mien, travaillant sur plusieurs facettes du projet permet <b>une circulation plus rapide des informations</b> mais aussi <b>une cohérence globale</b> entre les différentes tâches que j’ai réalisées.<br> Il faut aussi voir cela sous tous les angles, bien que cela m’ait beaucoup apporté, que ça soit sur le plan personnel ou professionnel. Je dois dire également que cela a représenté certaines <b>limites</b> pour moi.<br><br> En effet, chaque tâche longue que je réalisais d'un côté me mettait en <b>retard</b> ou <b>empêchait la réalisation de tâches d’un autre côté</b>. Je devais rester b>vigilant</b> en permanence pour ne dépasser aucune limite qui auraient pu nuire à la la bonne réalisation du projet. C’est une compétence que j’ai développée au fil du projet.<br> De plus, j’avais souvent l’impression de devoir être <b>présent</b> à toutes les réunions pour comprendre, suivre et participer aux décisions prises dans <b>les différents pôles du projet</b>. Une solution que j’ai appliquée était d’être présent surtout dans les réunions <b>décisionnelles</b> et dans certaines réunions de <b>brainstorming</b> afin de me dégager du temps dans ma production.<br> Pour finir, c’est aussi beaucoup de pression d’avoir des responsabilités aussi diverses dans un projet.<br><br> En bref, j’ai eu la chance de porter de <b>multiples</b> rôles me permettant d’avoir une vision <b>globale</b>, <b>utile</b> et <b>enrichissante</b> du projet que nous avons mené collectivement. J’ai pu être un élément <b>moteur</b>, <b>utile</b> et <b>créatif</b>.",
+        "images": [
+            {
+                "url": "assets/img/qbt/qbt-2.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/qbt-3.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/qbt-4.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/QBT-Ref-1-2-3.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/Start-TechArt-3.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/Start-TechArt-4.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/Start-TechArt-5.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/Start-TechArt-7.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/Start-TechArt-8.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/Start-TechArt-9.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/Start-TechArt-10.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/QBT-Ref-5-6-7.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/QBT-Ref-5-6-7.png",
+                "legende": ""
+            },
+            {
+                "url": "assets/img/qbt/QBT-Ref-5-6-7.png",
+                "legende": ""
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://robin-lefebvre.itch.io/qbt"
+            }
+        ],
+        "keep": true,
+        "jeux": true
+    },
+    {
+        "name": "Tekuteku : Fishing Adventure",
+        "date": "Avril 2024 à Août 2024",
+        "period": "5 mois",
+        "year": "2024",
+        "team": "7 personnes",
+        "context": "Universitaire",
+        "tags": [
+            "ld",
+            "ta"
+        ],
+        "type": "Universitaire",
+        "img": "assets/img/tekuteku/Tekuteku-Jacket.png",
+        "smalldesc": "Jeu d'aventure et de pêche",
+        "description": "<h2>Résumé de Tekuteku : Fishing Adventure</h2> <b>Tekuteku : Fishing Adventure</b> est un jeu sous <b>Unity</b> que j’ai réalisé en équipe de 7 en <b>5 mois</b> dans le cadre de ma formation. L’objectif était de réaliser un jeu, celui de notre choix, seul ou en groupe. J’ai travaillé sur le jeu en tant que <b>Level Designer</b> et <b>Technical Artist</b>.<br><br> Tekuteku : Fishing Adventure est un jeu <b>d'aventure</b> et de <b>pêche</b> se déroulant sur le dos d’une baleine volante dans lequel on incarne un <b>pêcheur</b> de l'espèce des <b>Tekuteku</b>. Le joueur est missionné par la déesse afin de retrouver l’élu qui s’est enfui. Il va devoir pêcher et déposer des poissons sur un <b>autel</b> afin de contrôler différents types <b>d’oiseaux</b> et de résoudre des <b>énigmes</b> bloquant son chemin.<br><br> <h2>Processus de création</h2> Mon travail s’est articulé autour de trois axes : le Level Design, le Level Art et le Tech Art.<br> En tant que Level designer, j’ai réalisé le seul niveau du jeu. Le niveau est assez grand mettant en avant les différents oiseaux du jeu. J’ai donc réalisé le niveau en réfléchissant aux différentes mécaniques disponibles dans le jeu ainsi que le contexte qui est sur le dos d’une baleine.<br><br> Le Level Design a surtout été un challenge technique de par les outils. En effet, j’ai passé beaucoup de temps à chercher un outil optimisé permettant de réaliser ce que je veux. N’étant pas satisfait par le résultat de <b>Unity Terrain</b> (outil natif de Unity), j’ai recherché des solutions alternatives. La solution que j’ai adoptée était une combinaison de <b>ProBuilder</b> et de <b>PolyBrush</b>. Solution qui fonctionnait plutôt bien autant d’un point de vue modelage que performance. Cependant, cette méthode avait un défaut majeur, le poids de la scène Unity qui atteignait de plusieurs gigaoctets. J’ai donc réalisé <b>le plan du niveau</b> et son <b>intégration</b> dans le moteur.<br><br> $!img=8!$<br> J’étais également responsable du <b>Level Art</b> du niveau. C’était un travail intéressant de par plusieurs aspects. Tout d’abord, j’ai apprécié essayer d’instaurer une ambiance unique dans le niveau en accord avec les éléments 3D et la direction du Game Design. J’ai également apprécié voir le niveau que j’avais conceptualisé prendre vie.<br><br> $!img=6!!img=7!$<br> Pour finir, j’étais également responsable du <b>Tech Art</b> du jeu. J’ai réalisé de multiples <b>shaders</b> : l’eau, la skybox , les nuages, les arbres, ou encore les plantes. J’ai également fait un travail sur le <b>post process</b> afin d’avoir un jeu avec le rendu visuel recherché. Ce fut une première expérience très enrichissante qui m’a permis de comprendre les fondements du Tech Art.<br><br> $!img=0!!img=1!!img=2!!img=3!!img=4!!img=5!$<br> <h2>Bilan de Tekuteku</h2> Tekuteku : Fishing Adventure n’a malheureusement pas abouti en un jeu complètement jouable à cause de retard du côté du développement.<br><br> C’est un jeu qui m’a permis d’en apprendre beaucoup en Level Design et Tech Art. En effet, le projet m’a poussé à avoir une attitude de <b>recherche</b> dans le Level Design afin de trouver les solutions techniques <b>adéquates</b> pour le projet. J’ai également pu apprendre les fondements du Tech Art et comprendre le fonctionnement du <b>Shader Graph</b> de Unity ainsi que du <b>post process</b>.<br> Ce projet m’a permis de renforcer ma capacité à résoudre des problèmes techniques <b>complexes</b> tout en conservant une vision artistique <b>cohérente</b>.<br><br>",
+        "images": [
+            {
+                "url": "assets/img/tekuteku/Tekuteku1.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/tekuteku/Tekuteku2.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/tekuteku/Tekuteku4.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/tekuteku/Tekuteku8.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/tekuteku/Tekuteku9.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/tekuteku/Tekuteku11.png",
+                "legende": "Screenshot du jeu"
+            },
+            {
+                "url": "assets/img/tekuteku/FirstLevel1.png",
+                "legende": "Le premier niveau en cours de réalisation"
+            },
+            {
+                "url": "assets/img/tekuteku/LastLevel1-2.png",
+                "legende": "Le premier niveau et une partie du second proche de son état final"
+            },
+            {
+                "url": "assets/img/tekuteku/Tekuteku_Level-1-2.png",
+                "legende": "Le plan du niveau"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://xc3l.itch.io/tekuteku-fishing-adventure"
+            }
+        ],
+        "keep": true,
+        "jeux": true
+    },
+    {
+        "name": "Anthares",
+        "date": "Sept. 2023 à Fév. 2024",
+        "period": "6 mois",
+        "year": "2023/2024",
+        "team": "14 personnes",
+        "context": "Universitaire",
+        "tags": [
+            "gd",
+            "ld",
+            "qa",
+            "dev"
+        ],
+        "type": "Universitaire",
+        "img": "assets/img/anthares/Anthares-Jacket.png",
+        "smalldesc": "Platforme figther cyberfuturiste",
+        "description": "<h2>Résumé de Anthares</h2> <b>Anthares</b> est un jeu sur lequel j'ai travaillé en tant que <b>Game Designer</b>, <b>Level Designer</b> et <b>QA Tester</b> dans le cadre de la première année de mon master. Le projet a été réalisé en une équipe de 15 personnes pendant <b>6 mois</b>. Dans un univers futuriste où chacun utilise la cyber-technologie, participez au grand tournoi <b>Anthares</b> organisé par <b>The Talos Conglomerate</b>. Affrontez-vous en <b>local</b> avec des personnages au style unique et battez votre adversaire lors d’un <b>1 contre 1</b> dynamique et fluide dans une arène remplie de <b>pièges</b> et devenez une légende du show-business !<br><br> $!img=1!!img=2!!img=3!$<br> <h2>Processus de création</h2> J’ai tout d’abord été <b>Game Designer</b>. J’ai pu réaliser le Game Design Document ainsi que les différents Documents de Spécification. J’ai également équilibré les différentes attaques, les déplacements et les pièges. L’objectif était de faire un jeu facile d’accès, fun rapidement avec beaucoup de juice dans les attaques pour éprouver de la satisfaction lorsqu’on réussit à toucher.<br> <ul> <li><b>Le Game Design Document</b>, dense et complet, fut une expérience enrichissante pour moi et pour le projet. Cependant, la réalisation de ce document m’a permis de comprendre un problème avec le format que j’ai choisi (document format A4) ainsi que par la manière dont j’ai rédigé, il ne donne pas envie d’être lu ce qui est dommage pour un document qui a pour but de donner les directions du projet. C’est une leçon que j’ai retenue pour mes futurs projets, il faut rendre le plus lisible et fluide possible.</li> <li><b>Les documents de spécification</b> permettaient donc de rendre plus lisibles et plus accessibles les informations.</li> <li><b>L’équilibrage</b> fut un travail de longue haleine, il a fallu travailler sur les différents aspects du jeu, de la vitesse de déplacement des personnages, en passant par les timings des attaques pour finir sur les pièges. Pour ce faire, nous avons réalisé <b>un document d’équilibrage</b> qui nous permettait de garder une trace des différentes valeurs des éléments à équilibrer. Ce travail <b>d’équipe</b>, en particulier avec le second Game Designer, nous a demandé beaucoup de réflexion pour faire un jeu le plus <b>juste</b> possible qui se rapproche le plus de ce qu’on voulait comme sensation côté joueur.</li> </ul> J’ai également contribué au <b>Level Design</b>, bien que ce fut plus restreint en raison du fait que le jeu ne comporte qu’une seule arène.<br><br> Vers la fin du projet, la <b>QA</b> à commencé à s’organiser afin de limiter les bugs. J’ai donc créé et organisé un <b>Jira</b> afin de répertorier les bugs pour les développeurs. À chaque <b>build</b>, nous procédions à de nombreux <b>tests</b>, qu’il s’agisse de tests cases ou des tests globaux de la build. <br><br> Aujourd’hui, <b>Anthares</b> est proche d’être terminé. Depuis la fin du projet en février 2024, le projet n’a pas eu beaucoup de changement, mais nous avons pour objectif d’ajouter des features <b>Quality of Life</b>, de <b>régler les bugs</b> ainsi que <b>d’équilibrer</b> une dernière fois le jeu avant de le sortir sur Steam. Dans ce cadre-là, je suis le seul développeur sur le projet et sa finalisation.<br><br> <h2>Bilan de Anthares</h2> Anthares fut un projet <b>enrichissant</b> qui m’a permis de grandement <b>progresser</b> en Game Design et d’apporter des réflexions sur ma manière de travailler et sur la forme de mes réalisations. J’ai également pu progresser dans mes idées et dans mes inspirations m’étant inspirés de nombreux jeux de combats pour ce projet. J’ai pu me rendre compte de l’importance de <b>l’équilibrage</b>, encore plus dans un <b>jeu de combat</b>.<br> J’ai également pu aborder pour la première fois dans un projet la <b>QA</b> ce qui m’a permis de comprendre de manière <b>concrète</b> plus que théorique les processus et l’importance de cette tâche sur un projet.<br><br>",
+        "images": [
+            {
+                "url": "assets/img/anthares/anthares-mainlogo.png",
+                "legende": "Banière du jeu sur Itch.io"
+            },
+            {
+                "url": "assets/img/anthares/anthares-screen1.png",
+                "legende": "Menu principal du jeu"
+            },
+            {
+                "url": "assets/img/anthares/anthares-screen2.png",
+                "legende": "Screen In-game"
+            },
+            {
+                "url": "assets/img/anthares/anthares-screen3.png",
+                "legende": "Screen In-game"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://robin-lefebvre.itch.io/anthares"
+            },
+            {
+                "name": "Voir le Game Design Document",
+                "icon": "launch",
+                "link": "data/GDD-Anthares.pdf"
+            }
+        ],
+        "keep": true,
+        "jeux": true
+    },
+    {
+        "name": "Pafia Masta",
+        "date": "Jan. 2024 à Mars 2024",
+        "period": "1 mois",
+        "year": "2024",
+        "team": "7 personnes",
+        "context": "Universitaire",
+        "tags": [
+            "dev",
+            "gd"
+        ],
+        "type": "Universitaire",
+        "img": "assets/img/pafia-masta/PafiaMasta-Jacket.png",
+        "smalldesc": "Jeu d’enquête dans un monde de pâtes",
+        "description": "<h2>Résumé de Pafia Masta</h2> <b>Pafia Masta</b> est un jeu que j’ai réalisé en équipe de 7 personnes en <b>1 mois</b> dans le cadre d’un cours durant mon Master. L’objectif était de réaliser un jeu, celui de notre choix, en s’organisant en groupe autour d’un développeur. J’ai travaillé sur le jeu en tant que <b>développeur</b> et <b>Game Designer</b> au début du projet.<br><br> Pafia Masta est un <b>jeu narratif</b> et une <b>murder party</b> dans lequel on incarne <b>Gnocchitalian la détective</b> qui cherche qui a empoisonné la <b>carbonara piscine</b> en mettant de la <b>crème fraîche</b>. Le joueur va devoir discuter avec tout le village afin de rassembler les <b>alibis</b> des habitants. Parfois ils demandent au joueur de faire quelque chose de particulier avec plusieurs <b>mini-jeux</b>. Le joueur termine la partie en choisissant un <b>coupable</b> une fois qu’il a réuni tous les alibis.<br><br> $!img=1!!img=2!$<br> <h2>Processus de création</h2> Le projet est né des profils variés de l’équipe : <b>deux artistes</b>, <b>deux narrative designers</b> et <b>un seul développeur</b>. Nous avons donc orienté le jeu de manière à ce qu’il soit réalisable malgré la quantité de contenu que les autres membres pouvaient produire. Les idées du projet étaient souvent <b>cadrées</b> par mes capacités de développement. En effet, je mettais des limites dans la conception en fonction de ce que j’étais capable de réaliser. Je ne me suis pas empêché de me <b>challenger</b> mais il fallait être réaliste.<br><br> Le processus de développement de Pafia Masta fut assez tendu, le jeu était fortement <b>ambitieux</b> pour 1 mois. Du côté développement, j’ai essayé d’aborder le jeu de manière plus <b>systémique</b> avec un seul et unique niveau, des écrans qui apparaissent pour les mini-jeux et les dialogues. Le développement du jeu a été fortement concentré sur <b>l’UI</b> notamment. L’importation de tous les assets et la création du système de dialogue ont été des éléments de développement majeur du projet.<br><br> $!img=3!!img=4!$<br> <h2>Bilan de Pafia Masta</h2> Finalement, Pafia Masta a été un jeu <b>intéressant</b> à développer, dû à la contrainte de temps, j’ai dû me creuser la tête afin de réaliser des systèmes <b>simples</b> et <b>réutilisables</b> demandant moins de développement. J’ai aussi beaucoup appris en ce qui concerne l’UI de <b>Unity</b> qui n’est pas toujours évidente dont je comprends maintenant mieux le fonctionnement.<br><br>",
+        "images": [
+            {
+                "url": "assets/img/pafia-masta/pafiamasta-mainlogo.png",
+                "legende": "Banière du jeu sur Itch.io"
+            },
+            {
+                "url": "assets/img/pafia-masta/pafiamasta-screen1.png",
+                "legende": "Menu principal du jeu"
+            },
+            {
+                "url": "assets/img/pafia-masta/pafiamasta-screen2.png",
+                "legende": "Screen In-game"
+            },
+            {
+                "url": "assets/img/pafia-masta/pafiamasta-screen3.png",
+                "legende": "Screen In-game"
+            },
+            {
+                "url": "assets/img/pafia-masta/pafiamasta-screen4.png",
+                "legende": "Screen In-game"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir la page itch.io",
+                "icon": "launch",
+                "link": "https://xc3l.itch.io/pafia-masta"
+            }
+        ],
+        "keep": true,
+        "jeux": true
+    },
+    {
+        "name": "Game Concept et GDD - Don't Be Fired !!",
+        "year": "2023 ",
+        "context": "Universitaire",
+        "date": "Avril 2023",
+        "tags": [
+            "gd"
+        ],
+        "type": "Document",
+        "img": "assets/img/dont-be-fired/DontBeFired-Jacket.png",
+        "smalldesc": "Game Concept et GDD d'un party game",
+        "description": "<h2>Résumé des documents</h2> <b>Don't be Fired</b> est un <b>Game Concept</b> que j'ai réalisé dans le cadre d'un cours de Game Design. L'objectif était de faire un party game. J’ai donc réalisé ce Game Concept en m’inspirant du monde de l’entreprise de manière humoristique ainsi que des party game basé sur la physique des objets. <br><br> J’ai ensuite rédigé un <b>Game Design Document</b> basé sur le Game Concept afin de développer en détails <b>les différentes mécaniques du jeu</b>, en détaillant les références visuelles, sonores et de gameplay. J’ai réalisé ce Game Design Document dans le cadre d’un dossier d’admission dans une formation.<br><br> Le jeu s’inspire donc de <i><b>Gang Beasts</b></i>, <i><b>Overcooked</b></i> et de l’entreprise à la manière de <i><b>The Office</b></i>.<br> Le jeu est simple : <ul> <li>4 joueurs dans une pièce</li> <li>3 vies chacun</li> <li>Des objets sur un bureau et des événements aléatoires</li> </ul> Le joueur peut <b>lancer des objets</b> pour <b>attaquer</b> les autres joueurs ou se <b>défendre</b>.<br> <b>L’objectif</b> est de faire perdre toutes les vies de tous les autres joueurs. Des événements comme le patron qui traverse la pièce ou des stagiaires qui ramènent des nouveaux objets surviennent tout au long de la partie.<br> Une fois les objets lancés, le joueur peut se lever pour ramasser les objets, il ne peut pas tirer dans cet état, il est dans un état de <b>vulnérabilité</b>. Cette mécanique insiste sur la gestion des ressources. <br><br> Ce travail m’a permis de progresser dans <b>la réalisation de documents</b>. J’ai précisé, détaillé et expliqué les différentes mécaniques en me basant sur des références afin de faire comprendre le jeu que j’imaginais. J’ai également schématisé pour expliquer mes idées.<br> La mise en page du Game Design Document pourrait être améliorée afin de <b>renforcer sa lisibilité</b>.",
+        "images": [
+            {
+                "url": "assets/img/logo-gdd-firedsimu.png",
+                "legende": "GDD"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le GDD",
+                "icon": "launch",
+                "link": "data/Game-Design-Document_Dont-Be-Fired_Robin-LEFEBVRE.pdf"
+            },
+            {
+                "name": "Voir le Game Conept",
+                "icon": "launch",
+                "link": "data/Exercice_Party_Games-Game_design.pdf"
+            }
+        ],
+        "keep": true,
+        "jeux": false
+    },
+    {
+        "name": "Booom!",
+        "date": "Jan. 2023 à Mars 2023",
+        "period": "2 mois",
+        "year": "2023",
+        "team": "5 personnes",
+        "context": "Universitaire",
+        "tags": [
+            "dev",
+            "gd"
+        ],
+        "type": "Universitaire",
+        "img": "assets/img/booom/Booom-Jacket.png",
+        "smalldesc": "Jeu arcade runner inspiré des jeux flashs",
+        "description": "<h2>Résumé de Booom!</h2> <b>Booom!</b> est un jeu que j'ai réalisé en équipe pour le projet de fin d'études de notre licence professionnelle métier du jeu vidéo avec comme thème \"Stronger Together\". Nous étions une équipe de 5 et j'étais <b>développeur</b> et <b>Game designer</b>. Nous avions eu 3 mois pour réaliser le jeu en même temps que les cours.<br><br> Booom! est une sorte de <b>runner</b> dans lequel on incarne un <b>astéroïde</b> qui veut détruire la terre. Pour ce faire, il doit accumuler de la <b>vitesse</b> et du <b>poids</b> en récupérant un <b>maximum</b> de débris sur le terrain, attention, les débris trop gros ne sont pas récupérables, il va falloir grossir avant. Ces débris sont pour la majorité de simples rochers spatiaux mais certains d’entre eux ont un visuel <b>particulier</b> et sont une référence à un élément de <b>culture populaire</b>.<br><br> $!img=1!!img=2!!img=4!$<br> <h2>Processus de création</h2> Nous avons tout d’abord imaginé le jeu dans une phase de brainstorming durant laquelle on a posé toutes les idées sur la table. L’idée d’un <b>astéroïde</b> devenant de plus en plus gros est arrivée. On a ensuite fait des <b>mockups</b> afin de s’accorder tous sur la forme qu'allait prendre le jeu. On a cherché des inspirations sur lesquelles se baser afin de définir précisément les mécaniques du jeu.<br><br> L’inspiration de Booom! sont les <b>jeux flash</b>. On voulait reproduire à notre manière l’accessibilité, la simplicité ainsi que le juice présent dans ces jeux. On voulait que le jeu soit fun immédiatement.<br><br> Au fur et à mesure que les mécaniques du jeu se formaient, j’ai commencé à développer les bases afin de voir au plus vite si nos idées <b>fonctionnaient</b> et si elles étaient bonnes.<br> À ce moment-là, nous avons décidé d’approcher le jeu de manière <b>itérative</b>. En effet, face au peu de temps qu’on avait pour réaliser Booom!. Nous avons choisi de rendre le jeu jouable <b>le plus tôt possible</b>, en découpant le jeu par niveau avec chacun des mécaniques différentes en plus des mécaniques de base du jeu. <br> Trois <b>niveaux</b>, inspirés de trois époques différentes : la préhistoire, l’époque contemporaine et le futur. Le 3ème niveau ne fut jamais réalisé par manque de temps dans la production mais grâce à notre approche, le jeu reste jouable et amusant.<br><br> <h2>Bilan de Booom!</h2> Ce fut une expérience très intéressante qui m'a permis de m'améliorer en Game Design et en développement Unity. C'est également une expérience qui m'a permis de voir l'importance de la <b>communication</b> et de <b>l'organisation</b> dans un groupe afin de mener le projet à bien.<br><br>",
+        "images": [
+            {
+                "url": "assets/img/booom/Booom-logo.png",
+                "legende": "Le logo du jeu."
+            },
+            {
+                "url": "assets/img/booom/Booom-menu.png",
+                "legende": "Les menus du jeu."
+            },
+            {
+                "url": "assets/img/booom/Booom-ingame.png",
+                "legende": "Capture d'écran in-game."
+            },
+            {
+                "url": "assets/img/booom/Booom-highscore.png",
+                "legende": "Le highscore en fin de partie."
+            },
+            {
+                "url": "assets/img/booom/Booom-codex.png",
+                "legende": "Le codex des débris spéciaux."
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://purpleluma.itch.io/booom"
+            }
+        ],
+        "keep": true,
+        "jeux": true
+    },
+    {
+        "name": "Game Concept - Animal Crossing RPG",
+        "date": "Fév. 2023",
+        "year": "2023",
+        "context": "Universitaire",
+        "tags": [
+            "gd"
+        ],
+        "type": "Document",
+        "img": "assets/img/ac-rpg/AC-Jacket.png",
+        "smalldesc": "Game Concept se basant sur Animal Crossing",
+        "description": "<h2>Résumé du document</h2> Ce travail est un <b>Game Concept</b> réalisé en groupe de trois dans le cadre d'une évaluation demandant de concevoir un game concept pour <b><i>Animal Crossing: New Horizons</i></b> en version <b>RPG</b>.<br><br> Comme l’objectif était de faire un <b><i>Animal Crossing</i></b> mais sous forme de <b>RPG</b>, nous nous sommes inspirés de <b><i>The Legend of Zelda</i></b> et <b><i>Ittle Dew</i></b>. Nous avons décidé de traiter l’île comme un <b>hub</b> que le joueur peut améliorer pour obtenir un meilleur <b>équipement</b> et progresser dans l’<b>intrigue narrative</b>.<br> En effet, afin de rendre le jeu plus engageant et en s’inspirant du genre RPG, nous avions décidé d’ajouter un enjeu : la mère du joueur est prise en otage par Tom Nook. Le joueur explore des îles mystérieuses afin de sauver des PNJ. Ces mêmes PNJ aideront le joueur dans sa quête en améliorant son <b>équipement</b> et en l’aidant à sauver sa mère.<br><br> En plus du <b>combat</b> se rapprochant de <b><i>The Legend of Zelda: Link’s Awakening</i></b>, le jeu a un système de <b>commerce</b>, de <b>craft</b> et d’<b>expérience</b> permettant au joueur de progresser. Afin de rester cohérent avec la franchise <b><i>Animal Crossing</i></b>, l’<b>entretien de l’île</b> est également une activité à laquelle le joueur peut s'adonner en trouvant des objets lors de ses explorations. Le joueur peut également pêcher, attraper des insectes ou encore récolter des ressources sur les îles qu’il explore.<br><br> Ce travail m’a permis de comprendre comment s’inspirer des <b>mécaniques</b> et de la <b>structure d’un jeu existant</b> pour les <b>adapter à un nouveau genre</b>.",
+        "images": [
+            {
+                "url": "assets/img/ACNH-RPG.png",
+                "legende": "Première page de document"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le document",
+                "icon": "launch",
+                "link": "data/Animal-Crossing_Game-Concept.pdf"
+            }
+        ],
+        "keep": true,
+        "jeux": false
+    },
+    {
+        "name": "Document de spé : Mécanique de craft - Cube World",
+        "date": "Fév. 2023",
+        "year": "2023",
+        "context": "Universitaire",
+        "type": "Document",
+        "tags": [
+            "gd"
+        ],
+        "img": "assets/img/cube-world/CubeWorld-Jacket.png",
+        "smalldesc": "Analyse d'une mécanique de craft",
+        "description": "<h2>Résumé du document</h2> Ce travail est un <b>document de spécialisation</b> se concentrant sur une <b>mécanique de craft</b>.Ce document a été produit dans le cadre d’un <b>exercice en cours de Game Design</b>.<br> Le <b>document de spécification</b> produit détaille la totalité des <b>mécaniques de craft</b> et leur fonctionnement du jeu <i>Cube World Alpha</i>.<br> Le document détaille les différents <b>crafts possibles</b>, comment ils sont obtenus, de quoi ils sont composés et pourquoi les faire. Les différents <b>établis</b> sont également présentés. La spécification de la <b>modification d’arme</b>, mécanique particulière de <i>Cube World</i>, est aussi incluse.<br><br> La réalisation de ce document m’a appris à être le plus <b>précis</b> possible dans mon travail afin d’être bien compris, une <b>rigueur</b> que j’ai cherché à conserver.<br> Cependant, je trouve après analyse de mon travail qu’il gagnerait en qualité s’il était plus <b>digeste</b> et <b>mieux présenté</b>.<br> Dans le contexte d’une <b>production</b>, une <b>liste des recettes</b> dans un tableur, accompagnée de <b>chiffres précis sur les matériaux</b>, serait indispensable et permettrait de compléter ce document.",
+        "images": [
+            {
+                "url": "assets/img/Doc-spe-craft.png",
+                "legende": "Première page de document"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le document",
+                "icon": "launch",
+                "link": "data/Doc-spe_craft-Cube-World-Alpha.pdf"
+            }
+        ],
+        "keep": true,
+        "jeux": false
+    },
+    {
+        "name": "Cours-Je ?",
+        "date": "Fév. 2023",
+        "period": "2 jours",
+        "year": "2023",
+        "team": "4 personnes",
+        "context": "Personnel",
+        "tags": [
+            "dev",
+            "gd"
+        ],
+        "img": "assets/img/cours-je/CoursJe-Jacket.png",
+        "type": "GameJam",
+        "smalldesc": "Jeu arcade top-view de scoring",
+        "description": "<h2>Résumé de Cours-je?</h2> Cours-je? est un jeu que j'ai réalisé deux semaines après la Global Game Jam 2023 avec une équipe de 4 personnes. J'avais les rôles de <b>développeur</b> et de <b>Game Designer</b>. Le thème de cette Game Jam était <b>\"Root\"</b>. Nous sommes donc partis sur les <b>plantes</b> et le <b>reggae roots</b>.<br><br> Cours-je? est un jeu <b>d'arcade</b> dans lequel il faut récupérer et vendre des plantes qui poussent dans un jardin afin de <b>s’échapper de la dette financière</b> qui nous prend de plus en plus d’argent. <br> Le jeu a des commandes simples mais avec un personnage glissant, le concept du jeu étant de se déplacer, c’est dans le contrôle de ses déplacements que réside le challenge du jeu.<br> Deux types de <b>plantes</b> existent, des <b>courges</b>, tout ce qui a de plus normal, et des <b>herbes</b> qui lorsqu’elles sont récupérées, nous donnent la nausée et il devient plus difficile de se repérer.<br> <h2>Bilan de la Game Jam</h2> Ce fut une expérience très <b>intéressante</b> et <b>enrichissante</b> en tant que développeur et Game designer. Étant la personne qui développait le jeu, j'étais en contact en permanence avec les autres membres de l'équipe pour faire un jeu le plus proche possible de ce qu'on avait imaginé.<br><br> De plus, j'ai beaucoup appris sur <b>la communication</b> entre Game Designer et développeur. Je me suis assez vite rendu compte des problèmes que pouvait rencontrer un développeur lorsque le document de spécification manque de détails. Cela m’a permis de mieux <b>comprendre</b> comment les rédiger.<br><br> $!img=0!!img=1!!img=2!!img=4!$<br>",
+        "images": [
+            {
+                "url": "assets/img/cours-je/cours-je-1.png",
+                "legende": "Le logo du jeu sur Itch.io"
+            },
+            {
+                "url": "assets/img/cours-je/cours-je-2.png",
+                "legende": "Les menus du jeu."
+            },
+            {
+                "url": "assets/img/cours-je/cours-je-3.png",
+                "legende": "Le début du jeu."
+            },
+            {
+                "url": "assets/img/cours-je/cours-je-4.png",
+                "legende": "Une partie en cours"
+            },
+            {
+                "url": "assets/img/cours-je/cours-je-5.png",
+                "legende": "Une fin de partie"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://alans-tagioo.itch.io/cours-je"
+            }
+        ],
+        "keep": true,
+        "jeux": true
+    },
+    {
+        "name": "Niveau réalisé sur Unreal Engine",
+        "date": "Jan. 2023",
+        "period": "2 semaines",
+        "year": "2023",
+        "context": "Universitaire",
+        "tags": [
+            "ld"
+        ],
+        "img": "assets/img/ue-ld/VengeanceFroide-Jacket.png",
+        "type": "Concept",
+        "smalldesc": "Niveau d'infiltration sur Unreal Engine",
+        "description": "<h2>Résumé de Vengeance Froide</h2> J'ai réalisé un niveau dans le cadre d'un <b>Workshop</b> de Level Design sur <b>Unreal Engine</b> organisé dans ma licence professionnelle métier du jeu vidéo afin d'apprendre Unreal Engine tout en mettant en pratique nos connaissances en Level Design. On joue un personnage avec une <b>arbalète</b> à la <b>troisième personne</b> avec infiltration et phase de tir.<br><br> $!img=2!!img=4!$<br><br> L'objectif était de réaliser un niveau de <b>A à Z</b> sur Unreal Engine d’un jeu d’aventure à la troisième personne. Une base nous était donnée avec une <b>caméra</b>, des <b>déplacements</b> et une <b>arme</b>.<br> Deux contraintes étaient imposées : <b>une phase de combat</b> et <b>une phase d'infiltration</b>.<br> Ce projet m’a permis de découvrir le moteur Unreal Engine à travers un exercice complet de level design, du concept à la réalisation.<br><br> Je suis passé par plusieurs étapes dans mon processus de création : <ul> <li>J’ai commencé par la <b>conceptualisation</b> avec le <b>contexte</b>, le <b>bubble diagram</b> puis le <b>plan</b>.</li> <li>Ensuite le <b>prototypage</b>, avec le <b>greyboxing</b>, les <b>premiers script</b> sur les comportement particulier du niveau et <b>l’ajustement</b> des scripts de base pour se rapprocher de l’idée que j’avais.</li> <li>Enfin, la phase de finalisation avec les <b>derniers scripts</b>, le <b>Level Art</b> et les <b>ajustements</b> après les tests.</li> </ul><br> $!img=1!!img=0!$<br><br> Voici le <b>contexte</b> :<br> \"Voleur de profession, notre personnage vit de prime grâce au vol commandité par des riches, des pauvres mais aussi des groupes de parias, de roublards ou encore de bandits. Elle est dans les petits papiers de tout le monde et elle en a payé le prix fort. En effet, lors d’une affaire de vol qui a mal tourné, elle s’est fait repérer par un groupe de bandits qu’elle était en train de voler. Ce n’est pas resté sans conséquence, le connaissant un peu trop bien, ils ont décidé de se venger en tuant son petit frère.\"<br> Ce contexte m'a permis de tirer un titre pour mon niveau : \"Vengeance Froide\" et c'est la ligne directrice que j'ai suivie dans ce niveau.<br<br> J’ai cherché à <b>alterner</b> entre <b>infiltration</b> et <b>combat</b> en commençant le début du niveau avec une phase rapide d’exploration. J’ai également cherché à parsemer l'exploration tout au fil du niveau avec des objectifs secondaires.<br> J’ai apporté un <b>twist</b> dans l’infiltration dans la tour avec des <b>chandeliers</b> à faire tomber en tirant dessus afin d’éliminer des ennemis nous empêchant de s’infiltrer.<br> A la fin de la grande tour, un <b>boss</b> nous attend qu’on doit éliminer à l’aide de barils explosifs.<br><br> $!img=7!!img=8!$<br><br> Un point important que j’ai cherché à travailler dans le niveau est le <b>landmarking</b>. En effet, le niveau commence en contrebas avec une <b>tour</b> sur la droite qui nous attire étant le seul élément qu’on perçoit avec la <b>grande tour</b> au centre du niveau. Cette petite tour sur le côté nous permet d’observer le niveau et de comprendre ce qui nous attend. Ensuite une tour effondrée permet au joueur de <b>planifier</b> et <b>comprendre</b> les déplacements des ennemis dans la phase d’infiltration.<br><br> Pour finir, la grande tour au centre du niveau représente un objectif perpétuel, à moyen terme, relativement aux autres éléments de landmarking.<br> Avec du recul, je constate cependant que <b>l’arène</b>, une étape importante du niveau, <b>n’est pas assez visible</b> pour attirer les joueurs.<br><br> $!img=6!!img=5!!img=9!$ <h2>Conclusion</h2> La création de ce niveau m’a permis de mettre en pratique des notions que j’avais abordé en cours comme le <b>greyboxing</b> ou encore le <b>landmarking</b>.<br> Un point important que j’ai tiré de la création de ce niveau est l’importance d’un plan <b>clair</b> mais <b>flexible</b> dans la conceptualisation d’un niveau. En effet, plus le plan était clair plus il était simple pour moi de réaliser le niveau <b>rapidement</b> mais il faut qu’il soit flexible pour coller à la <b>réalité</b> à l’intérieur du moteur en comparaison avec le plan.<br> J’en ai tiré des leçons et acquis une première expérience sur Unreal Engine, qui m’a permis de commencer à comprendre le moteur.<br><br>",
+        "images": [
+            {
+                "url": "assets/img/ue-ld/Niveau_froide_vengeance.png",
+                "legende": "Le plan du niveau au complet"
+            },
+            {
+                "url": "assets/img/ue-ld/bubblediagram_vengeancefroide.png",
+                "legende": "Bubble diagram"
+            },
+            {
+                "url": "assets/img/ue-ld/game-1.png",
+                "legende": "Screen du niveau en plein jeu"
+            },
+            {
+                "url": "assets/img/ue-ld/game-2.png",
+                "legende": "Screen du niveau en plein jeu"
+            },
+            {
+                "url": "assets/img/ue-ld/game-2.png",
+                "legende": "Screen du niveau en plein jeu"
+            },
+            {
+                "url": "assets/img/ue-ld/2tours-close.png",
+                "legende": "Les 2 tours du niveau"
+            },
+            {
+                "url": "assets/img/ue-ld/2tours-long.png",
+                "legende": "Les 2 tours vu depuis le début du niveau"
+            },
+            {
+                "url": "assets/img/ue-ld/boss.png",
+                "legende": "La zone du boss"
+            },
+            {
+                "url": "assets/img/ue-ld/chandelier.png",
+                "legende": "Les chandeliers à faire tomber"
+            },
+            {
+                "url": "assets/img/ue-ld/planification.png",
+                "legende": "La zone surélevée permettant d'oberserver"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir une vidéo du niveau",
+                "icon": "launch",
+                "link": "https://www.youtube.com/watch?v=9jDryQXAI-I"
+            }
+        ],
+        "keep": true,
+        "jeux": true
+    },
+    {
+        "name": "Niveau de Left4Dead 2",
+        "date": "Déc. 2022",
+        "year": "2022",
+        "context": "Universitaire",
+        "tags": [
+            "ld"
+        ],
+        "type": "Concept",
+        "img": "assets/img/l4d2/L4D2-Jacket.png",
+        "smalldesc": "Création d'un plan de niveau de Left 4 Dead 2",
+        "description": "<h2>Résumé du plan</h2> Ce travail est <b>un plan de level design</b> pour le jeu <b>Left 4 Dead 2</b>. L'objectif était de créer une suite de niveaux cohérents dans le jeu en groupe.<br> Nous avons décidé de faire un niveau dans des <b>montagnes</b>, car c'est un cadre qui n'est pas utilisé dans le jeu de base et nous pensions que c’est un cadre intéressant à explorer dans un contexte d’invasion zombie, <b>la météo particulière</b> ainsi que les <b>différentes possibilités d’environnement</b> permettent de nouvelles mise en scène ainsi que des espaces uniques.<br><br> Je me suis donc occupé de <b>la deuxième partie du niveau</b>. Cette partie correspond à la montée d'une montagne lors du <b>crépuscule</b> avec un début de <b>tempête de neige</b>.<br><br> L’objectif de ce niveau était de faire <b>une montée en puissance</b> dans le scénario de 4 niveaux. Le niveau a de grand <b>espace dégagé</b> afin d’insister sur la sensation de horde et d’invasion qui contraste avec des espaces avec <b>une vue cloisonnée</b> ajoutant de la pression chez les joueurs. Le niveau se divise en <b>5 zones</b>.<br><br> $!img=0!!img=1!$<br> <h2>Zone 1 : La traversée des herbes hautes</h2> Tout d’abord, une première zone fermée avec beaucoup de zombies, les joueurs suivent un couloir dans les hautes herbes. Cette zone abrite un objectif secondaire, une Witch dans un cabanon. Cette <b>Witch</b> représente un défi pour les joueurs qui trouveront dans le cabanon des <b>équipements supplémentaires</b> s’ils arrivent à la vaincre. <br><br> De nombreux zombies spéciaux sont présents dans cette zone jouant avec <b>le manque de visibilité</b> : des <b>Hunters</b> qui sautent sur les joueurs et les paralysent tant qu’ils ne sont pas éliminés, ainsi que des <b>Smoker</b> et un <b>Jockey</b> attirant les joueurs dans les hautes herbes.<br> Une fois toutes ces menaces passées, les joueurs arrivent dans la zone suivante.<br><br> $!img=2!$<br> <h2>Zone 2 : La bergerie</h2> La zone suivante est <b>un espace ouvert</b> dans lequel les joueurs peuvent retrouver de nombreux zombies, mais aussi deux bâtiments : <ul> <li><b>Une bergerie</b> avec des équipements à l’intérieur</li> <li><b>La maison du berger</b> avec des équipements à l’intérieur ainsi que des éléments narratif sur le berger.</li> </ul> La maison du berger abrite également un <b>Boomer</b> ainsi qu’un <b>Chargeur</b>. Deux zombies spéciaux fonctionnant bien dans les espaces clos.<br> <b>Un objectif annexe</b> est également présent avec <b>une tronçonneuse</b> si les joueurs osent explorer les hautes herbes.<br><br> Cette zone est aussi marquée par le <b>landmark</b> de la zone suivante, <b>une tour de guet illuminée</b> qui ressort lors des conditions particulières de ce niveau : la tempête de neige ainsi que le crépuscule. Le landmark indique clairement la suite du niveau.<br><br> $!img=3!$<br> <h2>Zone 3 : L’ascension</h2> La zone suivante est <b>une ascension courte</b> mais dangereuse d’une colline abritant de nombreux zombies spéciaux utilisant leur environnement pour blesser les joueurs : <ul> <li>Des <b>Hunter</b> qui sautent depuis les espaces en hauteur.</li> <li>Les <b>Smoker</b> qui attrapent les joueurs et les attirent dans les hordes</li> <li>Les <b>Spitter</b> qui utilisent l’espace restreint dans lequel les joueurs évoluent pour les piéger.</li> <li>Les <b>Jockeys</b> ponctuent cette ascension afin d’attirer les joueurs vers des espaces dangereux comme une <b>Witch</b> ou des espaces fermés</li> <li>Deux <b>Chargers</b> attendent de pied ferme les joueurs dans les quelques lignes droites de l’ascension.</li> </ul> Cette <b>ascension</b> vers cette <b>tour de guet</b> puis le <b>sommet de la colline</b>, donne un nouvel objectif pour les joueurs suite à une cinématique : un hélicoptère qui se dirige vers la montagne. Les joueurs descendent donc de la colline pour se diriger vers la montagne et arrivent dans la zone suivante.<br><br> $!img=4!$<br> <h2>Zone 4 : L’invasion</h2> La zone suivante est à nouveau plutôt <b>ouverte</b>, les joueurs vont faire face très rapidement à un problème : <b>un mur de zombie</b> arrive en face d’eux. <ul> <li>Soit ils le <b>traversent</b></li> <li>Soit ils utilisent le chemin <b>alternatif</b> abritant un <b>Tank</b>,</li> </ul> Dans tous les cas, un grand nombre de zombies, accompagnés de plusieurs infectés spéciaux, poussent les joueurs à avancer <b>le plus vite possible</b> afin d’atteindre la zone suivante. <br> Un élément secondaire est cependant à souligner dans cette zone, des éléments <b>narratifs</b> présents : <b>le corps du berger et ses affaires.</b><br><br> $!img=5!$<br> <h2>Zone 5 : La fuite</h2> La zone finale commence avec une minuscule île abritant <b>un bateau</b> qui doit être protégé le temps qu’il démarre, attirant <b>une vague de zombies</b>, les joueurs se défendent à l’aide des munitions et de l’équipement présent sur cette île.<br><br> Une fois que le bateau démarre, tous les joueurs y montent à bord afin d’arriver vers <b>l’abri</b>. Devant l’abri, il ne reste que des zombies normaux en grand nombre malgré tout représentant le dernier challenge des joueurs avant d’être en sécurité.<br><br> $!img=6!$<br> <h2>Conclusion</h2> Ce niveau de <b>Left 4 Dead 2</b> met en avant ma capacité à utiliser <b>les différents éléments</b> d’un jeu afin de créer de multiples situations avec les dits éléments, une réflexion se rapprochant du Rational Level Design.<br><br> J’ai également mis en œuvre un système de <b>landmarking</b> permettant aux joueurs de s’y retrouver et d’avoir un objectif clair en permanence et de savoir où se <b>diriger</b>, les <b>événements</b> servant également d’indicateurs d’objectifs.",
+        "images": [
+            {
+                "url": "assets/img/l4d2/left4dead-plan-partie2-Robin_Lefebvre.png",
+                "legende": "Le plan du niveau au complet"
+            },
+            {
+                "url": "assets/img/l4d2/bubblediagram_l4d2.png",
+                "legende": "Le bubble diagram à l'origine du niveau"
+            },
+            {
+                "url": "assets/img/l4d2/L4D2-zone-1.png",
+                "legende": "La première zone"
+            },
+            {
+                "url": "assets/img/l4d2/L4D2-zone-2.png",
+                "legende": "La seconde zone"
+            },
+            {
+                "url": "assets/img/l4d2/L4D2-zone-3.png",
+                "legende": "La troisième zone"
+            },
+            {
+                "url": "assets/img/l4d2/L4D2-zone-4.png",
+                "legende": "La quatrième zone"
+            },
+            {
+                "url": "assets/img/l4d2/L4D2-zone-5.png",
+                "legende": "La cinquième zone"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le plan",
+                "icon": "launch",
+                "link": "assets/img/l4d2/left4dead-plan-partie2-Robin_Lefebvre.png"
+            }
+        ],
+        "keep": true,
+        "main": false
+    },
+    {
+        "name": "Première de magazine inspiré d'un jeu",
+        "date": "Déc. 2022",
+        "tags": [
+            "2d"
+        ],
+        "img": "assets/img/Magazine-OuterWilds-Robin_Lefebvre.png",
+        "description": "Ce travail est un montage fait sur Photoshop dans le cadre d'un cours d'infographie 2D.<br>L'objectif était de réaliser la première de couverture d'un magazine dans l'univers d'un jeu.<br>\r<br>Le jeu que j'ai choisi est Outer Wilds. J'ai décidé de partir sur un magazine de science en m'inspirant d'une première de couverture de la revue scientifique \"nature\". <br>J'ai fait ce choix car Outer Wilds est un jeu qui se base grandement sur les sciences et imaginer un magazine créé dans ce monde parlant des dernières découvertes était amusant.",
+        "images": [
+            {
+                "url": "assets/img/Magazine-OuterWilds-Robin_Lefebvre.png",
+                "legende": "L'affiche dans son ensemble"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir l'affiche",
+                "icon": "launch",
+                "link": "assets/img/Magazine-OuterWilds-Robin_Lefebvre.png"
+            }
+        ],
+        "keep": false,
+        "jeux": false
+    },
+    {
+        "name": "Screen modifié venant d'un jeu",
+        "date": "Déc. 2022",
+        "tags": [
+            "2d"
+        ],
+        "img": "assets/img/Screen-OuterWilds-Robin_Lefebvre.png",
+        "description": "Ce travail est un montage fait sur Photoshop dans le cadre d'un cours d'infographie 2D.<br> L'objectif était de modifier un screenshot d'un jeu afin de changer l'univers dans lequel il se déroule.<br>Le jeu que j'ai choisi est Outer Wilds. A la place de faire dérouler le jeu dans un univers spatial, je me suis inspiré de \"Vingt Mille lieues sous les mers\", de l'imagerie Steampunk et de Bioshock pour modifier l'univers du jeu afin qu'il se déroule dans les fonds marin.",
+        "images": [
+            {
+                "url": "assets/img/Screen-OuterWilds-Robin_Lefebvre.png",
+                "legende": "Screen modifié"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le screen modifié",
+                "icon": "launch",
+                "link": "assets/img/Screen-OuterWilds-Robin_Lefebvre.png"
+            }
+        ],
+        "keep": false,
+        "jeux": false
+    },
+    {
+        "name": "The Dark Labyrinth",
+        "date": "Nov. 2022",
+        "tags": [
+            "gd"
+        ],
+        "img": "assets/img/THE-DARK-LABYRINTH.png",
+        "description": "The Dark Labyrinth est un game concept que j'ai réalisé en binôme dans le cadre d'un cours sur le game design.<br>L'objectif était de faire un jeu avec la contrainte d'un support, ici, le support était hybride.<br>\r<br>Pitch : \"Enfuyez-vous d'un labyrinthe sur le point de s'effondrer. Déplacer votre pion pour découvrir le labyrinthe, remplir les objectifs et vous enfuir. Attention, le premier qui s'enfuit enferme les autres.\"",
+        "images": [
+            {
+                "url": "assets/img/schema-gd-hybride.png",
+                "legende": "Schéma du dispositif"
+            },
+            {
+                "url": "assets/img/schema-gd-hybride2.png",
+                "legende": "Schéma du plateau de jeu"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir la fiche détaillée du game concept",
+                "icon": "launch",
+                "link": "data/THE-DARK-LABYRINTH.pdf"
+            }
+        ],
+        "keep": false,
+        "jeux": false
+    },
+    {
+        "name": "Don't be Fired Simulator",
+        "date": "Nov. 2022",
+        "tags": [
+            "gd"
+        ],
+        "img": "assets/img/wip-dontbefired.png",
+        "description": "Don't be Fired Simulator est un game concept que j'ai réalisé dans le cadre d'un cours sur le game design. L'objectif était de faire un party games.<br>Pitch : \"Vous et 3 collègues avez un patron difficile à vivre. Au moindre malaise ou erreur, vous vous faites virer. Avant vous étiez 100 dans le bureau maintenant, vous n'êtes plus que 4. Il ne peut en rester qu'un. Lancez les objets sur votre bureau pour assommer vos collègues !\"",
+        "images": [
+            {
+                "url": "assets/img/wip-dontbefired.png",
+                "legende": "Schéma du jeu"
+            },
+            {
+                "url": "assets/img/wip-dontbefired-rammaser.png",
+                "legende": "Schéma d'un joueur qui va ramasser un objet au centre"
+            },
+            {
+                "url": "assets/img/wip-dontbefired-reperer.png",
+                "legende": "Schéma d'un joueur qui se fait repérer au centre par le patron"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir la fiche détaillée du game concept",
+                "icon": "launch",
+                "link": "data/Exercice_Party_Games-Game_design.pdf"
+            }
+        ],
+        "keep": false,
+        "jeux": false
+    },
+    {
+        "name": "Living Rock",
+        "date": "Oct. 2022",
+        "period": "1 weekend",
+        "year": "2022",
+        "team": "7 personnes",
+        "context": "Universitaire",
+        "tags": [
+            "ld",
+            "gd"
+        ],
+        "img": "assets/img/living-rock/LivingRock-Jacket.png",
+        "type": "GameJam",
+        "smalldesc": "Jeu de puzzle en top-view",
+        "description": "<h2>Résumé de Living Rock</h2> <b>Living Rock</b> est un jeu que j'ai réalisé avec une équipe de <b>7 personnes</b> en tant que <b>Level Designer</b> et<b>Game Designer</b> lors de <b>l'UniJam 2022</b> en <b>un week-end</b>. Le thème de l'UniJam était <b>\"La distance rend toute chose infiniment plus précieuse\"</b>.<br><br> Nous incarnons donc un personnage qui se voit lié à <b>un cristal</b>, si le joueur s'éloigne trop du cristal, il meurt. Le joueur va donc devoir le prendre avec lui <b>tout le temps</b> pouvant le <b>tirer</b> et le <b>pousser</b>. Le joueur peut utiliser le cristal pour résoudre des énigmes.<br><br> $!img=0!!img=1!$<br> Nous avons donc commencé à travailler sur le <b>Game Concept</b> afin de trouver les mécaniques les plus intéressantes à réaliser dans le jeu. Nous avons travaillé à deux sur cette partie-là, j'avais un rôle de support puisque mon rôle principal était le Level Design.<br><br> Nous nous sommes dirigés vers un jeu d'énigme, les énigmes jouent donc systématiquement avec la distance entre le joueur et son cristal. Les différentes mécaniques sont : <br> <ul> <li><b>Un levier</b> permettant d’ouvrir une pour toujours.</li> <li><b>Des plaques de pressions</b> qui peuvent être activées par le cristal ainsi que par les caisses.</li> <li><b>Des caisses</b> permettant d’activer les plaques de pression.</li> <li> <b>Des tapis roulants</b> sur lesquels le joueur peut aller, mais aussi placer son cristal ou des caisses afin qu’ils se déplacent tout seuls</li> </ul> Deux menaces existent, les <b>trous</b> et les <b>piques</b>. Une fois les mécaniques et le game concept terminés, le Game Designer de l'équipe a commencé à faire le Game Document allant plus précisément dans les détails et moi j'ai commencé à faire le Level Design.<br><br> Le Level Design a été un vrai <b>défi</b> pour moi puisque je n'avais jamais fait de niveau à énigmes et cela a été un vrai exercice de réflexion de faire des niveaux cohérents, montant en difficulté sans que ça soit trop complexe.<br> J'ai cherché à utiliser les mécaniques en lien avec le cristal au maximum afin de rendre ça le plus intéressant possible.<br> <ul> <li>La distance avec le cristal étant <b>la mécanique principale</b>, j’ai essayé de l’utiliser de manière à pousser dans des situations où il doit réfléchir en pensant à cette mécanique.</li> <li>Tout d’abord, j’ai dû être vigilant à toujours vérifier en permanence <b>les distances</b> afin d’être sûr que les niveaux étaient faisables.</li> <li>Ensuite, j’ai essayé de mettre le joueur dans des situations de <b>danger</b> pour résoudre les énigmes, cela pousse le joueur à planifier avant d’agir et cela joue avec la mécanique principale.</li> <li>Pour finir, j’ai essayé de faire des énigmes en <b>plusieurs étapes</b> ce qui rend plus complexe les énigmes mais surtout procure plus de <b>satisfaction</b> chez le joueur lorsqu’il réussit.</li> </ul> $!img=2!$<br> <h2>Bilan de la Game Jam</h2> Cette Game Jam fut très intéressante car c'était la première fois que j'en faisais une en équipe et j'ai beaucoup appris en Level Design. En effet, j’ai pu mettre en <b>pratique</b> mes cours et apprendre plus en profondeur la réalisation d’énigme à plusieurs étapes <b>engageante</b> pour le joueur, le pousse à planifier et comprendre avant d’agir.<br> J’ai également appris à <b>imaginer</b> des mécaniques utiles et pertinentes dans le cadre d’un jeu d’énigmes et en lien avec les capacités de mon joueur.<br>",
+        "images": [
+            {
+                "url": "assets/img/living-rock/LivingRock.png",
+                "legende": "Illustration faite pour le jeu"
+            },
+            {
+                "url": "assets/img/living-rock/LivingRock-game.png",
+                "legende": "Screen in-game"
+            },
+            {
+                "url": "assets/img/living-rock/Schema-livingrock.png",
+                "legende": "Schéma du niveau que j'ai réalisé en tant que Level Designer"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://tiosstud.itch.io/living-rock"
+            }
+        ],
+        "keep": true,
+        "jeux": true
+    },
+    {
+        "name": "Jeu de société MashUp",
+        "date": "Oct. 2022",
+        "year": "2022",
+        "tags": [
+            "gd"
+        ],
+        "img": "assets/img/mashup/Mashup-Jacket.png",
+        "type": "GameJam",
+        "smalldesc": "Jeu d'apéro d'association d'idées",
+        "description": "<h2>Résumé de Mashup</h2> <b>MashUp</b> est un <b>jeu de société</b> que nous avons <b>prototypé</b> en <b>1 semaine</b>. En effet, dans le cadre de ma <b>licence professionnelle</b>, une <b>Game Jam</b> de jeux de société était organisée. L'objectif était de réaliser un prototype de jeu de société en 1 semaine avec pour thème \"The more you have the worst it gets\".<br><br> J'ai travaillé sur MashUp principalement en tant que Game Designer, nous avons réfléchi le jeu afin qu'il soit fun à jouer à l'apéro ou en soirée. Nous voulions un jeu accessible qui joue sur <b>l’imagination</b>.<br><br> Dans MashUp on doit associer <b>plusieurs cartes</b> représentant quelque chose (par exemple : un personnage ou un objet) afin de répondre à <b>un enjeu</b>. A la fin de chaque tour les joueurs <b>votent</b> pour la meilleure association. Le joueur qui remporte le plus de tours remporte la partie.<br><br> En tant que <b>Game Designer</b>, j’ai appris à prendre en compte les contraintes physiques que le jeu de société impose ainsi qu’à faire <b>évoluer</b> le jeu en fonction des tests sur les joueurs.<br><br> $!img=0!!img=1!!img=2!$<br> <h2>Détails du jeu</h2> Plusieurs types de cartes existent : <ul> <li><b>Les cartes enjeu</b>, elle détermine ce à quoi les joueurs doivent répondre, à chaque tour une carte enjeu est piochée. Exemple : \"Ayez l'empreinte carbone la plus faible\"</li><br> $!img=3!$<br> <li><b>Les cartes personnage</b>, elles représentent divers personnage différents, une seule est jouable par tour, à associer avec d’autres cartes. Exemple :\"Empereur intergalactique\"</li><br> $!img=4!$<br> <li><b>Les cartes item</b>, elles représentent des personnages minimes, des objets ou des états. Exemple : \"Affamé·e\" ou \"Pyjama\".</li><br> $!img=5!!img=6!$<br> <li><b>Les cartes narration</b> sont des cartes bonus permettant <b>d’impacter</b> le tour significativement, certaines se jouent au <b>début du tour</b> appliquant une condition particulière à celui-ci, d’autres se joue <b>en même temps</b> que ses autres cartes. Exemple : \"Tous les personnages de ce tour sont en maillot de bain\" ou \"Permet de simuler une carte item ou personnage de votre imagination\".</li><br> $!img=7!!img=8!$<br> </ul> <b>Exemple de tour :</b><br> <ul> <li>La carte <b>enjeu</b> de ce tour est \"Créer la combinaison la plus mignonne\".</li> <li>Le joueur joue la carte <b>\"Chat\"</b> et <b>\"Robe de princesse\"</b>, on a donc un chat en robe de princesse.</li> <li>Une fois que <b>tous</b> les joueurs ont proposé leur combinaison, chacun <b>vote</b>, la personne la plus votée <b>remporte le tour</b>.</li> <li>S’il reste des cartes enjeu, la carte enjeu suivante est tirée et un nouveau tour commence. Tous les joueurs piochent afin de récupérer leur main.</li></ul>",
+        "images": [
+            {
+                "url": "assets/img/mashup/mashup1.jpg",
+                "legende": "Le dessus de la boîte."
+            },
+            {
+                "url": "assets/img/mashup/mashup3.jpg",
+                "legende": "L'arrière de la boîte."
+            },
+            {
+                "url": "assets/img/mashup/mashup4.jpg",
+                "legende": "L'intérieur de la boîte."
+            },
+            {
+                "url": "assets/img/mashup/Carte-enjeu.png",
+                "legende": "Une carte enjeu"
+            },
+            {
+                "url": "assets/img/mashup/Carte-personnage.png",
+                "legende": "Une carte personnage"
+            },
+            {
+                "url": "assets/img/mashup/Carte-item-1.png",
+                "legende": "Une carte item"
+            },
+            {
+                "url": "assets/img/mashup/Carte-item-2.png",
+                "legende": "Une carte item"
+            },
+            {
+                "url": "assets/img/mashup/Carte-narration-1.png",
+                "legende": "Une carte narration qui se joue au début du tour"
+            },
+            {
+                "url": "assets/img/mashup/Carte-narration-2.png",
+                "legende": "Une carte narration qui se joue en même temps que les autres cartes"
+            }
+        ],
+        "buttons": [],
+        "keep": true,
+        "jeux": true
+    },
+    {
+        "name": "Niveau d'infiltration GTA",
+        "context": "Universitaire",
+        "date": "Oct. 2022",
+        "year": "2022",
+        "tags": [
+            "ld"
+        ],
+        "type": "Concept",
+        "img": "assets/img/gta/GTADiscretion-Jacket.png",
+        "smalldesc": "Création d'un plan de niveau de GTA",
+        "description": "<h2>Résumé du plan</h2> Ce travail est <b>un plan de level design</b> réalisé pour le jeu GTA, dans le cadre d’un cours de Level Design. L’objectif de cette réalisation était de comprendre comment réaliser un niveau de discrétion dans un jeu d’aventure, comment l’agencer et concevoir le parcours du joueur, afin de donner les outils utiles à sa progression. <br><br><b>Résumé de la mission : </b><br> Le personnage incarné par le joueur a été capturé par un gang de yakuzas. Il se réveille dans une cave et parvient à retirer la corde qui l’empêche de bouger. <br> En sortant de cette cave, il arrive dans une maison traditionnelle japonaise contrôlée par le gang. Il va donc devoir s'infiltrer dans cette maison pour trouver un moyen de sortir.<br> Deux options s'offrent à lui : <ul><li>Soit trouver de l'essence et faire brûler un tas de bois inflammable au fond du jardin. Cela attirera les yakuzas et permettra au joueur de s’enfuir.</li> <li>Ou bien il trouve des explosifs pour faire exploser le mur près de la porte afin de s'enfuir.</li></ul> Au cours de son parcours, il peut chercher des collectibles présents un peu partout dans la maison récompensant l’exploration et la planification de ses déplacements dans un espace dangereux.<br> <h2>Conclusion</h2> Ce plan m’a permis d’expérimenter une première fois la mise en scène de la discrétion dans un jeu d’action-aventure. J’ai pensé ce niveau avec l’objectif de pousser le joueur à <b>observer</b>, à <b>comprendre son environnement</b> et <b>planifier ses actions</b> avant d’agir.<br> Avec du recul, je pense que ce niveau gagnerait à avoir davantage de cinématique mise en scène en s’inspirant du cinéma afin de se rapprocher plus des codes narratifs du genre.<br><br> $!img=0!$",
+        "images": [
+            {
+                "url": "assets/img/gta/Niveau_Discretion-Gta.png",
+                "legende": "Le plan du niveau"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "assets/img/gta/Niveau_Discretion-Gta.png"
+            }
+        ],
+        "keep": true,
+        "jeux": false
+    },
+    {
+        "name": "Niveau de Mario World",
+        "context": "Universitaire",
+        "date": "Oct. 2022",
+        "year": "2022",
+        "tags": [
+            "ld"
+        ],
+        "type": "Concept",
+        "img": "assets/img/mario-world/Mario-Jacket.png",
+        "smalldesc": "Création d'un plan de niveau de Mario World",
+        "description": "<h2> Résumé du plan</h2> Ce travail est un plan de level design pour le jeu Super Mario World réalisé en cours de Level Design.<br>L'objectif était de choisir une mécanique du jeu et de concevoir un niveau complet en l'exploitant selon une progression suivant ce schéma : <br>Apprentissage > Application > Twist > Maîtrise. <br><br>J’ai choisi d'exploiter le saut sur les ennemis afin de faire des sauts plus hauts ou de se déplacer horizontalement.<br><br>J'ai donc divisé le niveau en 4 parties. $!img=0!$ <br><br><h2>Apprentissage :</h2> Le joueur évolue dans un cadre sans risques avec peu de danger afin qu’il découvre la mécanique. D’abord un koopa qui permet d’apprendre le saut simple pour franchir un obstacle puis un Thwomp qui permet d’apprendre le “Spin Jump”. <br><br>$!img=1!$<h2>Application :</h2>La mécanique est présentée au joueur dans plusieurs cas différents plus dangereux et plus difficiles au fil du niveau. <br>La situation du début est répétée avec d’abord le Koopa et ensuite le Thwomp, mais avec des dangers supplémentaires, l’objectif ici est de mobiliser ce qu’a appris le joueur afin de consolider son apprentissage. <br>Au fil du niveau, la difficulté augmente graduellement et les cas se multiplient variant de plus en plus les uns des autres afin de pousser le joueur à appliquer dans différents cas la mécanique phare du niveau. <br>Cette partie est ponctuée d'objectifs secondaires plus challengeants demandant un niveau de maîtrise plus élevé, ces objectifs secondaires ont pour but d’être gratifiants pour les joueurs les plus aguerris.<br><br>$!img=2!$<h2>Twist :</h2> La logique du saut a été inversée, à la place de sauter plus haut, il faut gérer son saut pour éviter d'aller trop haut sous peine de mourir. Contrôler ses sauts afin de ne pas mourir prend le joueur à revers sur ce qu’il devait faire pendant tout le niveau. Cela permet de renouveler la mécanique et de surprendre le joueur.<br><br>$!img=3!$<h2>Maîtrise :</h2> La dernière section met le joueur sous pression. Des Bullet Bills le poursuivent, l’obligeant à agir rapidement et à maîtriser parfaitement ses sauts. La vitesse et la précision deviennent essentielles pour atteindre la fin du niveau.<br><br>$!img=4!$<h2>Conclusion</h2>Ce niveau met en avant ma capacité à structurer une expérience de jeu claire et progressive. Le niveau joue avec les attentes et pousse le joueur à se renouveler et à maîtriser une mécanique de jeu.",
+        "images": [
+            {
+                "url": "assets/img/mario-world/LD-Mario.png",
+                "legende": "Plan du niveau"
+            },
+            {
+                "url": "assets/img/mario-world/LD-Mario-App.png",
+                "legende": "Partie apprentissage"
+            },
+            {
+                "url": "assets/img/mario-world/LD-Mario-Appl.png",
+                "legende": "Partie application"
+            },
+            {
+                "url": "assets/img/mario-world/LD-Mario-Twist.png",
+                "legende": "Partie twist"
+            },
+            {
+                "url": "assets/img/mario-world/LD-Mario-Mas.png",
+                "legende": "Partie Maîtrise"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le plan",
+                "icon": "launch",
+                "link": "assets/img/mario-world/LD-Mario.png"
+            }
+        ],
+        "keep": true,
+        "jeux": false
+    },
+    {
+        "name": "Chrono Bullet Hell Prototype",
+        "date": "Août 2022",
+        "tags": [
+            "gj",
+            "gd",
+            "dev"
+        ],
+        "img": "assets/img/chronobullethell-2.png",
+        "description": "Chrono Bullet Hell Prototype est un prototype de jeu Bullet Hell que j'ai créé lors de la Mini Jam 112 : Chrono. Cette Game Jam avait pour thème \"Chrono\" et pour contrainte \"Only 3 buttons\". <br>\r<br>Le jeu se situe donc sur un cadran d'horloge. Le personnage qu'on joue peut avancer ou reculer d'heure en heure afin d'éviter les tirs arrivants vers lui. Pour ce faire il peut également utiliser un multiplicateur qui lui permet d'avancer ou de reculer un plus grand nombre d'heures en une fois. <br>\r<br>Lors de cette Game Jam, j'ai commencé en posant mes idées sur papier en imaginant autour du thème. Grâce à ce processus j'ai pu cette fois-ci définir un scope plus petit et plus réaliste. Malgré tout il est important de préciser que là où l'idée était plus claire, le projet lui manquait de structure ce qui m'a beaucoup freiné. <br>\r<br>Je voulais au début ajouter une mécanique de temps qui permettait d'avancer plus loin ou moins loin en fonction du temps qu'une des touches était retenue. Au final, j'ai rejeté cette idée car rendait trop injuste le jeu car tout n'était qu'histoire de timing. <br>\r<br>Pour le moment le jeu n'est que de la survie mais par la suite on peut imaginer des niveaux utilisant des mécaniques différentes.<br>\r<br>Par exemple : <br>Un niveau jouant avec la lumière.<br>Un niveau avec des éléments à récupérer sur le cadran afin de vaincre un boss.<br>\r<br>Plus simplement, des patterns plus complexes demandant de la précisison.",
+        "images": [
+            {
+                "url": "assets/img/chronobullethell-1.png",
+                "legende": "Screen du jeu"
+            },
+            {
+                "url": "assets/img/chronobullethell-2.png",
+                "legende": "Screen du jeu"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://purpleluma.itch.io/chrono-bullet-hell"
+            }
+        ],
+        "keep": false,
+        "jeux": false
+    },
+    {
+        "name": "Black & White Prototype",
+        "date": "Juillet 2022",
+        "tags": [
+            "gj",
+            "gd",
+            "ld",
+            "dev"
+        ],
+        "img": "assets/img/BlackAndWhiteColorJam.png",
+        "description": "Black & White Prototype est un prototype de jeu d'énigme que j'ai commencé lors de la Mini Jam 111 : Colors². Cette Game Jam avait pour thème \"Colors\" et pour contrainte \"You are your own ennemy\".<br>\r<br>C'est une Game Jam assez courte et ma première erreur lors de cette dernière a été de me lancer sans poser de manière précise ce que je voulais réaliser. Le résultat a été que je n'ai pas réussi à finir le jeu à temps pour la fin de la Jam.<br> Mon idée principale était de réaliser un jeu d'énigme dans lequel, il fallait réaliser un parcours sans mourir sous peine de devoir le recommencer. Une fois le niveau terminé, notre double sur la partie droite de l'écran reproduit les déplacements réalisés. S'il finit le niveau, on perd, s'il perd on gagne. Le problème principal dans le prototype que j'ai réalisé en Juillet 2022 est que la mort de notre double dépend de timing et non pas de réflexion. En repensant le jeu, quelques éléments de gameplay interessants pourrait être ajouter afin que cela soit de la reflexion et non pas du timing. Par exemple :<br>Un piège qui s'active après un certain nombre d'actions, les siennes et celles du double. L'objectif serait que le joueur doit calculer son nombre d'actions pour piéger son double.<br>Au lieu de faire une division entre la partie du joueur et du double, il faudrait permettre aux joueurs d'intéragir avec des éléments du côté du double.",
+        "images": [
+            {
+                "url": "assets/img/BlackAndWhiteColorJam.png",
+                "legende": "Screen du jeu"
+            }
+        ],
+        "buttons": [],
+        "keep": false,
+        "jeux": false
+    },
+    {
+        "name": "Cosmic Jack",
+        "date": "Nov. 2021 et Mai 2022",
+        "tags": [
+            "gj",
+            "gd",
+            "dev"
+        ],
+        "img": "assets/img/CosmicJackWeb.png",
+        "description": "Jeu que j'ai réalisé une première fois en JavaScript en Nov. 2021 pour l'entrepise dans laquelle travaillait mon frère. J'ai donc réalisé la partie développement et mon frère la partie graphique. <br>On a fait un jeu inspiré du jeu du T-Rex car on voulait qu'il soit facilement jouable par tous et que ça soit un jeu à score. J'ai par la suite refait le jeu en Mai 2022 sur Unity afin de prendre en main le logiciel mais également afin d'avoir un jeu plus proche de ce que j'attendais.",
+        "images": [
+            {
+                "url": "assets/img/CosmicJackWeb.png",
+                "legende": "Screen de Cosmic Jack Web"
+            },
+            {
+                "url": "assets/img/CosmicUnity.png",
+                "legende": "Screen de Cosmic Unity"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir Cosmic Jack version Web",
+                "icon": "launch",
+                "link": "https://ginko-conseil.com/cosmic-jack/"
+            },
+            {
+                "name": "Voir Cosmic Unity",
+                "icon": "launch",
+                "link": "https://purpleluma.itch.io/cosmic-jack"
+            }
+        ],
+        "keep": false,
+        "jeux": false
+    },
+    {
+        "name": "Analyseur de croquettes NicePet",
+        "date": "Avril 2022",
+        "tags": [
+            "dev",
+            "web"
+        ],
+        "img": "assets/img/NicePet.png",
+        "description": "L'analyseur de croquettes est un site web et une application que j'ai réalisée en équipe lors d'un évenement organisé par mon DUT Informatique nommé la Startup Week. <br>L'objectif était de répondre à une demande d'une startup en une semaine.<br>Nous avons donc réalisé un analyseur de croquettes pour la startup NicePet. Je me suis occupé de toute la partie API.",
+        "images": [
+            {
+                "url": "assets/img/NicePet.png",
+                "legende": "Screen de l'interface web"
+            }
+        ],
+        "buttons": [],
+        "keep": false,
+        "jeux": false
+    },
+    {
+        "name": "Lecteur de fichier PLY",
+        "date": "Mars 2022",
+        "tags": [
+            "dev"
+        ],
+        "img": "assets/img/CaptureProjet4.png",
+        "description": "Le Lecteur de fichier PLY (fichier 3D) est un projet que j'ai réalisé en colaboration avec des camarades de classes lors de mon DUT Informatique. C'est un projet qui nous a demandé de travailler fortement en équipe puisque la charge de travail était assez importante, une répartition des tâches de manière précise était indispensable.<br>\r<br>Je me suis personnellement occupé tout d'abord du triage des points dans le fichier PLY afin de pouvoir afficher dans le bon ordre les faces des objets 3D.<br>J'ai ensuite développé avec une autre personne du groupe toute la partie mathématiques qui demandait des calculs de vecteur dans un espace en 3 dimensions.<br>Pour finir j'ai également développé la lumière qui se projetait sur les objets en 3D.",
+        "images": [
+            {
+                "url": "assets/img/CaptureProjet4.png",
+                "legende": "Screen du logiciel"
+            },
+            {
+                "url": "assets/img/ScreenProjet3.png",
+                "legende": "Screen du logiciel"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://github.com/RobLfbv/PLYReader"
+            }
+        ],
+        "keep": false,
+        "jeux": false
+    },
+    {
+        "name": "Rope Game Prototype",
+        "date": "Jan. 2022",
+        "tags": [
+            "gj",
+            "gd",
+            "ld",
+            "dev"
+        ],
+        "img": "assets/img/ropeproto.png",
+        "description": "Rope Game Prototype est un prototype de jeu de plateforme se jouant avec des cordes. J'ai réalisé ce jeu lors de la Game Jam My First Game Jam: Winter 2022 qui avait pour thème \"Nature\".<br>Ce jeu a été une sorte de défi technique pour moi car cela m'a demandé de comprendre en détail comment fonctionnait Unity. C'était également ma première Game Jam j'ai donc fait beaucoup d'erreurs : je me suis mal organisé et je n'ai pas assez posé mes idées. Mais pour une première Game Jam, j'étais assez fier du résultat malgré tout.",
+        "images": [
+            {
+                "url": "assets/img/ropeproto.png",
+                "legende": "Screen du jeu"
+            }
+        ],
+        "buttons": [
+            {
+                "name": "Voir le projet",
+                "icon": "launch",
+                "link": "https://purpleluma.itch.io/rope-game-prototype"
+            }
+        ],
+        "keep": false,
+        "jeux": false
+    }
+]
