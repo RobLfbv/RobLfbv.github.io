@@ -1,0 +1,10 @@
+---
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "projects/{{ project.name | slugify }}/index.html"
+layout: layout-project.njk
+---
+{# Ce fichier peut rester vide, tout se passe dans le layout et les filtres #}
+{{ project.description | transformCustomTags(project) | safe }}

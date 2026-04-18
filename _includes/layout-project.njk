@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ project.name }} | Portfolio</title>
+</head>
+<body>
+    <h1>{{ project.name }}</h1>
+    <p>Contexte : {{ project.context }} - Équipe : {{ project.team }}</p>
+    
+    <article>
+        {{ content | safe }}
+    </article>
+</body>
+</html>
