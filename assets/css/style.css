@@ -203,6 +203,21 @@ header ul {
 header ul li {
   padding: 0;
 }
+header #me {
+  margin-top: auto;
+  margin-top: auto;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+header #me h2 {
+  margin: 0;
+  padding: 0;
+}
+header #me h3 {
+  margin: 0;
+  padding: 0;
+}
 
 .big-square {
   border: solid 3px #2379bb;
