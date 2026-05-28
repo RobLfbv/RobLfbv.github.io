@@ -1,0 +1,27 @@
+[
+    {
+        "id": "gd",
+        "label": "Game Design",
+        "shortlabel":"GD"
+    },
+    {
+        "id": "ld",
+        "label": "Level Design",
+        "shortlabel":"LD"
+    },
+    {
+        "id": "dev",
+        "label": "Développement",
+        "shortlabel":"Dev."
+    },
+    {
+        "id": "qa",
+        "label": "QA Tester",
+        "shortlabel":"QA"
+    },    
+    {
+        "id": "ta",
+        "label": "Technical Artist",
+        "shortlabel":"TechArt"
+    }
+]

@@ -1,15 +1,128 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <title>{{ project.name }} | Portfolio</title>
-</head>
-<body>
-    <h1>{{ project.name }}</h1>
-    <p>Contexte : {{ project.context }} - Équipe : {{ project.team }}</p>
-    
-    <article>
-        {{ content | safe }}
-    </article>
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ project.name[locale] }} | Portfolio</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <header>
+            <div id="me">
+                <h2>Robin
+                    <b>LEFEBVRE</b>
+                </h2>
+                <h3>Level & Game Designer</h3>
+            </div>
+            <ul>
+                <li>
+                    <a href="/{{ locale }}/" bis_skin_checked="1">Accueil</a>
+                </li>
+                <li>
+                    <a href="/{{ locale }}/#profil" bis_skin_checked="1">Profil</a>
+                </li>
+                <li class="dropdown">
+                    <a style="display:flex; align-items:center; gap:0.5rem" href="/{{ locale }}/#mainProjects" bis_skin_checked="1">Jeux
+                    <img style="width:1rem; display:block; height:auto;" src="/data/svg/dropdown.svg"></a>
+                    <ul class="dropdown-content">
+                        {% for projectEach in projects %}
+                            {% if projectEach.keep and projectEach.jeux and project != projectEach %}
+                                <li>
+                                    <a href="/{{ locale }}/{{ projectEach.url }}">{{ projectEach.name[locale] }}</a>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </li>
+                <li>
+                    <a href="/{{ locale }}/#projects" bis_skin_checked="1">Documentations</a>
+                </li>
+                <li>
+                    <a href="/{{ locale }}/#contact" bis_skin_checked="1">Contact</a>
+                </li>
+            </ul>
+        </header>
+        <section id="projectPage">
+            <h1>{{ project.name[locale] }}</h1>
+            <div class="info-list">
+                {% if project.context[locale] != null %}
+                    <p>
+                        {% if locale == 'fr' %}
+                            <b>Projet :</b>
+                        {% elif locale == 'en' %}
+                            <b>Project :</b>
+                        {% endif %}
+                        {{ project.context[locale] }}
+                    </p>
+                {% endif %}
+                {% if project.team[locale] != null %}
+                    <p>
+                        {% if locale == 'fr' %}
+                            <b>Équipe :</b>
+                        {% elif locale == 'en' %}
+                            <b>Team :</b>
+                        {% endif %}
+                        {{ project.team[locale] }}
+                    </p>
+                {% endif %}
+                {% if project.period[locale] != null %}
+                    <p>
+                        {% if locale == 'fr' %}
+                            <b>Durée :</b>
+                        {% elif locale == 'en' %}
+                            <b>Period :</b>
+                        {% endif %}
+                        {{ project.period[locale] }}
+                    </p>
+                {% endif %}
+                {% if project.year != null %}
+                    <p>
+                        {% if locale == 'fr' %}
+                            <b>Année :</b>
+                        {% elif locale == 'en' %}
+                            <b>Year :</b>
+                        {% endif %}
+                        {{ project.year }}
+                    </p>
+                {% endif %}
+                <div class="buttons">
+                    {% for button in project.buttons %}
+                        <a class="button" href="{{ button.link }}" target="_blank">
+                            <span class="material-symbols-outlined">
+                                {{ button.icon }}</span>
+                            {{ button.name[locale] }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="tags">
+                {% for tag in project.tags %}
+                    {% set tagInfo = tags | getTag(tag) %}
+                    <div class="tag" data-tag="{{ tagInfo.id }}">{{ tagInfo.shortlabel }}</div>
+                {% endfor %}
+            </div>
+            <div class="desc">
+                {{ content | safe }}
+            </div>
+            <button id="backButton" onclick="window.location.href='/{{ locale }}/#mainProjects'">
+                Retour
+            </button>
+        </section>
+        <section id="image-modal" style="display: none;">
+            <div id="leaveScreen"></div>
+            <button id="closeImage" class="close">
+                <span>x</span>
+            </button>
+        </section>
+        <footer>
+            <p>&copy; 2025. Site web développé par
+                <a href="https://robin-lefebvre.fr">Robin LEFEBVRE</a>
+                à partir de la base
+                                de
+                <a href="https://davall.fr">DavAll</a>.
+            </p>
+        </footer>
+        <script src="/assets/js/projectPage.js"></script>
+    </body>
+</html></body></html>

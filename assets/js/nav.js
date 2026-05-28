@@ -41,7 +41,7 @@ function generateSocials() {
         if (reseau.link.startsWith('http')) social.rel = "noopener";
         if (reseau.icon) {
             const icon = document.createElement("img");
-            icon.src = "data/svg/" + reseau.icon + ".svg";
+            icon.src = "/data/svg/" + reseau.icon + ".svg";
             //icon.classList.add("material-symbols-outlined");
             //icon.innerText = reseau.icon;
             social.appendChild(icon);
@@ -57,7 +57,7 @@ function generateSocials() {
         if (reseau.link.startsWith('http')) social.rel = "noopener";
         if (reseau.icon) {
             const icon = document.createElement("img");
-            icon.src = "data/svg/" + reseau.icon + ".svg";
+            icon.src = "/data/svg/" + reseau.icon + ".svg";
             //icon.classList.add("material-symbols-outlined");
             //icon.innerText = reseau.icon;
             social.appendChild(icon);

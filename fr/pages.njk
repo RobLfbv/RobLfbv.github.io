@@ -1,0 +1,9 @@
+---
+pagination:
+  data: projects
+  size: 1
+  alias: project
+permalink: "fr/{{ project.url | slugify }}/index.html"
+layout: layout-project.njk
+---
+{{ project.description['fr'] | transformCustomTags(project) | safe }}
